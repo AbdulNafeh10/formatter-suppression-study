@@ -1,0 +1,270 @@
+{
+  "classification": "Preserved",
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[2].body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].body[2].names[0]",
+        "node_context": "alias(name='pytest')",
+        "construct_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            10,
+            11
+          ],
+          "end": [
+            10,
+            17
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 18,
+            "row": 10
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-kbja8hp8\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 11
+                },
+                "location": {
+                  "column": 1,
+                  "row": 10
+                }
+              }
+            ],
+            "message": "Remove unused import: `pytest`"
+          },
+          "location": {
+            "column": 12,
+            "row": 10
+          },
+          "message": "`pytest` imported but unused",
+          "noqa_row": 10,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[2].body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].body[2].names[0]",
+        "node_context": "alias(name='pytest')",
+        "construct_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            10,
+            11
+          ],
+          "end": [
+            10,
+            17
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 18,
+            "row": 10
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-46qwzaw4\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 11
+                },
+                "location": {
+                  "column": 1,
+                  "row": 10
+                }
+              }
+            ],
+            "message": "Remove unused import: `pytest`"
+          },
+          "location": {
+            "column": 12,
+            "row": 10
+          },
+          "message": "`pytest` imported but unused",
+          "noqa_row": 10,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[2].body[2].names[0]",
+      "original": {
+        "identity": "F401@$.body[2].body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].body[2].names[0]",
+        "node_context": "alias(name='pytest')",
+        "construct_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            10,
+            11
+          ],
+          "end": [
+            10,
+            17
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 18,
+            "row": 10
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-kbja8hp8\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 11
+                },
+                "location": {
+                  "column": 1,
+                  "row": 10
+                }
+              }
+            ],
+            "message": "Remove unused import: `pytest`"
+          },
+          "location": {
+            "column": 12,
+            "row": 10
+          },
+          "message": "`pytest` imported but unused",
+          "noqa_row": 10,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[2].body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].body[2].names[0]",
+        "node_context": "alias(name='pytest')",
+        "construct_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "pytest"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            10,
+            11
+          ],
+          "end": [
+            10,
+            17
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 18,
+            "row": 10
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-46qwzaw4\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 11
+                },
+                "location": {
+                  "column": 1,
+                  "row": 10
+                }
+              }
+            ],
+            "message": "Remove unused import: `pytest`"
+          },
+          "location": {
+            "column": 12,
+            "row": 10
+          },
+          "message": "`pytest` imported but unused",
+          "noqa_row": 10,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "explanation": "Underlying diagnostics match uniquely (1); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

@@ -1,0 +1,7 @@
+{
+  "public_evidence_schema": 1,
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "logical_filename": "after.py",
+  "original_sha256": "72b4e06e330745f790f22e8bbf388ef086a0ff79adec03cd66b037b4d84411cf",
+  "source_text": "from __future__ import annotations\n\nfrom unittest import TestCase  # noqa: F401\n\n\nfor i in range(15000):\n    exec(\n        f\"\"\"\nclass Test{i}(TestCase):\n    @classmethod\n    def setUpClass(cls): pass\n    def test_1(self): pass\n    def test_2(self): pass\n    def test_3(self): pass\n\"\"\"\n    )\n"
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "cell": null,
+    "code": "E402",
+    "end_location": {
+      "column": 42,
+      "row": 5
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 5
+    },
+    "message": "Module level import not at top of file",
+    "noqa_row": 5,
+    "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+  },
+  {
+    "cell": null,
+    "code": "E402",
+    "end_location": {
+      "column": 48,
+      "row": 6
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 6
+    },
+    "message": "Module level import not at top of file",
+    "noqa_row": 6,
+    "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+  }
+]

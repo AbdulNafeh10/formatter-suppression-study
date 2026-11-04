@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase7-controlled\\trials\\call_keywords_long--file_specific\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "# ruff: noqa: F821\nvalue = dict(\n    primary=missing_a,\n    secondary=missing_b,\n    description=\"A deliberately long description that exceeds the common formatter line length when placed beside the other arguments\",\n)\n",
+  "stderr": "All done! \\u2728 \\U0001f370 \\u2728\r\n1 file left unchanged.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-719lat_g"
+}

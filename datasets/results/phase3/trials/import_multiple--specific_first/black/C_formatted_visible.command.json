@@ -1,0 +1,26 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--isolated",
+    "--no-cache",
+    "--select",
+    "F401,F821,F841",
+    "--target-version",
+    "py311",
+    "--output-format",
+    "json",
+    "--no-fix",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"F401\",\n    \"end_location\": {\n      \"column\": 12,\n      \"row\": 2\n    },\n    \"filename\": \"<home>\\\\AppData\\\\Local\\\\Temp\\\\suppression-study-i8d_ryzm\\\\study_input.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 3\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 2\n          }\n        }\n      ],\n      \"message\": \"Remove unused import: `math`\"\n    },\n    \"location\": {\n      \"column\": 8,\n      \"row\": 2\n    },\n    \"message\": \"`math` imported but unused\",\n    \"noqa_row\": 2,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-import\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-i8d_ryzm"
+}

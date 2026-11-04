@@ -1,0 +1,10 @@
+semicolon-black Newly exposed PASS
+semicolon-ruff Newly exposed PASS
+list_inline-black Newly hidden PASS
+list_inline-ruff Preserved PASS
+import_inline-black Preserved PASS
+local_semicolon-ruff Newly exposed PASS
+repeated_name-black Newly exposed PASS
+unicode-black Newly exposed PASS
+manual-hidden Newly hidden PASS
+manual-mixed Mixed PASS

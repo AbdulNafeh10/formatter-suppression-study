@@ -1,0 +1,79 @@
+{
+  "classification": "AST changed",
+  "validation_status": "measurement_complete",
+  "configuration_mode": "project-config-sensitivity-selected-rule-subset",
+  "config": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\pyproject.toml",
+  "stdin_filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\src\\_pytest\\logging.py",
+  "selected_rules": [
+    "F401",
+    "F821",
+    "F841"
+  ],
+  "error": null,
+  "newly_hidden_count": null,
+  "newly_exposed_count": null,
+  "full_native_passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [
+      {
+        "cell": null,
+        "code": "PLE0704",
+        "end_location": {
+          "column": 18,
+          "row": 402
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\src\\_pytest\\logging.py",
+        "fix": null,
+        "location": {
+          "column": 13,
+          "row": 402
+        },
+        "message": "Bare `raise` statement is not inside an exception handler",
+        "noqa_row": 402,
+        "url": "https://docs.astral.sh/ruff/rules/misplaced-bare-raise"
+      }
+    ],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": [
+      {
+        "cell": null,
+        "code": "PLE0704",
+        "end_location": {
+          "column": 18,
+          "row": 402
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\src\\_pytest\\logging.py",
+        "fix": null,
+        "location": {
+          "column": 13,
+          "row": 402
+        },
+        "message": "Bare `raise` statement is not inside an exception handler",
+        "noqa_row": 402,
+        "url": "https://docs.astral.sh/ruff/rules/misplaced-bare-raise"
+      }
+    ]
+  },
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "matched_diagnostic_identities": [],
+  "underlying_changes": null,
+  "matching_errors": [],
+  "explanation": "Strict AST equivalence failed; suppression attribution blocked.",
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0
+  },
+  "full_native_counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 1,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 1
+  }
+}

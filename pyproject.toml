@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "formatter-suppression-study"
+version = "0.1.0"
+description = "Four-pass measurements and a conservative suppression-comparison oracle"
+requires-python = ">=3.11,<3.12"
+dependencies = ["black==25.1.0", "ruff==0.11.13"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+analysis = ["numpy==2.2.6", "pandas==2.2.3", "matplotlib==3.10.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,12 @@
+.venv/
+.venv-report/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+tmp/
+local/
+reports/local-*/
+datasets/real_world/phase4/archives/

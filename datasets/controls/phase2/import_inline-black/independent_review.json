@@ -1,0 +1,58 @@
+{
+  "before": [
+    {
+      "rule": "F401",
+      "lexeme": "path",
+      "visible": false,
+      "location": {
+        "column": 5,
+        "row": 2
+      },
+      "end_location": {
+        "column": 9,
+        "row": 2
+      }
+    },
+    {
+      "rule": "F401",
+      "lexeme": "getcwd",
+      "visible": true,
+      "location": {
+        "column": 5,
+        "row": 3
+      },
+      "end_location": {
+        "column": 11,
+        "row": 3
+      }
+    }
+  ],
+  "after": [
+    {
+      "rule": "F401",
+      "lexeme": "path",
+      "visible": false,
+      "location": {
+        "column": 5,
+        "row": 2
+      },
+      "end_location": {
+        "column": 9,
+        "row": 2
+      }
+    },
+    {
+      "rule": "F401",
+      "lexeme": "getcwd",
+      "visible": true,
+      "location": {
+        "column": 5,
+        "row": 3
+      },
+      "end_location": {
+        "column": 11,
+        "row": 3
+      }
+    }
+  ]
+}

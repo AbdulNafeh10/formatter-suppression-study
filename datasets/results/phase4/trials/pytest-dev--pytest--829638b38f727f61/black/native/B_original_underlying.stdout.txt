@@ -1,0 +1,19 @@
+[
+  {
+    "cell": null,
+    "code": "UP032",
+    "end_location": {
+      "column": 10,
+      "row": 81
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\src\\_pytest\\setuponly.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 77
+    },
+    "message": "Use f-string instead of `format` call",
+    "noqa_row": 77,
+    "url": "https://docs.astral.sh/ruff/rules/f-string"
+  }
+]

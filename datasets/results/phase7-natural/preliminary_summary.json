@@ -1,0 +1,191 @@
+{
+  "primary": {
+    "pallets/flask": {
+      "planned_comparisons": 26,
+      "recorded_comparisons": 26,
+      "excluded_preflight": 0,
+      "by_formatter": {
+        "black": {
+          "executed": 13,
+          "attributable": 12,
+          "outcomes": {
+            "Preserved": 12,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 1,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 1,
+          "formatting_unchanged": 12,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 4,
+          "with_original_selected_suppression": 4,
+          "zero_underlying_diagnostics": 9
+        },
+        "ruff": {
+          "executed": 13,
+          "attributable": 13,
+          "outcomes": {
+            "Preserved": 13,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 0,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 1,
+          "formatting_unchanged": 12,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 4,
+          "with_original_selected_suppression": 4,
+          "zero_underlying_diagnostics": 9
+        }
+      }
+    },
+    "psf/requests": {
+      "planned_comparisons": 14,
+      "recorded_comparisons": 14,
+      "excluded_preflight": 0,
+      "by_formatter": {
+        "black": {
+          "executed": 7,
+          "attributable": 7,
+          "outcomes": {
+            "Preserved": 7,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 0,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 3,
+          "formatting_unchanged": 4,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 6,
+          "with_original_selected_suppression": 5,
+          "zero_underlying_diagnostics": 1
+        },
+        "ruff": {
+          "executed": 7,
+          "attributable": 7,
+          "outcomes": {
+            "Preserved": 7,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 0,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 2,
+          "formatting_unchanged": 5,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 6,
+          "with_original_selected_suppression": 5,
+          "zero_underlying_diagnostics": 1
+        }
+      }
+    },
+    "pytest-dev/pytest": {
+      "planned_comparisons": 40,
+      "recorded_comparisons": 40,
+      "excluded_preflight": 0,
+      "by_formatter": {
+        "black": {
+          "executed": 20,
+          "attributable": 18,
+          "outcomes": {
+            "Preserved": 18,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 2,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 2,
+          "formatting_unchanged": 18,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 8,
+          "with_original_selected_suppression": 8,
+          "zero_underlying_diagnostics": 12
+        },
+        "ruff": {
+          "executed": 20,
+          "attributable": 19,
+          "outcomes": {
+            "Preserved": 19,
+            "Newly hidden": 0,
+            "Newly exposed": 0,
+            "Mixed": 0,
+            "Diagnostic changed": 0,
+            "AST changed": 1,
+            "Ambiguous": 0,
+            "Execution failure": 0
+          },
+          "formatting_changed": 6,
+          "formatting_unchanged": 14,
+          "newly_hidden_diagnostics": 0,
+          "newly_exposed_diagnostics": 0,
+          "with_underlying_selected_diagnostics": 8,
+          "with_original_selected_suppression": 8,
+          "zero_underlying_diagnostics": 12
+        }
+      }
+    }
+  },
+  "native_status_by_repository": {
+    "pallets/flask": {
+      "measurement_complete": 26
+    },
+    "psf/requests": {
+      "no_project_ruff_config": 14
+    },
+    "pytest-dev/pytest": {
+      "measurement_complete": 40
+    }
+  },
+  "native_outcomes_by_repository_formatter": {
+    "pallets/flask": {
+      "black": {
+        "Preserved": 12,
+        "AST changed": 1
+      },
+      "ruff": {
+        "Preserved": 13
+      }
+    },
+    "psf/requests": {
+      "black": {
+        "no_project_ruff_config": 7
+      },
+      "ruff": {
+        "no_project_ruff_config": 7
+      }
+    },
+    "pytest-dev/pytest": {
+      "black": {
+        "Preserved": 18,
+        "AST changed": 2
+      },
+      "ruff": {
+        "Preserved": 19,
+        "AST changed": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "title": [
+    "An Empirical Study of Suppressed Static Analysis Warnings"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-1470-0839",
+      "authenticated-orcid": false,
+      "given": "Huimin",
+      "family": "Hu",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "University of Stuttgart, Stuttgart, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6531-5420",
+      "authenticated-orcid": false,
+      "given": "Yingying",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of British Columbia, Vancouver, Canada"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7280-1614",
+      "authenticated-orcid": false,
+      "given": "Julia",
+      "family": "Rubin",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of British Columbia, Vancouver, Canada"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-1623-498X",
+      "authenticated-orcid": false,
+      "given": "Michael",
+      "family": "Pradel",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of Stuttgart, Stuttgart, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        6,
+        19
+      ]
+    ]
+  },
+  "volume": "2",
+  "issue": "FSE",
+  "page": "290-311",
+  "article-number": null,
+  "DOI": "10.1145/3715729",
+  "publisher": "Association for Computing Machinery (ACM)",
+  "container-title": [
+    "Proceedings of the ACM on Software Engineering"
+  ],
+  "URL": "https://doi.org/10.1145/3715729"
+}

@@ -1,0 +1,17 @@
+directive_placement,formatter,scheduled,measurement_complete,attributable,unresolved,outcome_preserved,outcome_newly_hidden,outcome_newly_exposed,outcome_mixed,outcome_diagnostic_changed,outcome_ast_changed,outcome_ambiguous,outcome_execution_failure,confirmed_drift,confirmed_fraction_scheduled,confirmed_fraction_resolved,newly_hidden_diagnostics,newly_exposed_diagnostics,text_changed,text_unchanged,text_changed_preserved,changed_and_resolved,changed_resolved_original_suppression,original_zero_underlying,original_with_suppression
+blanket_first,black,25,25,25,0,11,10,4,0,0,0,0,0,14,0.56000000000000005,0.56000000000000005,10,4,17,8,3,17,17,0,25
+blanket_first,ruff,25,25,25,0,20,0,5,0,0,0,0,0,5,0.20000000000000001,0.20000000000000001,0,5,14,11,9,14,14,0,25
+blanket_last,black,25,25,25,0,12,10,3,0,0,0,0,0,13,0.52000000000000002,0.52000000000000002,10,3,17,8,4,17,17,0,25
+blanket_last,ruff,25,25,25,0,15,7,3,0,0,0,0,0,10,0.40000000000000002,0.40000000000000002,7,3,14,11,4,14,14,0,25
+file_specific,black,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,17,8,17,17,17,0,25
+file_specific,ruff,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,17,8,17,17,17,0,25
+multicode_first,black,25,25,25,0,11,10,4,0,0,0,0,0,14,0.56000000000000005,0.56000000000000005,10,4,17,8,3,17,17,0,25
+multicode_first,ruff,25,25,25,0,20,0,5,0,0,0,0,0,5,0.20000000000000001,0.20000000000000001,0,5,14,11,9,14,14,0,25
+none,black,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,17,8,17,17,0,0,0
+none,ruff,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,17,8,17,17,0,0,0
+specific_first,black,25,25,25,0,11,10,4,0,0,0,0,0,14,0.56000000000000005,0.56000000000000005,10,4,17,8,3,17,17,0,25
+specific_first,ruff,25,25,25,0,20,0,5,0,0,0,0,0,5,0.20000000000000001,0.20000000000000001,0,5,14,11,9,14,14,0,25
+specific_last,black,25,25,25,0,12,10,3,0,0,0,0,0,13,0.52000000000000002,0.52000000000000002,10,3,17,8,4,17,17,0,25
+specific_last,ruff,25,25,25,0,15,7,3,0,0,0,0,0,10,0.40000000000000002,0.40000000000000002,7,3,14,11,4,14,14,0,25
+standalone_first,black,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,14,11,14,14,0,0,0
+standalone_first,ruff,25,25,25,0,25,0,0,0,0,0,0,0,0,0,0,0,0,14,11,14,14,0,0,0

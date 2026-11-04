@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 18,
+      "row": 10
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\bench\\bench.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 11
+          },
+          "location": {
+            "column": 1,
+            "row": 10
+          }
+        }
+      ],
+      "message": "Remove unused import: `pytest`"
+    },
+    "location": {
+      "column": 12,
+      "row": 10
+    },
+    "message": "`pytest` imported but unused",
+    "noqa_row": 10,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  }
+]

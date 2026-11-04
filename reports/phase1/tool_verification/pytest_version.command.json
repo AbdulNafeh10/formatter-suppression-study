@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "--version"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "pytest 8.3.5\r\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-xhq29ydn"
+}

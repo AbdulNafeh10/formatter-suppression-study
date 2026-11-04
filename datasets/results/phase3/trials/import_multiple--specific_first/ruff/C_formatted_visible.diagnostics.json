@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 12,
+      "row": 2
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3zz40l9k\\study_input.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 2
+          }
+        }
+      ],
+      "message": "Remove unused import: `math`"
+    },
+    "location": {
+      "column": 8,
+      "row": 2
+    },
+    "message": "`math` imported but unused",
+    "noqa_row": 2,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "import_multiple--specific_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 3,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "exception_binding_boundary--none",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "call_nested--specific_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "list_short--blanket_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "import_from--blanket_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "binary_long--specific_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "boolean_nested--blanket_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "generator_expression--file_specific",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "tuple_starred--blanket_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "function_locals--standalone_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "list_comprehension--specific_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "dict_unpacking--none",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "semicolon_function--specific_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 3,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "list_long--multicode_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "tuple_plain--specific_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "binary_short--standalone_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "function_defaults--none",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "semicolon_module--multicode_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 3,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "nested_container--blanket_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "conditional--multicode_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "dict_pairs--file_specific",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "dict_comprehension--blanket_last",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "call_positional--none",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "call_keywords_long--standalone_first",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  },
+  {
+    "case_id": "fstring_boundary--file_specific",
+    "eligible": true,
+    "error": null,
+    "diagnostic_count": 2,
+    "syntax_valid": true,
+    "duplicate_of": null
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "files_checked": 20,
+  "token_and_ast_checks_passed": true,
+  "paths": [
+    "datasets\\controls\\phase2\\semicolon-black\\before.py",
+    "datasets\\controls\\phase2\\semicolon-black\\after.py",
+    "datasets\\controls\\phase2\\semicolon-ruff\\before.py",
+    "datasets\\controls\\phase2\\semicolon-ruff\\after.py",
+    "datasets\\controls\\phase2\\list_inline-black\\before.py",
+    "datasets\\controls\\phase2\\list_inline-black\\after.py",
+    "datasets\\controls\\phase2\\list_inline-ruff\\before.py",
+    "datasets\\controls\\phase2\\list_inline-ruff\\after.py",
+    "datasets\\controls\\phase2\\import_inline-black\\before.py",
+    "datasets\\controls\\phase2\\import_inline-black\\after.py",
+    "datasets\\controls\\phase2\\local_semicolon-ruff\\before.py",
+    "datasets\\controls\\phase2\\local_semicolon-ruff\\after.py",
+    "datasets\\controls\\phase2\\repeated_name-black\\before.py",
+    "datasets\\controls\\phase2\\repeated_name-black\\after.py",
+    "datasets\\controls\\phase2\\unicode-black\\before.py",
+    "datasets\\controls\\phase2\\unicode-black\\after.py",
+    "datasets\\controls\\phase2\\manual-hidden\\before.py",
+    "datasets\\controls\\phase2\\manual-hidden\\after.py",
+    "datasets\\controls\\phase2\\manual-mixed\\before.py",
+    "datasets\\controls\\phase2\\manual-mixed\\after.py"
+  ]
+}

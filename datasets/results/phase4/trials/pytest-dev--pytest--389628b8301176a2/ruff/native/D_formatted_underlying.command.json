@@ -1,0 +1,25 @@
+{
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\pyproject.toml",
+    "--no-cache",
+    "--no-fix",
+    "--output-format",
+    "json",
+    "--stdin-filename",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\test_junitxml.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"UP031\",\n    \"end_location\": {\n      \"column\": 37,\n      \"row\": 1472\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\testing\\\\test_junitxml.py\",\n    \"fix\": {\n      \"applicability\": \"unsafe\",\n      \"edits\": [\n        {\n          \"content\": \"\\\"{classname} {name}\\\".format(**x)\",\n          \"end_location\": {\n            \"column\": 37,\n            \"row\": 1472\n          },\n          \"location\": {\n            \"column\": 9,\n            \"row\": 1472\n          }\n        }\n      ],\n      \"message\": \"Replace with format specifiers\"\n    },\n    \"location\": {\n      \"column\": 9,\n      \"row\": 1472\n    },\n    \"message\": \"Use format specifiers instead of percent format\",\n    \"noqa_row\": 1472,\n    \"url\": \"https://docs.astral.sh/ruff/rules/printf-string-formatting\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-3hvzcfb8"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase7-controlled\\trials\\fstring_boundary--blanket_last\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "text = f\"{missing_a}\"\nother = missing_b  # noqa\n",
+  "stderr": "All done! \\u2728 \\U0001f370 \\u2728\r\n1 file left unchanged.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-v8i5qo9d"
+}

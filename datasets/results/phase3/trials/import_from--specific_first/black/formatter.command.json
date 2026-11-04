@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase3\\trials\\import_from--specific_first\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "from os import (\n    path,  # noqa: F401\n    getcwd,\n)\n",
+  "stderr": "All done! \\u2728 \\U0001f370 \\u2728\r\n1 file left unchanged.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-goe_8010"
+}

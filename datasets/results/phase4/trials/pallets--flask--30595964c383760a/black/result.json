@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "phase": 4,
+  "trial_id": "phase4--pallets--flask--30595964c383760a--black",
+  "timestamp_utc": "2026-11-03T05:42:56.806491+00:00",
+  "dataset_origin": "public-repository-validation",
+  "ai_assisted": false,
+  "formatter": "black",
+  "evidence_path": "<repo>\\datasets\\results\\phase4\\trials\\pallets--flask--30595964c383760a\\black",
+  "classification": "Preserved",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": true,
+  "formatting_changed": false,
+  "matched_diagnostic_identities": [],
+  "newly_hidden_count": 0,
+  "newly_exposed_count": 0,
+  "configuration": {
+    "rules": [
+      "F401",
+      "F821",
+      "F841"
+    ],
+    "target_version": "py311",
+    "line_length": 88,
+    "preview": false,
+    "timeout_seconds": 30,
+    "isolated_lint": true
+  },
+  "error": null,
+  "case_id": "pallets--flask--30595964c383760a",
+  "repository": "pallets/flask",
+  "repository_url": "https://github.com/pallets/flask",
+  "repository_commit": "ab8149664182b662453a563161aa89013c806dc9",
+  "repository_tag": "3.1.0",
+  "original_path": "src/flask/blueprints.py",
+  "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/src/flask/blueprints.py",
+  "file_role": "package_or_other",
+  "configuration_mode": "standardized-study_input.py",
+  "population_rank": 13,
+  "source_acquisition_method": "immutable GitHub commit archive",
+  "native_config": "contexts/pallets--flask/pyproject.toml",
+  "reproduction_selected": false,
+  "manifest_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+  "input_structure_sha256": "36e344c92cd631aa6f8443edd96ce111d647fdf6da9358c19fa7ea17c56eb68f",
+  "input_sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "b70e42db1c1c23d2f2833a80fb1d90cc432ef769",
+    "repository_dirty": false,
+    "seed": 20261103,
+    "random_generation": false,
+    "snapshot_scope": "experiment start"
+  },
+  "output_sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "suppressed_within_source": {
+    "original": [],
+    "formatted": []
+  },
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0,
+    "original_suppressed": 0,
+    "formatted_suppressed": 0
+  },
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "anchors": {
+    "original": [],
+    "formatted": []
+  },
+  "explanation": "Underlying diagnostics match uniquely (0); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

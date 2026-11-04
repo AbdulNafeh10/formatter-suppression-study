@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "phase": 4,
+  "trial_id": "phase7-natural--pallets--flask--d3e0349504081bb5--black",
+  "timestamp_utc": "2026-11-03T07:13:15.561005+00:00",
+  "dataset_origin": "public-repository-validation",
+  "ai_assisted": false,
+  "formatter": "black",
+  "evidence_path": "<repo>\\datasets\\results\\phase7-natural\\trials\\pallets--flask--d3e0349504081bb5\\black",
+  "classification": "AST changed",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": false,
+  "formatting_changed": true,
+  "matched_diagnostic_identities": [],
+  "newly_hidden_count": null,
+  "newly_exposed_count": null,
+  "configuration": {
+    "rules": [
+      "F401",
+      "F821",
+      "F841"
+    ],
+    "target_version": "py311",
+    "line_length": 88,
+    "preview": false,
+    "timeout_seconds": 30,
+    "isolated_lint": true
+  },
+  "error": null,
+  "case_id": "pallets--flask--d3e0349504081bb5",
+  "repository": "pallets/flask",
+  "repository_url": "https://github.com/pallets/flask",
+  "repository_commit": "ab8149664182b662453a563161aa89013c806dc9",
+  "repository_tag": "3.1.0",
+  "original_path": "src/flask/app.py",
+  "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/src/flask/app.py",
+  "file_role": "package_or_other",
+  "configuration_mode": "standardized-study_input.py",
+  "population_rank": 4,
+  "source_acquisition_method": "immutable GitHub commit archive",
+  "native_config": "contexts/pallets--flask/pyproject.toml",
+  "reproduction_selected": false,
+  "manifest_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+  "input_structure_sha256": "855bd0ed8aa5753ca3827cdf5e8c443c0ebc5e6a75b30ec5ffebb6c471f65af5",
+  "input_sha256": "184ed0384fcdf531c38eeccac7481423d685e212e1d31c010daee12d5b23cbea",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "f6a3e0619243008cd8027e11896db0d8c343b69b",
+    "repository_dirty": true,
+    "seed": 20261103,
+    "random_generation": false,
+    "snapshot_scope": "experiment start"
+  },
+  "output_sha256": "95a9ce1fe679bace13075058e6f2327311405c98a596c5ce14322c89786c9783",
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "suppressed_within_source": {
+    "original": [],
+    "formatted": []
+  },
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0,
+    "original_suppressed": 0,
+    "formatted_suppressed": 0
+  },
+  "underlying_changes": null,
+  "matching_errors": [],
+  "explanation": "Strict AST equivalence failed; suppression attribution blocked."
+}

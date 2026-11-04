@@ -1,0 +1,9 @@
+{
+  "categories": {
+    "original_private_identity_or_home": [],
+    "any_home_directory": [],
+    "private_key_material": []
+  },
+  "matched_values_exported": false,
+  "scope": "All non-generated public files, including hidden files. Git internals and local verification outputs are checked separately or excluded from distribution."
+}

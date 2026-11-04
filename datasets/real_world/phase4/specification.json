@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "seed": 20261103,
+  "sample_per_repository": 20,
+  "max_source_bytes": 204800,
+  "repositories": [
+    {
+      "repository": "psf/requests",
+      "tag": "v2.32.3",
+      "commit": "0e322af87745eff34caffe4df68456ebc20d9068",
+      "commit_url": "https://github.com/psf/requests/commit/0e322af87745eff34caffe4df68456ebc20d9068",
+      "metadata_url": "https://api.github.com/repos/psf/requests/commits/v2.32.3",
+      "commit_date": "2024-05-29T15:36:10Z",
+      "tree_sha": "9474485f84c7244930abc1b8023f847486572091",
+      "archive_url": "https://codeload.github.com/psf/requests/tar.gz/0e322af87745eff34caffe4df68456ebc20d9068"
+    },
+    {
+      "repository": "pallets/flask",
+      "tag": "3.1.0",
+      "commit": "ab8149664182b662453a563161aa89013c806dc9",
+      "commit_url": "https://github.com/pallets/flask/commit/ab8149664182b662453a563161aa89013c806dc9",
+      "metadata_url": "https://api.github.com/repos/pallets/flask/commits/3.1.0",
+      "commit_date": "2024-11-13T18:20:07Z",
+      "tree_sha": "ac9687dbcc33f4c02c708197038d45d26cd97392",
+      "archive_url": "https://codeload.github.com/pallets/flask/tar.gz/ab8149664182b662453a563161aa89013c806dc9"
+    },
+    {
+      "repository": "pytest-dev/pytest",
+      "tag": "8.3.5",
+      "commit": "b55ab2aabb68c0ce94c3903139b062d0c2790152",
+      "commit_url": "https://github.com/pytest-dev/pytest/commit/b55ab2aabb68c0ce94c3903139b062d0c2790152",
+      "metadata_url": "https://api.github.com/repos/pytest-dev/pytest/commits/8.3.5",
+      "commit_date": "2025-03-02T12:47:09Z",
+      "tree_sha": "87d43cee430cadb963bd4a9429ba589834868bd1",
+      "archive_url": "https://codeload.github.com/pytest-dev/pytest/tar.gz/b55ab2aabb68c0ce94c3903139b062d0c2790152"
+    }
+  ]
+}

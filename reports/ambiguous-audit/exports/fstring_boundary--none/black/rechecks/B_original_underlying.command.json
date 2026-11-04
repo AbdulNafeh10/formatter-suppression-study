@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--isolated",
+    "--no-cache",
+    "--select",
+    "F401,F821,F841",
+    "--target-version",
+    "py311",
+    "--output-format",
+    "json",
+    "--no-fix",
+    "--stdin-filename",
+    "study_input.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "returncode": 1,
+  "cwd": "<home>\\AppData\\Local\\Temp\\supplementary-audit-4nvfpee9"
+}

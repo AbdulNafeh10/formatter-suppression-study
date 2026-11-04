@@ -1,0 +1,36 @@
+[
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 21,
+      "row": 1
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-6ifhm1yx\\study_input.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 1
+    },
+    "message": "Undefined name `missing_a`",
+    "noqa_row": 1,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 34,
+      "row": 1
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-6ifhm1yx\\study_input.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1
+    },
+    "message": "Undefined name `missing_b`",
+    "noqa_row": 1,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  }
+]

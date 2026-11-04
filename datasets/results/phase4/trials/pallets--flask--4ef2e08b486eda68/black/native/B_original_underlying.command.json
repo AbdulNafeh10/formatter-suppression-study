@@ -1,0 +1,25 @@
+{
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\pyproject.toml",
+    "--no-cache",
+    "--no-fix",
+    "--output-format",
+    "json",
+    "--stdin-filename",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_testing.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"I001\",\n    \"end_location\": {\n      \"column\": 41,\n      \"row\": 12\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pallets--flask\\\\tests\\\\test_testing.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"import importlib.metadata\\n\\nimport click\\nimport flask\\nimport pytest\\nfrom flask import appcontext_popped\\nfrom flask.cli import ScriptInfo\\nfrom flask.globals import _cv_request\\nfrom flask.json import jsonify\\nfrom flask.testing import EnvironBuilder\\nfrom flask.testing import FlaskCliRunner\\n\\n\\n\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 15\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 1\n          }\n        }\n      ],\n      \"message\": \"Organize imports\"\n    },\n    \"location\": {\n      \"column\": 1,\n      \"row\": 1\n    },\n    \"message\": \"Import block is un-sorted or un-formatted\",\n    \"noqa_row\": 1,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unsorted-imports\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"B018\",\n    \"end_location\": {\n      \"column\": 22,\n      \"row\": 238\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pallets--flask\\\\tests\\\\test_testing.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 9,\n      \"row\": 238\n    },\n    \"message\": \"Found useless expression. Either assign it to a variable or remove it.\",\n    \"noqa_row\": 238,\n    \"url\": \"https://docs.astral.sh/ruff/rules/useless-expression\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-fvk6_r6r"
+}

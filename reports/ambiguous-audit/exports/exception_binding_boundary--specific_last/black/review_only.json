@@ -1,0 +1,221 @@
+{
+  "case_id": "exception_binding_boundary--specific_last",
+  "formatter": "black",
+  "original_classification": "Ambiguous",
+  "original_directory": "datasets/results/phase3/trials/exception_binding_boundary--specific_last/black",
+  "before_sha256": "996acdf3e25cb67c53be0ccede398ef1d2e0f6cd688a6bfc1aa7cc3885e60110",
+  "after_sha256": "b9335eaaaee3e69c02dfb12964e14794ef2d3c711efc75a1d87c6f2720820540",
+  "original_matching_errors": [
+    "Expected one relevant AST anchor, found 0"
+  ],
+  "reason_explanation": "F841 points to the exception-handler name `error`. Python represents it as ExceptHandler.name (a string), not an ast.Name with Store context. The primary F841 anchor policy therefore finds no candidate. The separate `leftover` assignment does have a Store Name, but the unsupported `error` prevents complete primary correspondence.",
+  "noqa": {
+    "before": [
+      {
+        "row": 6,
+        "column": 17,
+        "end_column": 29,
+        "text": "# noqa: F841",
+        "kind": "inline",
+        "preceding_code": "leftover=1"
+      }
+    ],
+    "after": [
+      {
+        "row": 6,
+        "column": 19,
+        "end_column": 31,
+        "text": "# noqa: F841",
+        "kind": "inline",
+        "preceding_code": "leftover = 1"
+      }
+    ]
+  },
+  "review": {
+    "proposed_resolution": "Preserved",
+    "warnings": [
+      {
+        "identity": "review:F841@$.body[0].body[0].handlers[0].name",
+        "before": {
+          "identity": "review:F841@$.body[0].body[0].handlers[0].name",
+          "rule": "F841",
+          "lexeme": "error",
+          "role": "exception-handler binding string field",
+          "ast_context": "ExceptHandler(type=Name(id='Exception', ctx=Load()), name='error', body=[Pass()])",
+          "diagnostic": {
+            "cell": null,
+            "code": "F841",
+            "end_location": {
+              "column": 30,
+              "row": 4
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-pr6heyqp\\study_input.py",
+            "fix": {
+              "applicability": "safe",
+              "edits": [
+                {
+                  "content": "",
+                  "end_location": {
+                    "column": 30,
+                    "row": 4
+                  },
+                  "location": {
+                    "column": 21,
+                    "row": 4
+                  }
+                }
+              ],
+              "message": "Remove assignment to unused variable `error`"
+            },
+            "location": {
+              "column": 25,
+              "row": 4
+            },
+            "message": "Local variable `error` is assigned to but never used",
+            "noqa_row": 4,
+            "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+          },
+          "visible": true
+        },
+        "after": {
+          "identity": "review:F841@$.body[0].body[0].handlers[0].name",
+          "rule": "F841",
+          "lexeme": "error",
+          "role": "exception-handler binding string field",
+          "ast_context": "ExceptHandler(type=Name(id='Exception', ctx=Load()), name='error', body=[Pass()])",
+          "diagnostic": {
+            "cell": null,
+            "code": "F841",
+            "end_location": {
+              "column": 30,
+              "row": 4
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-yu2mk5p3\\study_input.py",
+            "fix": {
+              "applicability": "safe",
+              "edits": [
+                {
+                  "content": "",
+                  "end_location": {
+                    "column": 30,
+                    "row": 4
+                  },
+                  "location": {
+                    "column": 21,
+                    "row": 4
+                  }
+                }
+              ],
+              "message": "Remove assignment to unused variable `error`"
+            },
+            "location": {
+              "column": 25,
+              "row": 4
+            },
+            "message": "Local variable `error` is assigned to but never used",
+            "noqa_row": 4,
+            "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+          },
+          "visible": true
+        },
+        "transition": "visible in both"
+      },
+      {
+        "identity": "review:F841@$.body[0].body[1].targets[0]",
+        "before": {
+          "identity": "review:F841@$.body[0].body[1].targets[0]",
+          "rule": "F841",
+          "lexeme": "leftover",
+          "role": "assignment Store Name",
+          "ast_context": "Name(id='leftover', ctx=Store())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F841",
+            "end_location": {
+              "column": 13,
+              "row": 6
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-pr6heyqp\\study_input.py",
+            "fix": {
+              "applicability": "unsafe",
+              "edits": [
+                {
+                  "content": "",
+                  "end_location": {
+                    "column": 1,
+                    "row": 7
+                  },
+                  "location": {
+                    "column": 1,
+                    "row": 6
+                  }
+                }
+              ],
+              "message": "Remove assignment to unused variable `leftover`"
+            },
+            "location": {
+              "column": 5,
+              "row": 6
+            },
+            "message": "Local variable `leftover` is assigned to but never used",
+            "noqa_row": 6,
+            "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+          },
+          "visible": false
+        },
+        "after": {
+          "identity": "review:F841@$.body[0].body[1].targets[0]",
+          "rule": "F841",
+          "lexeme": "leftover",
+          "role": "assignment Store Name",
+          "ast_context": "Name(id='leftover', ctx=Store())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F841",
+            "end_location": {
+              "column": 13,
+              "row": 6
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-yu2mk5p3\\study_input.py",
+            "fix": {
+              "applicability": "unsafe",
+              "edits": [
+                {
+                  "content": "",
+                  "end_location": {
+                    "column": 1,
+                    "row": 7
+                  },
+                  "location": {
+                    "column": 1,
+                    "row": 6
+                  }
+                }
+              ],
+              "message": "Remove assignment to unused variable `leftover`"
+            },
+            "location": {
+              "column": 5,
+              "row": 6
+            },
+            "message": "Local variable `leftover` is assigned to but never used",
+            "noqa_row": 6,
+            "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+          },
+          "visible": false
+        },
+        "transition": "suppressed in both"
+      }
+    ],
+    "hidden": 0,
+    "exposed": 0,
+    "uncertainty": null
+  },
+  "judgment_explanation": "The source changes only assignment spacing; executable AST and non-comment code tokens are equal. Exact diagnostic source slices identify the same `as error` handler binding and `leftover` assignment, with unchanged warning messages and roles. F841 `error` is visible in both; F841 `leftover` is suppressed in both. All four saved outputs replay exactly after ignoring only temporary filenames. Neutralizing directive comments makes ordinary lint reproduce the underlying warnings in both snapshots. Proposed resolution: Preserved; no corresponding warning changes its visible/suppressed state.",
+  "human_review_flags": [
+    "Independent human adjudication is pending; this is an AI-assisted proposal.",
+    "A human should confirm the same exception binding is referenced by F841 and approve any future extension beyond Store Name anchors; no matcher change is proposed as validated here."
+  ],
+  "ast_equal": true,
+  "non_comment_code_tokens_equal": true
+}

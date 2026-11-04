@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "format",
+    "--isolated",
+    "--line-length",
+    "88",
+    "--target-version",
+    "py311",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "from os import (\n    # noqa: F401\n    path,\n    getcwd,\n)\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-6l2rto4s"
+}

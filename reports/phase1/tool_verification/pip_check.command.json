@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "No broken requirements found.\r\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-fwa11az0"
+}

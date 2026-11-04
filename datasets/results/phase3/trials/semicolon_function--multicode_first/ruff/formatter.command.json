@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "format",
+    "--isolated",
+    "--line-length",
+    "88",
+    "--target-version",
+    "py311",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "def compute():\n    first = 1\n    second = 2  # noqa: F401, F821, F841\n    third = 3\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-mxpk6oj5"
+}

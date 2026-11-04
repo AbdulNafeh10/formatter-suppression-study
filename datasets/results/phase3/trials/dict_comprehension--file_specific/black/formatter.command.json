@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase3\\trials\\dict_comprehension--file_specific\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "# ruff: noqa: F821\nvalue = {key: missing_a(key) for key in missing_b}\n",
+  "stderr": "reformatted -\r\n\r\nAll done! \\u2728 \\U0001f370 \\u2728\r\n1 file reformatted.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-1yuyfsml"
+}

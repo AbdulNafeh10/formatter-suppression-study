@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase2-validation-repeat\\semicolon-black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "x = missing_a\ny = missing_b  # noqa: F821\n",
+  "stderr": "reformatted -\r\n\r\nAll done! \\u2728 \\U0001f370 \\u2728\r\n1 file reformatted.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-0nfo6z_v"
+}

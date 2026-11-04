@@ -1,0 +1,3 @@
+# Separate optional PDF environment; not part of the experimental toolchain.
+reportlab==4.4.9
+pypdf==6.10.0

@@ -1,0 +1,1447 @@
+{
+  "scope": "Bound numeric observations; protocol constants, references and prose are reviewed separately.",
+  "readme_prose_words": 549,
+  "documents": {
+    "README.md": {
+      "template": "report/README_public.template.md",
+      "template_sha256": "5680ed4f4c626c719cd54737e44fb3fada2d013bcd1140f455fee17a3b760581",
+      "sha256": "4ba3b524c769b5b9e80bf63208c4aa9626d68a0ca257c7c4588e7a261de28692"
+    },
+    "report/research_report_public.md": {
+      "template": "report/research_report_public.template.md",
+      "template_sha256": "55fe9698e315c42cfe8943bf351a3ead42ee325e78784ac1eb9790ad6b13da5c",
+      "sha256": "b8b7eccbdf35feb741379ee4516a06b90a3b6628a001c6298f65bda70c4a4bd5"
+    }
+  },
+  "claims": {
+    "B_CHANGED_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "black",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 57,
+      "rendered": "57",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "R_RESOLVED_PCT": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "ruff",
+        "confirmed_fraction_resolved"
+      ],
+      "format": "pct2",
+      "value": 0.19021739130434784,
+      "rendered": "19.02",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77
+        ]
+      }
+    },
+    "B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 116,
+      "rendered": "116",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          70
+        ]
+      }
+    },
+    "PAIR_11": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        1,
+        1
+      ],
+      "format": "int",
+      "value": 35,
+      "rendered": "35",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          82
+        ]
+      }
+    },
+    "PYTEST_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 18,
+      "rendered": "18",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          115
+        ]
+      }
+    },
+    "FLASK_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          114
+        ]
+      }
+    },
+    "REQ_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          113
+        ]
+      }
+    },
+    "B_EXPOSED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Newly exposed"
+      ],
+      "format": "int",
+      "value": 18,
+      "rendered": "18",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          72
+        ]
+      }
+    },
+    "REQ_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          113
+        ]
+      }
+    },
+    "PAIR_01": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        0,
+        1
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          81
+        ]
+      }
+    },
+    "NATURAL_N": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "natural_files"
+      ],
+      "format": "int",
+      "value": 40,
+      "rendered": "40",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          18,
+          41
+        ],
+        "report/research_report_public.md": [
+          50,
+          109
+        ]
+      }
+    },
+    "R_HIDDEN": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Newly hidden"
+      ],
+      "format": "int",
+      "value": 14,
+      "rendered": "14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          71
+        ]
+      }
+    },
+    "R_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 35,
+      "rendered": "35",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "README.md": [
+          27
+        ],
+        "report/research_report_public.md": [
+          66
+        ]
+      }
+    },
+    "FLASK_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          114
+        ]
+      }
+    },
+    "B_RESOLVED_PCT": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "black",
+        "confirmed_fraction_resolved"
+      ],
+      "format": "pct2",
+      "value": 0.3695652173913043,
+      "rendered": "36.96",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77
+        ]
+      }
+    },
+    "R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 149,
+      "rendered": "149",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          70
+        ]
+      }
+    },
+    "B_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 68,
+      "rendered": "68",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "README.md": [
+          26
+        ],
+        "report/research_report_public.md": [
+          66
+        ]
+      }
+    },
+    "DRAWS": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "replicates"
+      ],
+      "format": "int",
+      "value": 20000,
+      "rendered": "20000",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          95
+        ]
+      }
+    },
+    "R_CHANGED_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "ruff",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 75,
+      "rendered": "75",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "PAIR_00": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        0,
+        0
+      ],
+      "format": "int",
+      "value": 132,
+      "rendered": "132",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          81
+        ]
+      }
+    },
+    "REQ_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          113
+        ]
+      }
+    },
+    "PYTEST_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 1,
+      "rendered": "1",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          115
+        ]
+      }
+    },
+    "B_HIDDEN": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Newly hidden"
+      ],
+      "format": "int",
+      "value": 50,
+      "rendered": "50",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          71
+        ]
+      }
+    },
+    "PYTEST_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 2,
+      "rendered": "2",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          115
+        ]
+      }
+    },
+    "R_EXPOSED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Newly exposed"
+      ],
+      "format": "int",
+      "value": 21,
+      "rendered": "21",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          72
+        ]
+      }
+    },
+    "FLASK_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 12,
+      "rendered": "12",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          114
+        ]
+      }
+    },
+    "REQ_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          113
+        ]
+      }
+    },
+    "FAMILIES": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "families"
+      ],
+      "format": "int",
+      "value": 25,
+      "rendered": "25",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          17
+        ],
+        "report/research_report_public.md": [
+          48
+        ]
+      }
+    },
+    "FLASK_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 1,
+      "rendered": "1",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          114
+        ]
+      }
+    },
+    "CONTROLLED_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 200,
+      "rendered": "200",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "README.md": [
+          18,
+          26,
+          37
+        ],
+        "report/research_report_public.md": [
+          48,
+          66,
+          75
+        ]
+      }
+    },
+    "PYTEST_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 19,
+      "rendered": "19",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          115
+        ]
+      }
+    },
+    "PAIR_10": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        1,
+        0
+      ],
+      "format": "int",
+      "value": 33,
+      "rendered": "33",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          82
+        ]
+      }
+    },
+    "MODES": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "modes"
+      ],
+      "format": "int",
+      "value": 8,
+      "rendered": "8",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          17
+        ],
+        "report/research_report_public.md": [
+          48
+        ]
+      }
+    },
+    "NATURAL_PAIRS": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "natural_comparisons"
+      ],
+      "format": "int",
+      "value": 80,
+      "rendered": "80",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          40
+        ],
+        "report/research_report_public.md": [
+          109,
+          121
+        ]
+      }
+    },
+    "NATURAL_UNCHANGED": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "natural_unchanged"
+      ],
+      "format": "int",
+      "value": 65,
+      "rendered": "65",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          40
+        ],
+        "report/research_report_public.md": [
+          117
+        ]
+      }
+    },
+    "NATURAL_CHANGED": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "natural_changed"
+      ],
+      "format": "int",
+      "value": 15,
+      "rendered": "15",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          117,
+          121
+        ]
+      }
+    },
+    "NATURAL_AST_EXCLUSIONS": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "natural_ast_exclusions"
+      ],
+      "format": "int",
+      "value": 4,
+      "rendered": "4",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          42
+        ],
+        "report/research_report_public.md": [
+          119
+        ]
+      }
+    },
+    "ZERO_FILES": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "zero_files"
+      ],
+      "format": "int",
+      "value": 22,
+      "rendered": "22",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          41
+        ],
+        "report/research_report_public.md": [
+          117
+        ]
+      }
+    },
+    "ZERO_COMPARISONS": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "zero_comparisons"
+      ],
+      "format": "int",
+      "value": 44,
+      "rendered": "44",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          117
+        ]
+      }
+    },
+    "NATIVE_COMPLETED": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "native_completed"
+      ],
+      "format": "int",
+      "value": 66,
+      "rendered": "66",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          119
+        ]
+      }
+    },
+    "NATIVE_MISSING": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "native_missing"
+      ],
+      "format": "int",
+      "value": 14,
+      "rendered": "14",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          119
+        ]
+      }
+    },
+    "REVIEW_N": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "reviewed_comparisons"
+      ],
+      "format": "int",
+      "value": 32,
+      "rendered": "32",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "README.md": [
+          31
+        ],
+        "report/research_report_public.md": [
+          56
+        ]
+      }
+    },
+    "FSTRING_N": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "fstring_comparisons"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          88
+        ]
+      }
+    },
+    "EXCEPTION_N": {
+      "source": "reports/publication-phase-b/public_facts.json",
+      "pointer": [
+        "facts",
+        "exception_comparisons"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
+      "locations": {
+        "report/research_report_public.md": [
+          88
+        ]
+      }
+    },
+    "B_PCT": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "black",
+        "confirmed_fraction_scheduled"
+      ],
+      "format": "pct1",
+      "value": 0.34,
+      "rendered": "34.0",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "README.md": [
+          27
+        ],
+        "report/research_report_public.md": [
+          66
+        ]
+      }
+    },
+    "B_AMBIG": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "black",
+        "outcomes",
+        "Ambiguous"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "README.md": [
+          30
+        ],
+        "report/research_report_public.md": [
+          73
+        ]
+      }
+    },
+    "B_CHANGED": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "black",
+        "text_changed"
+      ],
+      "format": "int",
+      "value": 133,
+      "rendered": "133",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "B_REVIEW_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 132,
+      "rendered": "132",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "README.md": [
+          32
+        ],
+        "report/research_report_public.md": [
+          70
+        ]
+      }
+    },
+    "B_REVIEW_AMBIG": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "black",
+        "outcomes",
+        "Ambiguous"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          73
+        ]
+      }
+    },
+    "B_REVIEW_CHANGED_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "black",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 65,
+      "rendered": "65",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "R_PCT": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "ruff",
+        "confirmed_fraction_scheduled"
+      ],
+      "format": "pct1",
+      "value": 0.175,
+      "rendered": "17.5",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "README.md": [
+          27
+        ],
+        "report/research_report_public.md": [
+          66
+        ]
+      }
+    },
+    "R_AMBIG": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "ruff",
+        "outcomes",
+        "Ambiguous"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          73
+        ]
+      }
+    },
+    "R_CHANGED": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_controlled",
+        "ruff",
+        "text_changed"
+      ],
+      "format": "int",
+      "value": 118,
+      "rendered": "118",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "R_REVIEW_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 165,
+      "rendered": "165",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "README.md": [
+          32
+        ],
+        "report/research_report_public.md": [
+          70
+        ]
+      }
+    },
+    "R_REVIEW_AMBIG": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "ruff",
+        "outcomes",
+        "Ambiguous"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          73
+        ]
+      }
+    },
+    "R_REVIEW_CHANGED_PRES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_controlled",
+        "ruff",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 83,
+      "rendered": "83",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          105
+        ]
+      }
+    },
+    "ORIGINAL_PAIRS": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_pairs",
+        "common_resolved"
+      ],
+      "format": "int",
+      "value": 184,
+      "rendered": "184",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77
+        ]
+      }
+    },
+    "REVIEWED_PAIRS": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "common_resolved"
+      ],
+      "format": "int",
+      "value": 200,
+      "rendered": "200",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77,
+          84
+        ]
+      }
+    },
+    "ORIGINAL_DIFF": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "original_pairs",
+        "contrasts_common_resolved",
+        "drift",
+        "black_minus_ruff"
+      ],
+      "format": "pct2",
+      "value": 0.1793478260869565,
+      "rendered": "17.93",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77
+        ]
+      }
+    },
+    "REVIEWED_DIFF": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_pairs",
+        "contrasts_common_resolved",
+        "drift",
+        "black_minus_ruff"
+      ],
+      "format": "pct2",
+      "value": 0.165,
+      "rendered": "16.50",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          77
+        ]
+      }
+    },
+    "OLD_FAMILY_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.08695652173913043,
+      "rendered": "8.70",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          92
+        ]
+      }
+    },
+    "OLD_FAMILY_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.2826086956521739,
+      "rendered": "28.26",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          92
+        ]
+      }
+    },
+    "OLD_FAMILIES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 23,
+      "rendered": "23",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          95
+        ]
+      }
+    },
+    "NEW_FAMILY_LO": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.08000000000000002,
+      "rendered": "8.00",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          92
+        ]
+      }
+    },
+    "NEW_FAMILY_HI": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.255,
+      "rendered": "25.50",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          92
+        ]
+      }
+    },
+    "NEW_FAMILIES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "family",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 25,
+      "rendered": "25",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          95
+        ]
+      }
+    },
+    "OLD_CATEGORY_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.05921052631578949,
+      "rendered": "5.92",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          93
+        ]
+      }
+    },
+    "OLD_CATEGORY_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.3214285714285714,
+      "rendered": "32.14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          93
+        ]
+      }
+    },
+    "OLD_CATEGORIES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 12,
+      "rendered": "12",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          95
+        ]
+      }
+    },
+    "NEW_CATEGORY_LO": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.04891304347826089,
+      "rendered": "4.89",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          93
+        ]
+      }
+    },
+    "NEW_CATEGORY_HI": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.30288461538461536,
+      "rendered": "30.29",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          93
+        ]
+      }
+    },
+    "NEW_CATEGORIES": {
+      "source": "reports/publication-phase-a/analysis/metrics.json",
+      "pointer": [
+        "reviewed_cluster_model_intervals",
+        "category",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
+      "locations": {
+        "report/research_report_public.md": [
+          95
+        ]
+      }
+    },
+    "REPLAY_N": {
+      "source": "reports/publication-phase-a/analysis/evidence_checks.json",
+      "pointer": [
+        "supplementary",
+        "saved_lint_replays_verified"
+      ],
+      "format": "int",
+      "value": 128,
+      "rendered": "128",
+      "source_sha256": "fc2c7bda1a2959162fa54c259f59407743d678efde42e4b8460c338f3020da7c",
+      "locations": {
+        "report/research_report_public.md": [
+          88
+        ]
+      }
+    },
+    "INTERVENTION_N": {
+      "source": "reports/publication-phase-a/analysis/evidence_checks.json",
+      "pointer": [
+        "supplementary",
+        "saved_comment_interventions_verified"
+      ],
+      "format": "int",
+      "value": 64,
+      "rendered": "64",
+      "source_sha256": "fc2c7bda1a2959162fa54c259f59407743d678efde42e4b8460c338f3020da7c",
+      "locations": {
+        "report/research_report_public.md": [
+          88
+        ]
+      }
+    },
+    "REQ_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          113
+        ]
+      }
+    },
+    "FLASK_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          114
+        ]
+      }
+    },
+    "PYTEST_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 20,
+      "rendered": "20",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "locations": {
+        "report/research_report_public.md": [
+          115
+        ]
+      }
+    },
+    "CONTROLLED_COMPARISONS": {
+      "source": "reports/publication-phase-a/analysis/evidence_checks.json",
+      "pointer": [
+        "primary",
+        "controlled",
+        "records"
+      ],
+      "format": "int",
+      "value": 400,
+      "rendered": "400",
+      "source_sha256": "fc2c7bda1a2959162fa54c259f59407743d678efde42e4b8460c338f3020da7c",
+      "locations": {
+        "README.md": [
+          21
+        ],
+        "report/research_report_public.md": [
+          66
+        ]
+      }
+    }
+  }
+}

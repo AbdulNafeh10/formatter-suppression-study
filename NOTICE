@@ -1,0 +1,12 @@
+Requests
+Copyright 2019 Kenneth Reitz
+
+
+The project also retains Flask and pytest evidence under their own licenses.
+See THIRD_PARTY_NOTICES.md and third_party/.
+Natural-source evidence containers carry source and modification notices.
+
+Flask tests/test_cli.py retains material from Flask-CLI:
+Copyright (C) 2015 CERN. See third_party/flask-cli/LICENSE.
+Original source-specific notices, including those inside evidence containers,
+remain part of the distributed material.

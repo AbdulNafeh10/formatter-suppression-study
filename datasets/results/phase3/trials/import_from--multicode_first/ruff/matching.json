@@ -1,0 +1,522 @@
+{
+  "classification": "Preserved",
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[0]",
+        "node_context": "alias(name='path')",
+        "construct_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            8
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 9,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-p4rfcg6u\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "`os.path` imported but unused",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      {
+        "identity": "F401@$.body[0].names[1]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[1]",
+        "node_context": "alias(name='getcwd')",
+        "construct_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            4
+          ],
+          "end": [
+            3,
+            10
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 11,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-p4rfcg6u\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 3
+          },
+          "message": "`os.getcwd` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": true
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[0]",
+        "node_context": "alias(name='path')",
+        "construct_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            8
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 9,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ennkkkwf\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "`os.path` imported but unused",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      {
+        "identity": "F401@$.body[0].names[1]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[1]",
+        "node_context": "alias(name='getcwd')",
+        "construct_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            4
+          ],
+          "end": [
+            3,
+            10
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 11,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ennkkkwf\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 3
+          },
+          "message": "`os.getcwd` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": true
+      }
+    ]
+  },
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[0].names[0]",
+      "original": {
+        "identity": "F401@$.body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[0]",
+        "node_context": "alias(name='path')",
+        "construct_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            8
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 9,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-p4rfcg6u\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "`os.path` imported but unused",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[0]",
+        "node_context": "alias(name='path')",
+        "construct_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "path"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            8
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 9,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ennkkkwf\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "`os.path` imported but unused",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    },
+    {
+      "identity": "F401@$.body[0].names[1]",
+      "original": {
+        "identity": "F401@$.body[0].names[1]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[1]",
+        "node_context": "alias(name='getcwd')",
+        "construct_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            4
+          ],
+          "end": [
+            3,
+            10
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 11,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-p4rfcg6u\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 3
+          },
+          "message": "`os.getcwd` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": true
+      },
+      "formatted": {
+        "identity": "F401@$.body[0].names[1]",
+        "rule": "F401",
+        "ast_path": "$.body[0].names[1]",
+        "node_context": "alias(name='getcwd')",
+        "construct_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "getcwd"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            4
+          ],
+          "end": [
+            3,
+            10
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 11,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ennkkkwf\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 5
+                },
+                "location": {
+                  "column": 1,
+                  "row": 1
+                }
+              }
+            ],
+            "message": "Remove unused import"
+          },
+          "location": {
+            "column": 5,
+            "row": 3
+          },
+          "message": "`os.getcwd` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": true
+      },
+      "transition": "preserved"
+    }
+  ],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "explanation": "Underlying diagnostics match uniquely (2); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

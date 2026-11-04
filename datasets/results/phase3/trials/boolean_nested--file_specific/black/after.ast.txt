@@ -1,0 +1,1 @@
+Module(body=[Assign(targets=[Name(id='value', ctx=Store())], value=BoolOp(op=And(), values=[Name(id='missing_a', ctx=Load()), BoolOp(op=Or(), values=[Name(id='missing_b', ctx=Load()), Constant(value=False)])]))], type_ignores=[])

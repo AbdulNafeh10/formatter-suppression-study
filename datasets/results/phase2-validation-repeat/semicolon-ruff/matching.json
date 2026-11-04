@@ -1,0 +1,394 @@
+{
+  "classification": "Newly exposed",
+  "anchors": {
+    "original": [
+      {
+        "identity": "F821@$.body[0].value",
+        "rule": "F821",
+        "ast_path": "$.body[0].value",
+        "node_context": "Name(id='missing_a', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            2
+          ],
+          "end": [
+            1,
+            11
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 12,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-8uaoyib9\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 3,
+            "row": 1
+          },
+          "message": "Undefined name `missing_a`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      },
+      {
+        "identity": "F821@$.body[1].value",
+        "rule": "F821",
+        "ast_path": "$.body[1].value",
+        "node_context": "Name(id='missing_b', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            15
+          ],
+          "end": [
+            1,
+            24
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 25,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-8uaoyib9\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 1
+          },
+          "message": "Undefined name `missing_b`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F821@$.body[0].value",
+        "rule": "F821",
+        "ast_path": "$.body[0].value",
+        "node_context": "Name(id='missing_a', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            4
+          ],
+          "end": [
+            1,
+            13
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 14,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ha6uxn08\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 5,
+            "row": 1
+          },
+          "message": "Undefined name `missing_a`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": true
+      },
+      {
+        "identity": "F821@$.body[1].value",
+        "rule": "F821",
+        "ast_path": "$.body[1].value",
+        "node_context": "Name(id='missing_b', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            13
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 14,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ha6uxn08\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "Undefined name `missing_b`",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F821@$.body[0].value",
+      "original": {
+        "identity": "F821@$.body[0].value",
+        "rule": "F821",
+        "ast_path": "$.body[0].value",
+        "node_context": "Name(id='missing_a', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            2
+          ],
+          "end": [
+            1,
+            11
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 12,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-8uaoyib9\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 3,
+            "row": 1
+          },
+          "message": "Undefined name `missing_a`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F821@$.body[0].value",
+        "rule": "F821",
+        "ast_path": "$.body[0].value",
+        "node_context": "Name(id='missing_a', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_a"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            4
+          ],
+          "end": [
+            1,
+            13
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 14,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ha6uxn08\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 5,
+            "row": 1
+          },
+          "message": "Undefined name `missing_a`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": true
+      },
+      "transition": "newly_exposed"
+    },
+    {
+      "identity": "F821@$.body[1].value",
+      "original": {
+        "identity": "F821@$.body[1].value",
+        "rule": "F821",
+        "ast_path": "$.body[1].value",
+        "node_context": "Name(id='missing_b', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            1,
+            15
+          ],
+          "end": [
+            1,
+            24
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 25,
+            "row": 1
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-8uaoyib9\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 1
+          },
+          "message": "Undefined name `missing_b`",
+          "noqa_row": 1,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F821@$.body[1].value",
+        "rule": "F821",
+        "ast_path": "$.body[1].value",
+        "node_context": "Name(id='missing_b', ctx=Load())",
+        "construct_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "missing_b"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            2,
+            4
+          ],
+          "end": [
+            2,
+            13
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F821",
+          "end_location": {
+            "column": 14,
+            "row": 2
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ha6uxn08\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 5,
+            "row": 2
+          },
+          "message": "Undefined name `missing_b`",
+          "noqa_row": 2,
+          "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "explanation": "Underlying diagnostics match uniquely (2); 0 newly hidden, 1 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

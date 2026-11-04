@@ -1,0 +1,516 @@
+{
+  "repository": "psf/requests",
+  "tag": "v2.32.3",
+  "commit": "0e322af87745eff34caffe4df68456ebc20d9068",
+  "commit_url": "https://github.com/psf/requests/commit/0e322af87745eff34caffe4df68456ebc20d9068",
+  "metadata_url": "https://api.github.com/repos/psf/requests/commits/v2.32.3",
+  "commit_date": "2024-05-29T15:36:10Z",
+  "tree_sha": "9474485f84c7244930abc1b8023f847486572091",
+  "archive_url": "https://codeload.github.com/psf/requests/tar.gz/0e322af87745eff34caffe4df68456ebc20d9068",
+  "archive": "archives/psf--requests.tar.gz",
+  "archive_sha256": "0e26fc10271a9a328923ebc478e99397d034d1d8ad12cabe9100c9de3d6a6865",
+  "python_population": 36,
+  "eligible_noqa_files": 7,
+  "selected_files": 7,
+  "exclusions": {
+    "no_natural_noqa_comment": 28,
+    "generated_header_or_protobuf": 1
+  },
+  "config_files": [
+    ".gitignore",
+    "docs/_themes/.gitignore",
+    "pyproject.toml",
+    "setup.cfg",
+    "tox.ini"
+  ],
+  "license_files": [
+    "LICENSE",
+    "NOTICE",
+    "docs/_themes/LICENSE",
+    "ext/LICENSE"
+  ],
+  "population": [
+    {
+      "path": "docs/_themes/flask_theme_support.py",
+      "size_bytes": 4875,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "bba3677c6eeb99f678e808e90142a025b798b7658bac1ab4632591df8441d209",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "a3002a5970fd19ab89652eb0eba8cc706c6ab9107a616bd2ba999bc3894cc90f",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "docs/conf.py",
+      "size_bytes": 12251,
+      "eligible": false,
+      "exclusion": "generated_header_or_protobuf",
+      "input_sha256": "7288e50389e89cc24cd7ac6b96d8108438ff9d5e0191a950907be392a5458478",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "setup.py",
+      "size_bytes": 3941,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "b45df91c5c6c34e6a799e5a2cbec75eb8bfcead682aaddd10d5da4583f20bfc1",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "c9a7c7b4603cccc75cc43f5bdaed961f370f1df6732d37a80743837d65167e1c",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/__init__.py",
+      "size_bytes": 5072,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+      "noqa_comments": [
+        {
+          "row": 67,
+          "column": 44,
+          "text": "# noqa: F811"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "73b978799057165819a2970bbec35e2d799894f1ee1bf65279e51f57a1482744",
+      "file_role": "initializer",
+      "rank": 7,
+      "selected": true
+    },
+    {
+      "path": "src/requests/__version__.py",
+      "size_bytes": 435,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "1557e09606663509e660f5e93a8843539f05e4451bffe5674936807ac4b5f3b8",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "8d60697eaf73fe3aaa0195bf30cea4c77f36632e444582e78da8b3c219778530",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/_internal_utils.py",
+      "size_bytes": 1495,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "9cc4329abe21b37d93a95a3901b0ab99c24486f3d487bc57965bb2ab0b252e24",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "60fb284fb5d16855aed431e55da049ddfbe12b6cb2e4449715e643d54bb8d782",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/adapters.py",
+      "size_bytes": 27451,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "28871e72c72a6a6eab78e097465e03c0fe235fc25c97cb1de7b7edd7b291d9c4",
+      "noqa_comments": [
+        {
+          "row": 10,
+          "column": 16,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 78,
+          "column": 17,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "59e27eb509ec224233b653af12115e09f840bee3615dd9396db7459651264def",
+      "file_role": "package_or_other",
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "path": "src/requests/api.py",
+      "size_bytes": 6449,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e5aaa15e220522b4513f2504d02a9c2832fb0b99fbe05b4bc114dedb1f8a38e4",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/auth.py",
+      "size_bytes": 10186,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d",
+      "noqa_comments": [
+        {
+          "row": 176,
+          "column": 50,
+          "text": "# noqa:E731"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "1fdcbaa0ebd47b2bf0645da33cf65e5e426658c0e52a94391732176f34cc7198",
+      "file_role": "package_or_other",
+      "rank": 6,
+      "selected": true
+    },
+    {
+      "path": "src/requests/certs.py",
+      "size_bytes": 429,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "67d49be35d009efea35054f2b2cd23145854eb1b2df1cb442ea7f2f04bf6de0c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "62b492f8cf17309f12a16b3b9f0a56c27b91811c66c79768726a26f77f03f76c",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/compat.py",
+      "size_bytes": 1817,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0b9c3f0cf2d2bab5cf81c75653bf1fa2b6b400f99b6245f61bcf50bc7e71ccf0",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e9c9ab6ecd086b8fc34d5aa4961974865df62a74d826224baadc309e51022d0e",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/cookies.py",
+      "size_bytes": 18590,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "d9dbe546156a809cb3fa38a0cb1a1e7c6a0e3e7f37bbf64891674a8cfba73830",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/exceptions.py",
+      "size_bytes": 4260,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "8c93d2d545804ecf3a4a155468ba2b4e225bd52686ba83445a020225ea7e5646",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e3b89dc4dae15179db87300dcf54fb929862b9594a340d176ce5acf4b9c91004",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/help.py",
+      "size_bytes": 3875,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "80f5f977f1fb5ddf3c6830017a386a1a097d075545453b79066898bcbdcfcc84",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "5d56e9b0614778d6f107198e7db4b42ab53f1bba0963e7e547ee3c990c3efad7",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/hooks.py",
+      "size_bytes": 733,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0a2bb2b221c0dfd57951f702057148c7cdc8ac3a6ec1f37d45c4d482fdbc7ed4",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "5136ee8294500c04767db7636340582f8723eaecdd75d32ec52071859c06de04",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/models.py",
+      "size_bytes": 35418,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "938daba17cc2f2efce6a000f422f54e0c91f3bb8b8af615d6aabccaacb4f7a17",
+      "noqa_comments": [
+        {
+          "row": 13,
+          "column": 24,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "fe19719d2c841046a5241ad0241635754f6fad2957d1d574cad5f12e00fd9751",
+      "file_role": "package_or_other",
+      "rank": 5,
+      "selected": true
+    },
+    {
+      "path": "src/requests/packages.py",
+      "size_bytes": 904,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2118a6d432c0c244e5922a7bdb93d8bf02b6e83c782201f9bbc18069c2d85234",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/sessions.py",
+      "size_bytes": 30495,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "ca44c8f145864a5b4e7c7d3b1caa25947ee44c11b0e168620556901a67244f0e",
+      "noqa_comments": [
+        {
+          "row": 33,
+          "column": 24,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 41,
+          "column": 23,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "0f431c4040c42f69fbbc048d2dbafd89758fa38f68bb9b7c625333b57bfd17fa",
+      "file_role": "package_or_other",
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "path": "src/requests/status_codes.py",
+      "size_bytes": 4322,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "889500780db96da4ddc3ee8f7c3d1e178aa1a48343251248fb268cab1b382c42",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "7925fb20e2e482e9ec9cfe1c4f71de4a33cef4ebd5a1d37d29476b09e236a64a",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/structures.py",
+      "size_bytes": 2912,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "f886e6855cf4e92fb968f499b94b6167afba0fd5ce8d1b935c739a6d8d38d573",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "0e1a69f1172b489783e3bace858d198ed0c8602b92ca08b9883744b9eb21b77d",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/requests/utils.py",
+      "size_bytes": 33619,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "1e2402e8dabf0dade4b5a32217342487e7429378901c7284b184b990373ef02c",
+      "noqa_comments": [
+        {
+          "row": 28,
+          "column": 33,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 114,
+          "column": 30,
+          "text": "# noqa"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "6d4e0bc6ea23c0f8a2788980d6863b50242c5bd7a28de2f21ec5657b246a350f",
+      "file_role": "package_or_other",
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "path": "tests/__init__.py",
+      "size_bytes": 469,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "ac7f253daae0905f9b3dec647cae736bb3c090185aa373b30b3e851599e5342c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6cbd563faf0a6224ccec5bf9ae6e94b3eef2dca9e15993b84ed47fb568c45adc",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/compat.py",
+      "size_bytes": 480,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d58ff5e3167de0140a667cc51427f809c552e485875c95b9dad43ce13ba15083",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e2071f2850d732bf3f197a39c9becab91fab82ed3497600cf968275eeb67faec",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 1581,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "c31d83bf96fbf585c0d497fbf21a39b2e69411948ddb947e5ad51e5857976c5c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "f9f1ce9f56d6d698840d2c8128ec32eaa2aa1a28612c1ce9a833b49d4eb1ed6e",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_adapters.py",
+      "size_bytes": 311,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "28f88de1601bcde6a9f178b98452d6b90c55f5d1a6c9a2c15622cd760fbd4c91",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "68193bcf9718a0ecac484cd3f6643767c0517fe34dfdc3a879f1bed0df4a24ad",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_help.py",
+      "size_bytes": 839,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "1c2ac8ca9f4986429717791df766122b23e1fe90aa621318380ccf1f8e83d0f6",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "10d7435aa66a51fee74e45c212a1fd790903bfa93393fc4a5ca6d93cfbc23140",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_hooks.py",
+      "size_bytes": 424,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "a9e5163f538543a660be3b06650cd0b803ff0c503f5948f66b6fc50ede38109c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "f69d6073aa931a8723a45fff802d907d77514f89d317052596eaee6b389dfea6",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_lowlevel.py",
+      "size_bytes": 15343,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "2dc5990ef15fbbfcf1681827a337e6195144ee0e2031fb951ed1d32e29cdc27d",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6164a45305970f7dd9d9bb885e79824ce2219493bda6e9545459f8819ef14443",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_packages.py",
+      "size_bytes": 229,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "90875423db059d65b39416d7b6d01b18938851b8071279877400beb506e08676",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "9ca5171e2bd35287e727273873c6cfc10d7e74c10d5266a50d7b3176653322e2",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_requests.py",
+      "size_bytes": 104496,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "8e553d75084306fd04a2b3fd8ec3f7f7578ae1c44c48d96790e56046cbdf5fbf",
+      "noqa_comments": [
+        {
+          "row": 93,
+          "column": 72,
+          "text": "# noqa:F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "0e9b4cd80255efc262ba497759901ce93a5031b9b89b3119dd2472e903d53ca8",
+      "file_role": "tests",
+      "rank": 4,
+      "selected": true
+    },
+    {
+      "path": "tests/test_structures.py",
+      "size_bytes": 2279,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "f7b80e00888105ae80312203279e0cf9256726740bcaa15c6cee7c2c07d33d60",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e44f7e4339f080b6bb7343b0277b78097af8d02e680ee6c5f3e54fc0383b676a",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_testserver.py",
+      "size_bytes": 5553,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "5c388f68ff0bb13c255856ed19c5943ed493cfa52a62ad557c5ae84887b5da1f",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "0c8f683bb94a628d7e20baf86366e3d58426976eaa30a6fa65fd65bd6a3a9978",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "size_bytes": 29357,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "6d76461599944810c00b059c4c75acca1e034c3c96701a190b8115f87b5442af",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "c67edc643319fa21f9eb604c87b6ea840b404584920e7986d0bc68e3760a8a94",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/testserver/__init__.py",
+      "size_bytes": 0,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/testserver/server.py",
+      "size_bytes": 5147,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "15a9092cc5edb005af6732097555515c4b82093d9394f6463c966259f83068c3",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "9f4afc0022aa685e2f28c4108d70cafb997ba41681e9fafaab64cbd9f775a290",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/utils.py",
+      "size_bytes": 366,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "cfaec86690eba62573c8c730a121332837809333fb2b1006a20e2e8f4d34d4de",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "9b2e20f32d8a7a5c41b4c02f10921da0fdfe272199f7e244030f3f7877eca405",
+      "file_role": "tests"
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://codeload.github.com/psf/requests/tar.gz/0e322af87745eff34caffe4df68456ebc20d9068",
+    "final_url": "https://codeload.github.com/psf/requests/tar.gz/0e322af87745eff34caffe4df68456ebc20d9068",
+    "downloaded_bytes": 4055676
+  },
+  "context_sha256": {
+    ".gitignore": "0d87c78c285d5f3a9f83c7b9a09c42aa566c771a7e35d0da1ed0dabcd5831b6c",
+    "LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "NOTICE": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc",
+    "docs/_themes/.gitignore": "f27660c4ec6efa86aac4d61036c5f495e9438805a6f63be44f17db003979a06f",
+    "docs/_themes/LICENSE": "6afc9d58f919ab52f4806a895a37aefe4d263f8e52278e6a1e87c5d7ec82299c",
+    "ext/LICENSE": "3172d399cbd8f10609e73fec73d0e0b33eecd3c572a68b0722229d8c7059f725",
+    "pyproject.toml": "a5b52f2e3196da56ac62b0d48b2be83e36eccf62f9d062b93fca8488da49ab60",
+    "setup.cfg": "68d06c0156b89e98ac163dea286ec652845a1c989da58f07ec36d3b142f1499e",
+    "tox.ini": "641c0b07168239428b7bc1e3a101301a2c7346b3cac7bc3a517ad255de2dbcea"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\pyproject.toml",
+    "--no-cache",
+    "--no-fix",
+    "--output-format",
+    "json",
+    "--stdin-filename",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_json.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"I001\",\n    \"end_location\": {\n      \"column\": 52,\n      \"row\": 11\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pallets--flask\\\\tests\\\\test_json.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"import datetime\\nimport decimal\\nimport io\\nimport uuid\\n\\nimport flask\\nimport pytest\\nfrom flask import json\\nfrom flask.json.provider import DefaultJSONProvider\\nfrom werkzeug.http import http_date\\n\\n\\n\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 14\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 1\n          }\n        }\n      ],\n      \"message\": \"Organize imports\"\n    },\n    \"location\": {\n      \"column\": 1,\n      \"row\": 1\n    },\n    \"message\": \"Import block is un-sorted or un-formatted\",\n    \"noqa_row\": 1,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unsorted-imports\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-wh1chg1k"
+}

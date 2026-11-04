@@ -1,0 +1,135 @@
+[
+  {
+    "cell": null,
+    "code": "I002",
+    "end_location": {
+      "column": 1,
+      "row": 1
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\code\\test_source.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n",
+          "end_location": {
+            "column": 1,
+            "row": 5
+          },
+          "location": {
+            "column": 1,
+            "row": 5
+          }
+        }
+      ],
+      "message": "Insert required import: `from __future__ import annotations`"
+    },
+    "location": {
+      "column": 1,
+      "row": 1
+    },
+    "message": "Missing required import: `from __future__ import annotations`",
+    "noqa_row": 1,
+    "url": "https://docs.astral.sh/ruff/rules/missing-required-import"
+  },
+  {
+    "cell": null,
+    "code": "PGH004",
+    "end_location": {
+      "column": 15,
+      "row": 2
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\code\\test_source.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 2
+    },
+    "message": "Use specific rule codes when using `ruff: noqa`",
+    "noqa_row": 2,
+    "url": "https://docs.astral.sh/ruff/rules/blanket-noqa"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 40,
+      "row": 18
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\code\\test_source.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import inspect\nimport linecache\nfrom pathlib import Path\nimport sys\nimport textwrap\nfrom typing import Any\nfrom typing import Dict\n\nfrom _pytest._code import Code\nfrom _pytest._code import Frame\nfrom _pytest._code import getfslineno\nfrom _pytest._code import Source\nfrom _pytest.pathlib import import_path\nimport pytest\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 21
+          },
+          "location": {
+            "column": 1,
+            "row": 5
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 5
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "noqa_row": 5,
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 260
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\code\\test_source.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "pass",
+          "end_location": {
+            "column": 4,
+            "row": 262
+          },
+          "location": {
+            "column": 9,
+            "row": 260
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `c`"
+    },
+    "location": {
+      "column": 9,
+      "row": 260
+    },
+    "message": "Local variable `c` is assigned to but never used",
+    "noqa_row": 262,
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "FA100",
+    "end_location": {
+      "column": 12,
+      "row": 339
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\code\\test_source.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 339
+    },
+    "message": "Add `from __future__ import annotations` to simplify `typing.Dict`",
+    "noqa_row": 339,
+    "url": "https://docs.astral.sh/ruff/rules/future-rewritable-type-annotation"
+  }
+]

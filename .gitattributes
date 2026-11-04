@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.pdf binary
+# Preserve original evidence bytes, including tool whitespace and line endings.
+reports/** -text
+datasets/results/** -text
+datasets/controls/** -text
+datasets/controlled/** -text
+datasets/real_world/** -text
+docs/research_brief.md -text

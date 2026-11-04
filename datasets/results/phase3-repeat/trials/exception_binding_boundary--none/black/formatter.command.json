@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase3-repeat\\trials\\exception_binding_boundary--none\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "def compute():\n    try:\n        1 / 0\n    except Exception as error:\n        pass\n    leftover = 1\n",
+  "stderr": "reformatted -\r\n\r\nAll done! \\u2728 \\U0001f370 \\u2728\r\n1 file reformatted.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-laz0pryn"
+}

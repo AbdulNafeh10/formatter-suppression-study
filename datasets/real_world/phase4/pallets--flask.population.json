@@ -1,0 +1,1104 @@
+{
+  "repository": "pallets/flask",
+  "tag": "3.1.0",
+  "commit": "ab8149664182b662453a563161aa89013c806dc9",
+  "commit_url": "https://github.com/pallets/flask/commit/ab8149664182b662453a563161aa89013c806dc9",
+  "metadata_url": "https://api.github.com/repos/pallets/flask/commits/3.1.0",
+  "commit_date": "2024-11-13T18:20:07Z",
+  "tree_sha": "ac9687dbcc33f4c02c708197038d45d26cd97392",
+  "archive_url": "https://codeload.github.com/pallets/flask/tar.gz/ab8149664182b662453a563161aa89013c806dc9",
+  "archive": "archives/pallets--flask.tar.gz",
+  "archive_sha256": "79c2b933eeb0af9c44973a325cfe9db9ce02e3435d9b1ed8f96b89f8f1b20bdb",
+  "python_population": 83,
+  "eligible_noqa_files": 13,
+  "selected_files": 13,
+  "exclusions": {
+    "no_natural_noqa_comment": 70
+  },
+  "config_files": [
+    ".gitignore",
+    "examples/celery/pyproject.toml",
+    "examples/javascript/.gitignore",
+    "examples/javascript/pyproject.toml",
+    "examples/tutorial/.gitignore",
+    "examples/tutorial/pyproject.toml",
+    "pyproject.toml",
+    "tests/static/config.toml",
+    "tox.ini"
+  ],
+  "license_files": [
+    "LICENSE.txt",
+    "docs/license.rst",
+    "examples/javascript/LICENSE.txt",
+    "examples/tutorial/LICENSE.txt"
+  ],
+  "population": [
+    {
+      "path": "docs/conf.py",
+      "size_bytes": 3259,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "46b1c74197624e021d8a9936883a74bdd15542e5087b9131729e728faac51328",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "fd3482fced0f3090c133e76aeb81f8d79a2156115716787215eb29788beabd2b",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/celery/make_celery.py",
+      "size_bytes": 102,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "ff32ebf85ef8791fc07177ffe2dad6020fad34a4a57831d37a8bd8531f6e6707",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "ab5f87aa6b9d28f150a0a2d17daaf242c3b707f458295ef3e37cd4e8e0433027",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/celery/src/task_app/__init__.py",
+      "size_bytes": 1019,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "172de995eb076d7ea1911f20bf4c2fcb72dbc3d7eee3e5796c4cdfa2dfd486ab",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "12b469a2e466860b22de57924398960c553074defbb92aaad90a7a041ec1c884",
+      "file_role": "initializer"
+    },
+    {
+      "path": "examples/celery/src/task_app/tasks.py",
+      "size_bytes": 484,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d2c365c8ed2f5abf0b5b109361ebe58941559b7d67e57f96d6a6b7bd69970364",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "4400fb8394129ced15648d552aa4ce00ee7882b2a42cfc33c1af85aa61031d9a",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/celery/src/task_app/views.py",
+      "size_bytes": 954,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "cb9f3c9ebbb359bae6d49f55fd717700062691d2be60f1700e2abf7060082704",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "af7e07a6db5e6d96e6ce3ba7cdfb4374303da80094076d8441029eec316cb9be",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/javascript/js_example/__init__.py",
+      "size_bytes": 97,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "ea2307cfd406f1b66de1537bc11eecc7d9ff2bf098b65befbe52e99a52ca2b09",
+      "noqa_comments": [
+        {
+          "row": 5,
+          "column": 31,
+          "text": "# noqa: E402, F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "cd72410e17e11e3d937fc988a4df1e0c984dcd2ab3092be73ef7ba86c0b03749",
+      "file_role": "initializer",
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "path": "examples/javascript/js_example/views.py",
+      "size_bytes": 429,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "221cbb10e105b7463f25e0f296da6efc4db0346f49c6127f07168f283b3e70ca",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "72d98f22e26bbec0fa4397c654de7234ffdfe34e60daf8bd276e94f569fee707",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/javascript/tests/conftest.py",
+      "size_bytes": 216,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "aff1ac8ea5b7c6e4d7adf67a0eae5c13cbb9adf38e1a2434e6cc7e6824c56b11",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e9ff6ae8c795bb3e3ee5b33370946ae52c35f7f1d630c5abc9d80547f762ddd8",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/javascript/tests/test_js_example.py",
+      "size_bytes": 727,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "52a0ce22402bb671b391cd278c2ab0865d2d5f9d6daf8d4387ef23337f0a026f",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "76e0e720b039abd76d0234aadb12a368a536d4ab4ef3faffeeadbeca55c0f69b",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/tutorial/flaskr/__init__.py",
+      "size_bytes": 1437,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "ecfe54451a0cb1cfb8aac26d0f65bdfc4b1fc5ccd7148f4ad38829a8ba26f03a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "fe3117a116cb3843399232d7555ef68a756955f86ecd1746a182275a0b1cb38c",
+      "file_role": "initializer"
+    },
+    {
+      "path": "examples/tutorial/flaskr/auth.py",
+      "size_bytes": 3296,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "a5ed5eaa05c6f6ee3e5bdb07b9e657a6e9320a115a68fd74b1cb4ac646680167",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "603f977eb2a4c487e9d955aaeb205a19d586bfa4038586e17dea05023f2c2b19",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/tutorial/flaskr/blog.py",
+      "size_bytes": 3305,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "c49c5f6e3db32d74bfac13633fd328ec904cb7159d76ca78f6956432076c1fd7",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "3afdc55ca33a1eacf74fd107c62bb99c3b0e95417fdb93d699be1d193ca00b05",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/tutorial/flaskr/db.py",
+      "size_bytes": 1317,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "700f9d0a455bf79c9bf6de4f2784f13b96256faea19c15ddee71fb7957e14c31",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6c99430a13f6ecf453269ccbc140a794668cb8c133100f3cfbab5e77c45c5d24",
+      "file_role": "docs_examples"
+    },
+    {
+      "path": "examples/tutorial/tests/conftest.py",
+      "size_bytes": 1454,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "2778b7c035d917bb0909ec6ee2f9d61ccba030ff8ae635ff65a52c133ec5afca",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "f1fa9e69ca1aa967bff9a51c44bf8d6befea56ead283618feababe2271e3f2de",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/tutorial/tests/test_auth.py",
+      "size_bytes": 2070,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "cbbe178c9980d8499561d8eae72f01b8abeead2fa10c9d5f71427da4af38a938",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2fd379673a43369d412dc6d24bbebce62fd97362c1c163bccbfd395c2fc00661",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/tutorial/tests/test_blog.py",
+      "size_bytes": 2503,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "a4c01c486e86aed522c3ade398bf4016f6ef59bbada2c7c5f69eb55ce297877c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2d41b4bba3aafb6d04f3ef91ab87378d7da8aa8090a9f759ea7266cd375ff975",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/tutorial/tests/test_db.py",
+      "size_bytes": 616,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "324baea21b981575b4e6d92b6517f21ec2ad86a6138010863a9fcfb4f984e649",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "df8d7fc47187b227f55193725f2584653a0d787664550f6ba224c14c368b49e0",
+      "file_role": "tests"
+    },
+    {
+      "path": "examples/tutorial/tests/test_factory.py",
+      "size_bytes": 298,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "1906cfed379afe315b6ad7db3c71c951ac87c53b57b28b04b5b6c84df2a79e01",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "27fbfa5fb69286d56e7be7a374bd74cb57b0d4376880adbce94ec83094bff481",
+      "file_role": "tests"
+    },
+    {
+      "path": "src/flask/__init__.py",
+      "size_bytes": 2625,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "eb132a7550341484365352956865f79733427573f3a073da6b486f40235c7d29",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6987bd00616cdb355d83d96a9a148a121c28ed405c3765f7b12c0d81cdad32c8",
+      "file_role": "initializer"
+    },
+    {
+      "path": "src/flask/__main__.py",
+      "size_bytes": 30,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "5bf246174eaeca14567b224668308cdfb45ec9f02f82e4a985d8ad78de08f317",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/app.py",
+      "size_bytes": 61725,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "184ed0384fcdf531c38eeccac7481423d685e212e1d31c010daee12d5b23cbea",
+      "noqa_comments": [
+        {
+          "row": 278,
+          "column": 76,
+          "text": "# type: ignore # noqa: B950"
+        },
+        {
+          "row": 1515,
+          "column": 22,
+          "text": "# noqa: B001"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "855bd0ed8aa5753ca3827cdf5e8c443c0ebc5e6a75b30ec5ffebb6c471f65af5",
+      "file_role": "package_or_other",
+      "rank": 4,
+      "selected": true
+    },
+    {
+      "path": "src/flask/blueprints.py",
+      "size_bytes": 4541,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+      "noqa_comments": [
+        {
+          "row": 11,
+          "column": 76,
+          "text": "# noqa"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "36e344c92cd631aa6f8443edd96ce111d647fdf6da9358c19fa7ea17c56eb68f",
+      "file_role": "package_or_other",
+      "rank": 13,
+      "selected": true
+    },
+    {
+      "path": "src/flask/cli.py",
+      "size_bytes": 37093,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "5dd9a4043ef84a74f48ebb7682ac87ac4f685c675695c753ac9411fa2e5a0296",
+      "noqa_comments": [
+        {
+          "row": 497,
+          "column": 24,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 816,
+          "column": 42,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "1de910d7dd6af1e6424fc6ba3124a4a3b9f30abfa4fbde4c363cfda5f15313cf",
+      "file_role": "package_or_other",
+      "rank": 7,
+      "selected": true
+    },
+    {
+      "path": "src/flask/config.py",
+      "size_bytes": 13219,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "3e2a85d033da9ba1d6d051f8087d61a574c17b7d0d4b38cf10ec2bcf56fa92dd",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "40a2db25efef8ad93a58874106df39690d8e26b875890e0ae5998c667a9ec433",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/ctx.py",
+      "size_bytes": 15120,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e1ab4384927f72957554cab8aac7d4e04ffad4cd6837dde3952d87f608eb979f",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "dfad096d89d56fa82f853c1d26a8ad62f7e923ecb1204dc9ec0aa2599eb305d6",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/debughelpers.py",
+      "size_bytes": 6080,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "3c6203852b56fde7d18e969adf31c8a68fa1b52b49391e35229dce2563d8070a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "1428ffb66f18d82971e2765594e0dcb05142b4ecf4016e8ac944b4f4e2a1eee2",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/globals.py",
+      "size_bytes": 1713,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "5dd419992b4198f22cf2df77b63c7aa4eec19b78286c068e3569057141da19ab",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "deea502dce35a862d79ac0d1acc6e561d70911b6fa3b3c677f1ee83626672fe9",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/helpers.py",
+      "size_bytes": 23521,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "ee78e6ce4149beb3d242e76c80e36c810cda1ab1a9a5e04835ebca8167ac70f9",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2a3b79247404187ea58e7ad051e00e34790d6bf1b3c972091244fb5966f40236",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/json/__init__.py",
+      "size_bytes": 5602,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "84b351f3df296aaa1e7dd78086b69ae70c89cbe6e6441da4d9d578120572d99f",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "412e40ffadff8b30224d7b4f2a67b85e4c5c2501a0921815f8ad51af01e25616",
+      "file_role": "initializer"
+    },
+    {
+      "path": "src/flask/json/provider.py",
+      "size_bytes": 7672,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e62984cd8e478d5d87a1456b41b24ba970b330da595df0f46355ea74b5765c10",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "7c7af6ab2873ae24237cd98d2c5ad5080330193d135fb9d7d222470ef6579a60",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/json/tag.py",
+      "size_bytes": 9281,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0e168dc2e20e85db7647be28382f58e19f19a6bc4562245be5d50fe5bcb220dc",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "21c311178510d62d281e31d85a269307dbf91c97a7ed6fa1daf53d0c5ee21473",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/logging.py",
+      "size_bytes": 2377,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "f2c33758c4ee6e2d5c05bd9cfe53e45a937427c74c02aae029160b2e2d5d0952",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "79cfba63f4455595ccceaeef99281eca8068475e8690d62e1771020e52f1c369",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/sansio/app.py",
+      "size_bytes": 38116,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "5a3f4d546b624758ef919f6048577dd6eb1494cf07d20d3a68f573dac321e1bc",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "b2bdce9213c3e49155c8189fdf1f785d78d86ab1d152d985e6a9c99d204532c6",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/sansio/blueprints.py",
+      "size_bytes": 24637,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "4ea7beec4919fad6d67219bc883a027c3f38f1fd3fde72efe8d3637883ef1f03",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "156b843ea807a29c99175a16b6c536163281059abbbfecda96ba4ab4f75f2eac",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/sansio/scaffold.py",
+      "size_bytes": 30387,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "abac0ce18e1a60c18637f2e2b6c8f73d82a9052dd9beeb74c610e6a4110715da",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "01a5e8290d984f074a0fa0b581e4d6d59fb472bef174650f4c94025add2d4d4c",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/sessions.py",
+      "size_bytes": 15430,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "a4899215020308fb55f97488f2db40c934dbbed44c9210dea89f153d965469fd",
+      "noqa_comments": [
+        {
+          "row": 110,
+          "column": 86,
+          "text": "# type: ignore # noqa: B950"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "5bf396bd10f5432cb3e94c87adb0b792e3fdb7bbc0ee6e2aaed816bced482a0e",
+      "file_role": "package_or_other",
+      "rank": 5,
+      "selected": true
+    },
+    {
+      "path": "src/flask/signals.py",
+      "size_bytes": 750,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "57b94c530c3b0aa809d93854067d4f89ab59b506a73b2b7b399a6ed86648fb7e",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6e7bdbcf9f129fd94b7d2034a39b87a752f33f353a7ff34b83d11f82cbd17518",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/templating.py",
+      "size_bytes": 7537,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d937172d3f3902c7e59b65bd58e485c4a0a6627e5ee3dc3f26483df8d69a256a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "0dcf8ad3eb22961380e7ef471c58319f1d8ef22e5484276696c6a0e7fb87a197",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/testing.py",
+      "size_bytes": 10100,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e43c60e9567464f863c06f517949784eb86f923058be023357de3d8e46348c85",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "bd5f9d32b712537de5005ffa520b7bef45c09ebf274c6605af0231cdf1d7da22",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/typing.py",
+      "size_bytes": 3166,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "6fb98c048780a0e70023fbc5cf385f3a6eca799fe7f3af1220cc3ac695f92984",
+      "noqa_comments": [
+        {
+          "row": 6,
+          "column": 49,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 7,
+          "column": 50,
+          "text": "# noqa: F401"
+        },
+        {
+          "row": 8,
+          "column": 52,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "8fe312709ec11c8c4e62d4044f9d3bfadaff500814b683d15c03748a7e02c3f4",
+      "file_role": "package_or_other",
+      "rank": 11,
+      "selected": true
+    },
+    {
+      "path": "src/flask/views.py",
+      "size_bytes": 6962,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "c73271ea826a18495386d12085937b65018cc394c3172b91c5491e73046e0280",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "ce44d4580c980f0019f0ff4b5a8980d00e6546537a02deba98eabb4a7c84c217",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "src/flask/wrappers.py",
+      "size_bytes": 9406,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "8d492fe2655e93622ae21c3177846faab20c6faf41bf43c49438162e6779391a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "108c41c2749b0735f20e8c9bcf31b974da6d5af597313a20a639c8187febd8be",
+      "file_role": "package_or_other"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 4320,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "822fa3248cec3a9ee35306fd19a8b0770fe7162054e405b0778a59de9e9663ba",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "d9bc5abef58de022bec20056903dcf8d64cb6bf5fe7e74d1c5a7022069acd933",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_appctx.py",
+      "size_bytes": 4978,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "4e40c0ab6c7b7bd04b9e286a329ffba7c32082969961176aa8c30a0eb78a7fb0",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "92459f376c7086bc6c4e74d9ec71056d935ef55f34ee6bc02fd2980a53a47299",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/blueprintapp/__init__.py",
+      "size_bytes": 256,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "87622ebc37bcfe87d81be1437e4b97a4c2a8341eb3df38461dd37a0b89db07d3",
+      "noqa_comments": [
+        {
+          "row": 5,
+          "column": 44,
+          "text": "# noqa: E402"
+        },
+        {
+          "row": 6,
+          "column": 50,
+          "text": "# noqa: E402"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "cb6a9d743348382f924795503eb61b7ed83914a9b564eee0cdd8d1643d52f227",
+      "file_role": "tests",
+      "rank": 10,
+      "selected": true
+    },
+    {
+      "path": "tests/test_apps/blueprintapp/apps/__init__.py",
+      "size_bytes": 0,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/blueprintapp/apps/admin/__init__.py",
+      "size_bytes": 366,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "5e849dc6984b0b3944ea687e40d96da9d5a9f42e32aa5b4035dedef4558ad83d",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2fc4b9c5ef5386220bbd7aa6a564196ff5f2268d311a78654b9251e70723741c",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/blueprintapp/apps/frontend/__init__.py",
+      "size_bytes": 327,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "1630cefb5d073808e8b4164e4d910f69aee57a93eaee53debb575e7e7aabb83f",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "4c3a07b4fe2f17421bee848793b8ef698feb8dfbe9ce9f01d9d2a8264182da00",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/__init__.py",
+      "size_bytes": 0,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/app.py",
+      "size_bytes": 52,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "b0c37142ff064f6d7f3ca21b8acec34a0657cf1a7c354178d5e3acc0879c7467",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "ebfa1d0b587b80626cfef7233f9351bec51987f2e6781a80e0249cbe7ce4c332",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/factory.py",
+      "size_bytes": 169,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "3a93cd69f200848e8ffef6b2abdaa5803fb5044981ab64297f8c7d6541820570",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6e6b82bd95a9fd589e09d7901ae34ffef06f10900c4b10271c24b7abdfcc3165",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/importerrorapp.py",
+      "size_bytes": 73,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "5ad812b09337f9699cd2b6aeebfd7d6f14045451de846b0503d746a34ce8a8c4",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "0679505da323335a6c147fb7038326d328814084a62ae3db99da0b7a733a2dad",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/inner1/__init__.py",
+      "size_bytes": 55,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d3885f0114c83025a754fb3a8582634946541c9aeb72fe4f90af27554a6d4c83",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "51f2474a670c943a1782085b9c2d828f66bf3bb00cd8dadf0d9ca68600c349f2",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/inner1/inner2/__init__.py",
+      "size_bytes": 0,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/inner1/inner2/flask.py",
+      "size_bytes": 47,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "570567aafaf185348cffa097d904b964c44fe1a92c5ec82488b97e3d93dbab38",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "87702b7b55eeeb56601489c42675004e9c92f0d097550233c7091a76ab348ace",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/cliapp/multiapp.py",
+      "size_bytes": 67,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0580225ea4edb705c2e412c5ac6bd27d659cc239f0243467a33eaa9ee74675fc",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e7581bbbaddf629fdbe3efbc767cb9b299dbb8f440e6ba0c0b7ca13968838736",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/helloworld/hello.py",
+      "size_bytes": 104,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "42722083156af9f3eb82e3a88403f4191b9dfcb5f9e1c3432e79f02827b0ccf1",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "17df7a4e7a0fb69dd38ad19c34e7d1f99b85559b2d87f3a4c1436a05f4a965f3",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_apps/helloworld/wsgi.py",
+      "size_bytes": 36,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "c1d5a162364e71546a8a8b76eb7fba0381582b8546ad14189f6431e647b7a547",
+      "noqa_comments": [
+        {
+          "row": 1,
+          "column": 24,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "b8d8d545d49ac92b623b03943cf47b87e206c1c62ab577d701677c085476b448",
+      "file_role": "tests",
+      "rank": 8,
+      "selected": true
+    },
+    {
+      "path": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "size_bytes": 73,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "31e4dbd8ce53affded865990aea6a44db0bc46a0f44ee3fd6c14106f84a65cad",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "0379910a7a2e8b5e2483fbf8eeb3958d84628b12561b0f8c743c9f3eec8dd944",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_async.py",
+      "size_bytes": 3335,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0a6a50bfd651581478abe8cda5c94aba6d70df35567a220aabc7ba08202d471c",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "066b847ce899db07ddab039d28e8a18318f34ac68331f0b3289f3bc9c7d0435f",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_basic.py",
+      "size_bytes": 53424,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "b3ba24c897272f9df537d8101aa6c1ca829751de62b1bcca492885a5a9db5698",
+      "noqa_comments": [
+        {
+          "row": 461,
+          "column": 39,
+          "text": "# noqa: E721"
+        },
+        {
+          "row": 463,
+          "column": 40,
+          "text": "# noqa: E721"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "6236dc87ca2b4e88ae8c19cfce1a9ab8a35cbbde0b5e90697631ec5e862df4e3",
+      "file_role": "tests",
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "path": "tests/test_blueprints.py",
+      "size_bytes": 28778,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "63592f00e0151b8f4362fdae5fa231c42ca638cb4d2b94fabe216e39f3874142",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "362f6a7b87df99a464ff5ae0b0708f95effa18f31f59824b10c0c7168dd7d040",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "size_bytes": 20368,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "bc9b456bcd5c8698f4a809ca9c5a595b8be47ac5f8f057442d6c78498b70e3f8",
+      "noqa_comments": [
+        {
+          "row": 523,
+          "column": 24,
+          "text": "# noqa: F401"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "4c39d3cbb1c874f831093ab92d02808c6e2330fa2f6675a7ea2deb56bc5484dc",
+      "file_role": "tests",
+      "rank": 6,
+      "selected": true
+    },
+    {
+      "path": "tests/test_config.py",
+      "size_bytes": 7748,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "09df8aec5f88df421fa5b47bd66ee4e3aef23384c7c36a1be191d24723caadd0",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "fd4b8aca39aac8aa0d2298dd577e247dcedc82831f53b7c8f26161270216b3f0",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_converters.py",
+      "size_bytes": 1093,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "4f529ca6ee85a88c487a488807ff30cb8e4672307b9017f348174a67a5984347",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "2bf9c5eb66a5b291487efe0e382f422d9fa4d7b3a51f6dc23eec3f29e5af4672",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_helpers.py",
+      "size_bytes": 10588,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "53416203889a17bbb591a2ff4082f473c4d5fc4e80988eda1200aef048df3a09",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "00a0f2cf6872a0602a782ead8628e8c201cfeb3a405650069a6e5162909a648e",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_instance_config.py",
+      "size_bytes": 3359,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "8eed24cc54fac632f4a96896181e07c2938c27eab47c49a1225de245110c6f9a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "60a48bea0e0e6d91a331d1fa0c8b4765b58ca644df66c641b08474738ed85d28",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_json.py",
+      "size_bytes": 8741,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "f6c73c61a602ee3b8b87bfa90284fbc96e567b77c3a6d86c0e3919c5f12b64c6",
+      "noqa_comments": [
+        {
+          "row": 224,
+          "column": 15,
+          "text": "# noqa: B903, for Python2 compatibility"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "a7ff47ecfd455908a5737ef4a826605f2b73dfd4ea55bc67baa0284483beff0f",
+      "file_role": "tests",
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "path": "tests/test_json_tag.py",
+      "size_bytes": 1998,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "019a2cd9b43245667b178e023dbd3541086f561677c32f06fa2eb85fd81aff65",
+      "noqa_comments": [
+        {
+          "row": 44,
+          "column": 17,
+          "text": "# noqa: B903, for Python2 compatibility"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "ce4fd48f88042e589d9110cf3dfb84d1edd154fb782abd4ab12e6ad310a15697",
+      "file_role": "tests",
+      "rank": 12,
+      "selected": true
+    },
+    {
+      "path": "tests/test_logging.py",
+      "size_bytes": 2529,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "311ea43751a836c3d585a40f08fa54a60d783a232aa50c5ea1225b689e9ac683",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6fae6c1057d9b15e6bc45f4b43e122a661226d7c5a97ae77d5f73eee5b76aa5e",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_regression.py",
+      "size_bytes": 712,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "2749a17454a9aa8a610a2213d739046488af06fe742da1c06802d00ab28a3bf8",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "9056398ff57f58c6b2a2bdd9b01460b0a0727e020e72d04538a262f10429ef2e",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_reqctx.py",
+      "size_bytes": 8691,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "8c19e1468ed3360efccef5e5ea886377cfe5baf8bb259b34dc84ee993974a764",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "aac9632b5bde970f3648db5b5f5c78362a03cdb5b42d0c8d51a0f5165d388f7d",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_request.py",
+      "size_bytes": 1902,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "4e9b4bb6fa9ec22285bf8c5004bec5a32d25b60ab1717acd38f98ed8f6ec63c4",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "d1040f8c020f4ec59c57857820cfa8a896246b5fd6f553fa365db90a5b3c4575",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_session_interface.py",
+      "size_bytes": 792,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d3990141744f27683503ffc17f46042b9fe0b10119c77e414ea47795079b7dba",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "7c4ba7363c9ca54db39d789a1a1f4d5e4641d749768a961617b55a780347d60d",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_signals.py",
+      "size_bytes": 4864,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "eaa27de84a44ad1f1b0baa883ec7b76793ee0973362646a7f93ebb7d5e3b2abe",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "34e7ed653f7eabe7f271a769016756e6feb24328df12cfc36fdeff51dd433b76",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_subclassing.py",
+      "size_bytes": 475,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "0d325f8099e38403287a0cd8f1e184884beb5c345ac894300f2aa469a04cbd10",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "a1edd01d7fc71740e7e1c47fb04cec840785a9097888180a5cbe87bfae3f798f",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_templating.py",
+      "size_bytes": 12323,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "d20c5f1f67fdc81ed0f9fdaf450b699fa9cb787e2eb1b40637b4c758a1e20e19",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "607e8e1012c1e763bbd72d02bcef259c531c1ddaaaa0d017f95e9782c1dc62e3",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_testing.py",
+      "size_bytes": 10622,
+      "eligible": true,
+      "exclusion": null,
+      "input_sha256": "57715cab1ba6470c821eb2a3a94af98cf73a9380de9b1af3f30b504ea77c921d",
+      "noqa_comments": [
+        {
+          "row": 238,
+          "column": 24,
+          "text": "# noqa: B018"
+        }
+      ],
+      "ai_assisted": false,
+      "input_structure_sha256": "b81eb7f0911d6f710debd6a44d03b5d80d2bd29a43db5831a988ea3f7cb10139",
+      "file_role": "tests",
+      "rank": 9,
+      "selected": true
+    },
+    {
+      "path": "tests/test_user_error_handler.py",
+      "size_bytes": 8436,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "f05213bb275e08d354bf9750eb3a37aeb8fc713a8beee7edcdd3078d11af9d60",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "e5d5d83f61de040771d0581bfac8d3f3dd74b728883ff330122acca4d1767740",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/test_views.py",
+      "size_bytes": 6732,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "166328b1cef85fcd8f4336ac1c1a27e40444c9d26c54b46a1321fbfc11a4fca9",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "64ea0c21112592218073817553c4ed0139c2082da4d0a48d709a8411ef56047c",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/type_check/typing_app_decorators.py",
+      "size_bytes": 589,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "1236df0a3447c828b1401cc56a31f1b988d6a4aa4944e63bf678c5470e373859",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "b287c8758d78d02acff99598badfe4e878e4bcdb5d9b0297396726f9f56e11bc",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/type_check/typing_error_handler.py",
+      "size_bytes": 647,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "6ca69ec7b4813dfac97080cfb49b9c2d41acab44351e86620e337e1f25674604",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "6ee752f8e4440e6b89b631503d4f8b8ab2196c5bcf346ee039aafa30b4c07588",
+      "file_role": "tests"
+    },
+    {
+      "path": "tests/type_check/typing_route.py",
+      "size_bytes": 2532,
+      "eligible": false,
+      "exclusion": "no_natural_noqa_comment",
+      "input_sha256": "4554c7c77994fdd2ba2a8c50756c418aba619707f3e951551f26e8e9fd37c72a",
+      "noqa_comments": [],
+      "ai_assisted": false,
+      "input_structure_sha256": "adaf00f6a21e01a4f41a10f5a0e620ecb87b1bf6a1f96c27f4a187683d802104",
+      "file_role": "tests"
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://codeload.github.com/pallets/flask/tar.gz/ab8149664182b662453a563161aa89013c806dc9",
+    "final_url": "https://codeload.github.com/pallets/flask/tar.gz/ab8149664182b662453a563161aa89013c806dc9",
+    "downloaded_bytes": 693491
+  },
+  "context_sha256": {
+    ".gitignore": "7c29846deb0881728ede7eec4b26bd3350b3757e3029670aa375e61d7cca2007",
+    "LICENSE.txt": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "docs/license.rst": "1e07e9c25f2618a040560b70e63f42259eab24e558d0f3532e6163d751cb4eea",
+    "examples/celery/pyproject.toml": "00d27458e466294e03bd3be48bfb8c436be5f9bd49cee885e2fb2d88f2b684b5",
+    "examples/javascript/.gitignore": "33e8459e8e10c3260d9b06a2d3a256306cbc154708601d734bff17c42109b319",
+    "examples/javascript/LICENSE.txt": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "examples/javascript/pyproject.toml": "2efeb4bc2175dd05aa6452dd11ed761cbeb278bb3ce1de6aca2ed0caf29ce12a",
+    "examples/tutorial/.gitignore": "33e8459e8e10c3260d9b06a2d3a256306cbc154708601d734bff17c42109b319",
+    "examples/tutorial/LICENSE.txt": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "examples/tutorial/pyproject.toml": "8ea666f85481f44bc7a5cef54e39ab939f92f5f2cb576f9a6b959866a3fac0aa",
+    "pyproject.toml": "625d2002343fdfc7535b7ce1cb590f86c2a9a9296e632ef5127becea31519fbf",
+    "tests/static/config.toml": "1551d036dd594e88079db2179d045df595760af46dd6c80c11ef828fa2f7a02a",
+    "tox.ini": "4242b7e6cd17c603b4d08fe3338cff0eca2f7d1c416c38049a0c176911ba3314"
+  }
+}

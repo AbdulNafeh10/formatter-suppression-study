@@ -1,0 +1,1 @@
+warning: Invalid rule code provided to `# noqa` at study_input.py:110: B950

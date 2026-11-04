@@ -1,0 +1,58 @@
+{
+  "before": [
+    {
+      "rule": "F841",
+      "lexeme": "a",
+      "visible": false,
+      "location": {
+        "column": 5,
+        "row": 2
+      },
+      "end_location": {
+        "column": 6,
+        "row": 2
+      }
+    },
+    {
+      "rule": "F841",
+      "lexeme": "b",
+      "visible": false,
+      "location": {
+        "column": 10,
+        "row": 2
+      },
+      "end_location": {
+        "column": 11,
+        "row": 2
+      }
+    }
+  ],
+  "after": [
+    {
+      "rule": "F841",
+      "lexeme": "a",
+      "visible": true,
+      "location": {
+        "column": 5,
+        "row": 2
+      },
+      "end_location": {
+        "column": 6,
+        "row": 2
+      }
+    },
+    {
+      "rule": "F841",
+      "lexeme": "b",
+      "visible": false,
+      "location": {
+        "column": 5,
+        "row": 3
+      },
+      "end_location": {
+        "column": 6,
+        "row": 3
+      }
+    }
+  ]
+}

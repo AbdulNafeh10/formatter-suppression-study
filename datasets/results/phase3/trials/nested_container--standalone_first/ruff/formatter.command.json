@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "format",
+    "--isolated",
+    "--line-length",
+    "88",
+    "--target-version",
+    "py311",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "value = {\n    # noqa: F821\n    \"items\": [missing_a],\n    \"lookup\": {\"key\": missing_b},\n}\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-whv2woe3"
+}

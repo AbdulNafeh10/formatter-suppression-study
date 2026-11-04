@@ -1,0 +1,10 @@
+dataset = "datasets/controlled/phase3"
+output = "datasets/results/phase3-repeat"
+seed = 20261103
+formatters = ["black", "ruff"]
+rules = ["F401", "F821", "F841"]
+target_version = "py311"
+line_length = 88
+preview = false
+subprocess_timeout_seconds = 30
+repeat_only = true

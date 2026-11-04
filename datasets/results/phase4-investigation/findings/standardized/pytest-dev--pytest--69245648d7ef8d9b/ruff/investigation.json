@@ -1,0 +1,28 @@
+{
+  "trial_id": "phase4--pytest-dev--pytest--69245648d7ef8d9b--ruff",
+  "repository": "pytest-dev/pytest",
+  "original_path": "src/_pytest/logging.py",
+  "formatter": "ruff",
+  "classification_retained": "AST changed",
+  "matching_errors": [],
+  "execution_error": null,
+  "explanation": "Strict AST equivalence failed; suppression attribution blocked.",
+  "mode": "standardized",
+  "type_ignore_line_metadata_only": true,
+  "ast_field_differences": {
+    "total_field_differences": 2,
+    "first_25": [
+      {
+        "path": "$.type_ignores[1].lineno",
+        "before": "896",
+        "after": "899"
+      },
+      {
+        "path": "$.type_ignores[2].lineno",
+        "before": "903",
+        "after": "906"
+      }
+    ]
+  },
+  "interpretation": "TypeIgnore line metadata differs; strict primary AST outcome retained."
+}

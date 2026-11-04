@@ -1,0 +1,13 @@
+{
+  "control_id": "manual-mixed",
+  "trial_id": "phase2-validation-manual-mixed",
+  "expected_classification": "Mixed",
+  "observed_classification": "Mixed",
+  "source_and_output_match_frozen_control": true,
+  "classification_agrees": true,
+  "occurrence_states_agree": true,
+  "hidden_count_agrees": true,
+  "exposed_count_agrees": true,
+  "measurement_complete": true,
+  "passed": true
+}

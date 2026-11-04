@@ -1,0 +1,1 @@
+Module(body=[FunctionDef(name='compute', args=arguments(posonlyargs=[], args=[arg(arg='first'), arg(arg='second')], kwonlyargs=[], kw_defaults=[], defaults=[Name(id='missing_a', ctx=Load()), Name(id='missing_b', ctx=Load())]), body=[Return(value=Tuple(elts=[Name(id='first', ctx=Load()), Name(id='second', ctx=Load())], ctx=Load()))], decorator_list=[])], type_ignores=[])

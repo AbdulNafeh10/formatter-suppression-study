@@ -1,0 +1,69 @@
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 10,
+      "row": 1
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-gj2md8q2\\study_input.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 2
+          },
+          "location": {
+            "column": 1,
+            "row": 1
+          }
+        }
+      ],
+      "message": "Remove unused import: `os`"
+    },
+    "location": {
+      "column": 8,
+      "row": 1
+    },
+    "message": "`os` imported but unused",
+    "noqa_row": 1,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 21,
+      "row": 3
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-gj2md8q2\\study_input.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3
+    },
+    "message": "Undefined name `missing_name`",
+    "noqa_row": 3,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 30,
+      "row": 4
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-gj2md8q2\\study_input.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 4
+    },
+    "message": "Undefined name `another_missing_name`",
+    "noqa_row": 4,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  }
+]

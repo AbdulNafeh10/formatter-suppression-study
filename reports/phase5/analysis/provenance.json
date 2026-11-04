@@ -1,0 +1,67 @@
+{
+  "analysis_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.3"
+  },
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "ca6084a8c7282b2279fca7be382e48e361209ce3",
+    "repository_dirty": true,
+    "seed": 0,
+    "random_generation": false
+  },
+  "input_sha256": {
+    "datasets/controlled/phase3/manifest.json": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+    "datasets/results/phase3/results.jsonl": "8a45b27fff2cf43b0c7656142e699988ad8f43a0e7fdd08e32beec88e1a9f887",
+    "datasets/results/phase3/results.csv": "97d4fbedd33c0093ec10a5a924d3245ca4dde5bec571f2bd49e6d52042c71b06",
+    "datasets/results/phase3/manifest.json": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+    "datasets/results/phase3/run.json": "897c7099e2b21ac8177f1c4506cc12beb6da878a92a158c0992e0fdd0b61e687",
+    "datasets/real_world/phase4/manifest.json": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+    "datasets/results/phase4/results.jsonl": "c195cdce85640cb9b6f0a0f08f5722e0c4735dcdd22b75df3597a72b85c1ebee",
+    "datasets/results/phase4/results.csv": "6a62e3a09907282e7af293563e13361be5ea2dbaa7c81e34574e17e00fce7555",
+    "datasets/results/phase4/manifest.json": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+    "datasets/results/phase4/run.json": "099380fa4d687d1bad06019f69b67a3bb9be375d2ed5918113e265f767930601",
+    "datasets/results/phase4/native_results.jsonl": "692a57675acc5731d100d9421d68d7032f093ac926ec43ffea4db74f03601f17",
+    "datasets/results/phase4/native_results.csv": "2a4ec3975f6392fcc76d6bdbfbdc76c803702259412fb92b96278072d8133442"
+  },
+  "analysis_specification_sha256": "7ea3df8a65729304a5791f48999264848ee39b99cbbe0cf404ab6d3fd22c647a",
+  "artifacts": {
+    "category_bootstrap_draws.csv": "2bd586ff8eb7f863ac9b99f998e2862f53e2bb9077048302e9c86ec3490b6629",
+    "category_cluster_counts.csv": "96c8d0bdb09b9ab9b731e2109d9392d221dbcbabae4d271c50c384b5efc30c0e",
+    "category_treatment.csv": "98d60799f474af4e5e3f411cacee2e8bd6f2a4d096a6fe83c56df3c7d5775721",
+    "controlled_by_category.csv": "f80099594a86b5cfce95d6326cd41dac7dd4ea8cfc442566e1cc83ae9e48b85f",
+    "controlled_by_family.csv": "96ea2b687f895b164e8d44bb769af6c570a15a88b61b1c5f35394c3129c3bfd2",
+    "controlled_by_suppression_type.csv": "d05d77203f3718b1512736274d556bdac53d19f26cf766cadb741fe03fe60e55",
+    "controlled_by_treatment.csv": "c7be63fd75e73bf3af899bf9e869dda3d811e515bcf3026db62634b077784ed1",
+    "controlled_pairs.csv": "8c8827c17cdedd6e86deaf5f6232b34e9e44e5d6bd1d70b97dc7779bf2e3c009",
+    "family_bootstrap_draws.csv": "8a9609cd18e4fc99affed1ef0be235289e21a895bf3750718378df33e7de0faf",
+    "family_cluster_counts.csv": "29bb0b633fbdd0203434b6e88cf3772f28ca9305bb14e89fddf9bb252cf49869",
+    "family_wilson_model_sensitivity.csv": "f3e7d9628d03c3eb4e9575e781265f0021b849124d3d95a8355278e826f21dd2",
+    "figure_captions.json": "01b3bbec3282aae02214015febd71742e9c22cac43cf5e73c60e6d3c15390adc",
+    "integrity.json": "73ee4a8f7d7fc9d76f7f34b6d11fdc244452a3fcd1701906b39291c78eb9b7e3",
+    "metrics.json": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+    "natural_by_repository.csv": "d30687fd91c0cf73930d34955367d57402a7d321a51c6ca92f0f25568dbd4b39",
+    "natural_finite_frame_bounds.csv": "304ad4f8975bcfebb87feb19ff5249748e5a36db71975bcadcb0368980edf06a",
+    "natural_pairs.csv": "79a2861b14c6fc31e6aa7183594cfd6876c41d4b7fa05ec40913ec93e541fea8",
+    "observations.csv": "727e4a55e208abbe0d6bac32270df128f0de988b510fef1578ddee63952954e7",
+    "primary_summary.csv": "51969e7d61cc53ce3a3e1c9597018f2de94a3c1e769ae6445acf7c17f1be17cd"
+  },
+  "figures": {
+    "figure1_outcomes.png": "afb52b61d726ec5a36daa7ba81d4e5e0a371dbef2b5e432ce227d02091f05dfb",
+    "figure1_outcomes.svg": "4c679c3c260692a581da720d22f552beb4dc8fdcc3e92ea6b9a50688803dd01a",
+    "figure2_paired_comparison.png": "e15d3532a93893e912b53de94470cd2209d8aa5bf5833358000add8312fac1b4",
+    "figure2_paired_comparison.svg": "8e516656414ee20216869faf525839782b05b46a9b8bbef6c931faf271e16e9d",
+    "figure3_structural_patterns.png": "51839f07c42f75210c3ff51a4a21b4a6d6bf64303d2ee4a8e9dfde6a2607f85c",
+    "figure3_structural_patterns.svg": "b84d9b6d6193d6fde85e81c608764cb6bcad9fb218d27c9ef85e3af2281c1177",
+    "figure4_natural_relevance.png": "748eb063b0a5a979d2455973280692435b64fbe5628ccaf7eb34aa4c8b90fe4c",
+    "figure4_natural_relevance.svg": "c2575a264b83194366960de55209de016b6642f64014bee648c69718112db36a"
+  }
+}

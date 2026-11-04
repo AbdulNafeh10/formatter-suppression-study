@@ -1,0 +1,1856 @@
+{
+  "figure1_reviewed_outcomes": {
+    "labels": [
+      "Original automatic: Black",
+      "Original automatic: Ruff",
+      "Supplementary reviewed: Black",
+      "Supplementary reviewed: Ruff"
+    ],
+    "summaries": [
+      {
+        "scheduled": 200,
+        "measurement_complete": 200,
+        "attributable": 184,
+        "unresolved": 16,
+        "outcomes": {
+          "Preserved": 116,
+          "Newly hidden": 50,
+          "Newly exposed": 18,
+          "Mixed": 0,
+          "Diagnostic changed": 0,
+          "AST changed": 0,
+          "Ambiguous": 16,
+          "Execution failure": 0
+        },
+        "outcome_proportions_scheduled": {
+          "Preserved": 0.58,
+          "Newly hidden": 0.25,
+          "Newly exposed": 0.09,
+          "Mixed": 0.0,
+          "Diagnostic changed": 0.0,
+          "AST changed": 0.0,
+          "Ambiguous": 0.08,
+          "Execution failure": 0.0
+        },
+        "confirmed_drift": 68,
+        "confirmed_fraction_scheduled": 0.34,
+        "confirmed_fraction_resolved": 0.3695652173913043,
+        "finite_observed_corpus_bounds": [
+          0.34,
+          0.42
+        ],
+        "newly_hidden_diagnostics": 50,
+        "newly_exposed_diagnostics": 18,
+        "text_changed": 133,
+        "text_unchanged": 67,
+        "text_changed_preserved": 57,
+        "changed_and_resolved": 125,
+        "changed_resolved_original_suppression": 96,
+        "original_zero_underlying": 0,
+        "original_with_suppression": 150
+      },
+      {
+        "scheduled": 200,
+        "measurement_complete": 200,
+        "attributable": 184,
+        "unresolved": 16,
+        "outcomes": {
+          "Preserved": 149,
+          "Newly hidden": 14,
+          "Newly exposed": 21,
+          "Mixed": 0,
+          "Diagnostic changed": 0,
+          "AST changed": 0,
+          "Ambiguous": 16,
+          "Execution failure": 0
+        },
+        "outcome_proportions_scheduled": {
+          "Preserved": 0.745,
+          "Newly hidden": 0.07,
+          "Newly exposed": 0.105,
+          "Mixed": 0.0,
+          "Diagnostic changed": 0.0,
+          "AST changed": 0.0,
+          "Ambiguous": 0.08,
+          "Execution failure": 0.0
+        },
+        "confirmed_drift": 35,
+        "confirmed_fraction_scheduled": 0.175,
+        "confirmed_fraction_resolved": 0.19021739130434784,
+        "finite_observed_corpus_bounds": [
+          0.175,
+          0.255
+        ],
+        "newly_hidden_diagnostics": 14,
+        "newly_exposed_diagnostics": 21,
+        "text_changed": 118,
+        "text_unchanged": 82,
+        "text_changed_preserved": 75,
+        "changed_and_resolved": 110,
+        "changed_resolved_original_suppression": 81,
+        "original_zero_underlying": 0,
+        "original_with_suppression": 150
+      },
+      {
+        "scheduled": 200,
+        "measurement_complete": 200,
+        "attributable": 200,
+        "unresolved": 0,
+        "outcomes": {
+          "Preserved": 132,
+          "Newly hidden": 50,
+          "Newly exposed": 18,
+          "Mixed": 0,
+          "Diagnostic changed": 0,
+          "AST changed": 0,
+          "Ambiguous": 0,
+          "Execution failure": 0
+        },
+        "outcome_proportions_scheduled": {
+          "Preserved": 0.66,
+          "Newly hidden": 0.25,
+          "Newly exposed": 0.09,
+          "Mixed": 0.0,
+          "Diagnostic changed": 0.0,
+          "AST changed": 0.0,
+          "Ambiguous": 0.0,
+          "Execution failure": 0.0
+        },
+        "confirmed_drift": 68,
+        "confirmed_fraction_scheduled": 0.34,
+        "confirmed_fraction_resolved": 0.34,
+        "finite_observed_corpus_bounds": [
+          0.34,
+          0.34
+        ],
+        "newly_hidden_diagnostics": 50,
+        "newly_exposed_diagnostics": 18,
+        "text_changed": 133,
+        "text_unchanged": 67,
+        "text_changed_preserved": 65,
+        "changed_and_resolved": 133,
+        "changed_resolved_original_suppression": 102,
+        "original_zero_underlying": 0,
+        "original_with_suppression": 150
+      },
+      {
+        "scheduled": 200,
+        "measurement_complete": 200,
+        "attributable": 200,
+        "unresolved": 0,
+        "outcomes": {
+          "Preserved": 165,
+          "Newly hidden": 14,
+          "Newly exposed": 21,
+          "Mixed": 0,
+          "Diagnostic changed": 0,
+          "AST changed": 0,
+          "Ambiguous": 0,
+          "Execution failure": 0
+        },
+        "outcome_proportions_scheduled": {
+          "Preserved": 0.825,
+          "Newly hidden": 0.07,
+          "Newly exposed": 0.105,
+          "Mixed": 0.0,
+          "Diagnostic changed": 0.0,
+          "AST changed": 0.0,
+          "Ambiguous": 0.0,
+          "Execution failure": 0.0
+        },
+        "confirmed_drift": 35,
+        "confirmed_fraction_scheduled": 0.175,
+        "confirmed_fraction_resolved": 0.175,
+        "finite_observed_corpus_bounds": [
+          0.175,
+          0.175
+        ],
+        "newly_hidden_diagnostics": 14,
+        "newly_exposed_diagnostics": 21,
+        "text_changed": 118,
+        "text_unchanged": 82,
+        "text_changed_preserved": 83,
+        "changed_and_resolved": 118,
+        "changed_resolved_original_suppression": 87,
+        "original_zero_underlying": 0,
+        "original_with_suppression": 150
+      }
+    ]
+  },
+  "figure2_reviewed_pairs": {
+    "family_counts": [
+      {
+        "input_family_black": "call_positional",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "call_keywords_long",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "call_nested",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "list_short",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "list_long",
+        "black": 5,
+        "ruff": 5,
+        "n": 8
+      },
+      {
+        "input_family_black": "tuple_plain",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "tuple_starred",
+        "black": 2,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "dict_pairs",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "dict_unpacking",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "binary_short",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "binary_long",
+        "black": 5,
+        "ruff": 5,
+        "n": 8
+      },
+      {
+        "input_family_black": "boolean_nested",
+        "black": 5,
+        "ruff": 2,
+        "n": 8
+      },
+      {
+        "input_family_black": "conditional",
+        "black": 5,
+        "ruff": 5,
+        "n": 8
+      },
+      {
+        "input_family_black": "list_comprehension",
+        "black": 5,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "dict_comprehension",
+        "black": 5,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "generator_expression",
+        "black": 5,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "function_defaults",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "function_locals",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "import_multiple",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "import_from",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "semicolon_module",
+        "black": 3,
+        "ruff": 3,
+        "n": 8
+      },
+      {
+        "input_family_black": "semicolon_function",
+        "black": 3,
+        "ruff": 3,
+        "n": 8
+      },
+      {
+        "input_family_black": "nested_container",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "fstring_boundary",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      },
+      {
+        "input_family_black": "exception_binding_boundary",
+        "black": 0,
+        "ruff": 0,
+        "n": 8
+      }
+    ],
+    "matrix": [
+      [
+        132,
+        0
+      ],
+      [
+        33,
+        35
+      ]
+    ],
+    "intervals": {
+      "family": {
+        "clusters": 25,
+        "paired_cases": 200,
+        "seed": 20261103,
+        "replicates": 20000,
+        "level": 0.95,
+        "method": "paired whole-cluster percentile bootstrap; linear quantiles",
+        "interpretation": "conditional exchangeable-cluster model sensitivity; not ecosystem coverage",
+        "statistics": {
+          "black_rate": {
+            "estimate": 0.34,
+            "lower": 0.225,
+            "upper": 0.45
+          },
+          "ruff_rate": {
+            "estimate": 0.175,
+            "lower": 0.095,
+            "upper": 0.26
+          },
+          "black_minus_ruff": {
+            "estimate": 0.165,
+            "lower": 0.08000000000000002,
+            "upper": 0.255
+          }
+        }
+      },
+      "category": {
+        "clusters": 13,
+        "paired_cases": 200,
+        "seed": 20261104,
+        "replicates": 20000,
+        "level": 0.95,
+        "method": "paired whole-cluster percentile bootstrap; linear quantiles",
+        "interpretation": "conditional exchangeable-cluster model sensitivity; not ecosystem coverage",
+        "statistics": {
+          "black_rate": {
+            "estimate": 0.34,
+            "lower": 0.19021739130434784,
+            "upper": 0.4943181818181818
+          },
+          "ruff_rate": {
+            "estimate": 0.175,
+            "lower": 0.08189655172413793,
+            "upper": 0.2916666666666667
+          },
+          "black_minus_ruff": {
+            "estimate": 0.165,
+            "lower": 0.04891304347826089,
+            "upper": 0.30288461538461536
+          }
+        }
+      }
+    }
+  },
+  "figure3_reviewed_patterns": [
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_calls",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "nested_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "specific_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "blanket_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "multicode_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "lists",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "tuples",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "specific_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "blanket_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "multicode_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "dictionaries",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "multiline_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "long_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "conditional_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "none",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "specific_first",
+      "drift": 3,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "blanket_first",
+      "drift": 3,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "multicode_first",
+      "drift": 3,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "specific_last",
+      "drift": 3,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "blanket_last",
+      "drift": 3,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "comprehensions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "function_definitions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "imports",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "specific_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "blanket_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "multicode_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "multiple_statements",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "black",
+      "category": "oracle_boundaries",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_calls",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "nested_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "lists",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "tuples",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "specific_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "blanket_last",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "dictionaries",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiline_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "long_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "none",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "specific_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "blanket_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "multicode_first",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "specific_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "blanket_last",
+      "drift": 1,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "conditional_expressions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 1
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "none",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "comprehensions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 3
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "function_definitions",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "imports",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "specific_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "blanket_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "multicode_first",
+      "drift": 2,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "multiple_statements",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "none",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "standalone_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "specific_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "blanket_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "multicode_first",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "specific_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "blanket_last",
+      "drift": 0,
+      "n": 2
+    },
+    {
+      "formatter": "ruff",
+      "category": "oracle_boundaries",
+      "mode": "file_specific",
+      "drift": 0,
+      "n": 2
+    }
+  ]
+}

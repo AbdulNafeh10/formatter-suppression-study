@@ -1,0 +1,394 @@
+{
+  "classification": "Preserved",
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[42].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[42].body[0].body[0].names[0]",
+        "node_context": "alias(name='dotenv')",
+        "construct_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            497,
+            15
+          ],
+          "end": [
+            497,
+            21
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 22,
+            "row": 497
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-q6dj2_tc\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 497
+          },
+          "message": "`dotenv` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 497,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      {
+        "identity": "F401@$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "node_context": "alias(name='cryptography')",
+        "construct_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            816,
+            27
+          ],
+          "end": [
+            816,
+            39
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 40,
+            "row": 816
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-q6dj2_tc\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 28,
+            "row": 816
+          },
+          "message": "`cryptography` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 816,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[42].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[42].body[0].body[0].names[0]",
+        "node_context": "alias(name='dotenv')",
+        "construct_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            497,
+            15
+          ],
+          "end": [
+            497,
+            21
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 22,
+            "row": 497
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ch0fhc0h\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 497
+          },
+          "message": "`dotenv` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 497,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      {
+        "identity": "F401@$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "node_context": "alias(name='cryptography')",
+        "construct_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            816,
+            27
+          ],
+          "end": [
+            816,
+            39
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 40,
+            "row": 816
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ch0fhc0h\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 28,
+            "row": 816
+          },
+          "message": "`cryptography` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 816,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[42].body[0].body[0].names[0]",
+      "original": {
+        "identity": "F401@$.body[42].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[42].body[0].body[0].names[0]",
+        "node_context": "alias(name='dotenv')",
+        "construct_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            497,
+            15
+          ],
+          "end": [
+            497,
+            21
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 22,
+            "row": 497
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-q6dj2_tc\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 497
+          },
+          "message": "`dotenv` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 497,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[42].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[42].body[0].body[0].names[0]",
+        "node_context": "alias(name='dotenv')",
+        "construct_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "dotenv"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            497,
+            15
+          ],
+          "end": [
+            497,
+            21
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 22,
+            "row": 497
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ch0fhc0h\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 16,
+            "row": 497
+          },
+          "message": "`dotenv` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 497,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    },
+    {
+      "identity": "F401@$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+      "original": {
+        "identity": "F401@$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "node_context": "alias(name='cryptography')",
+        "construct_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            816,
+            27
+          ],
+          "end": [
+            816,
+            39
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 40,
+            "row": 816
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-q6dj2_tc\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 28,
+            "row": 816
+          },
+          "message": "`cryptography` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 816,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[48].body[3].body[1].handlers[0].body[1].body[0].body[0].names[0]",
+        "node_context": "alias(name='cryptography')",
+        "construct_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "cryptography"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            816,
+            27
+          ],
+          "end": [
+            816,
+            39
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 40,
+            "row": 816
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-ch0fhc0h\\study_input.py",
+          "fix": null,
+          "location": {
+            "column": 28,
+            "row": 816
+          },
+          "message": "`cryptography` imported but unused; consider using `importlib.util.find_spec` to test for availability",
+          "noqa_row": 816,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "explanation": "Underlying diagnostics match uniquely (2); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

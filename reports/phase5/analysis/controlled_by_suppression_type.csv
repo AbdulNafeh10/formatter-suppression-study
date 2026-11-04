@@ -1,0 +1,13 @@
+suppression_type,formatter,scheduled,measurement_complete,attributable,unresolved,outcome_preserved,outcome_newly_hidden,outcome_newly_exposed,outcome_mixed,outcome_diagnostic_changed,outcome_ast_changed,outcome_ambiguous,outcome_execution_failure,confirmed_drift,confirmed_fraction_scheduled,confirmed_fraction_resolved,newly_hidden_diagnostics,newly_exposed_diagnostics,text_changed,text_unchanged,text_changed_preserved,changed_and_resolved,changed_resolved_original_suppression,original_zero_underlying,original_with_suppression
+blanket,black,50,50,46,4,19,20,7,0,0,0,4,0,27,0.54000000000000004,0.58695652173913049,20,7,34,16,5,32,32,0,50
+blanket,ruff,50,50,46,4,31,7,8,0,0,0,4,0,15,0.29999999999999999,0.32608695652173914,7,8,28,22,11,26,26,0,50
+file_specific,black,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,17,8,16,16,16,0,25
+file_specific,ruff,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,17,8,16,16,16,0,25
+multicode,black,25,25,23,2,9,10,4,0,0,0,2,0,14,0.56000000000000005,0.60869565217391308,10,4,17,8,2,16,16,0,25
+multicode,ruff,25,25,23,2,18,0,5,0,0,0,2,0,5,0.20000000000000001,0.21739130434782608,0,5,14,11,8,13,13,0,25
+none,black,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,17,8,16,16,0,0,0
+none,ruff,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,17,8,16,16,0,0,0
+specific,black,50,50,46,4,19,20,7,0,0,0,4,0,27,0.54000000000000004,0.58695652173913049,20,7,34,16,5,32,32,0,50
+specific,ruff,50,50,46,4,31,7,8,0,0,0,4,0,15,0.29999999999999999,0.32608695652173914,7,8,28,22,11,26,26,0,50
+standalone,black,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,14,11,13,13,0,0,0
+standalone,ruff,25,25,23,2,23,0,0,0,0,0,2,0,0,0,0,0,0,14,11,13,13,0,0,0

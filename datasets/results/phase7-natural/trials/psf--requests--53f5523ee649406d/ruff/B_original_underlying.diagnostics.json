@@ -1,0 +1,68 @@
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 19,
+      "row": 35
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-zp162gct\\study_input.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from .models import (  # noqa: F401\n    DEFAULT_REDIRECT_LIMIT,\n    PreparedRequest,\n    Request,\n)",
+          "end_location": {
+            "column": 2,
+            "row": 38
+          },
+          "location": {
+            "column": 1,
+            "row": 33
+          }
+        }
+      ],
+      "message": "Remove unused import: `.models.REDIRECT_STATI`"
+    },
+    "location": {
+      "column": 5,
+      "row": 35
+    },
+    "message": "`.models.REDIRECT_STATI` imported but unused",
+    "noqa_row": 35,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 26,
+      "row": 50
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-zp162gct\\study_input.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from .utils import (  # noqa: F401\n    DEFAULT_PORTS,\n    default_headers,\n    get_auth_from_url,\n    get_environ_proxies,\n    get_netrc_auth,\n    requote_uri,\n    resolve_proxies,\n    rewind_body,\n    to_key_val_list,\n)",
+          "end_location": {
+            "column": 2,
+            "row": 52
+          },
+          "location": {
+            "column": 1,
+            "row": 41
+          }
+        }
+      ],
+      "message": "Remove unused import: `.utils.should_bypass_proxies`"
+    },
+    "location": {
+      "column": 5,
+      "row": 50
+    },
+    "message": "`.utils.should_bypass_proxies` imported but unused",
+    "noqa_row": 50,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  }
+]

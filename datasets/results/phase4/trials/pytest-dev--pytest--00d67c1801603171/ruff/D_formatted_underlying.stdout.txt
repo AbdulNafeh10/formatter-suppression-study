@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 15,
+      "row": 532
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-8js5skhp\\study_input.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 533
+          },
+          "location": {
+            "column": 1,
+            "row": 532
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `topdir`"
+    },
+    "location": {
+      "column": 9,
+      "row": 532
+    },
+    "message": "Local variable `topdir` is assigned to but never used",
+    "noqa_row": 532,
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "black_version": true,
+  "ruff_version": true,
+  "pytest_version": true,
+  "black_help": true,
+  "ruff_check_help": true,
+  "ruff_format_help": true,
+  "pip_check": true
+}

@@ -1,0 +1,8 @@
+{
+  "classification": "AST changed",
+  "anchors": null,
+  "matched_diagnostic_identities": [],
+  "underlying_changes": null,
+  "matching_errors": [],
+  "explanation": "Strict AST equivalence failed; suppression attribution blocked."
+}

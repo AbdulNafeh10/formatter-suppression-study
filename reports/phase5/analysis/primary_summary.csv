@@ -1,0 +1,9 @@
+dataset,repository,formatter,scheduled,measurement_complete,attributable,unresolved,outcome_preserved,outcome_newly_hidden,outcome_newly_exposed,outcome_mixed,outcome_diagnostic_changed,outcome_ast_changed,outcome_ambiguous,outcome_execution_failure,confirmed_drift,confirmed_fraction_scheduled,confirmed_fraction_resolved,newly_hidden_diagnostics,newly_exposed_diagnostics,text_changed,text_unchanged,text_changed_preserved,changed_and_resolved,changed_resolved_original_suppression,original_zero_underlying,original_with_suppression
+controlled,controlled_suite,black,200,200,184,16,116,50,18,0,0,0,16,0,68,0.34000000000000002,0.36956521739130432,50,18,133,67,57,125,96,0,150
+controlled,controlled_suite,ruff,200,200,184,16,149,14,21,0,0,0,16,0,35,0.17499999999999999,0.19021739130434784,14,21,118,82,75,110,81,0,150
+natural,pallets/flask,black,13,13,12,1,12,0,0,0,0,1,0,0,0,0,0,0,0,1,12,0,0,0,9,4
+natural,pallets/flask,ruff,13,13,13,0,13,0,0,0,0,0,0,0,0,0,0,0,0,1,12,1,1,0,9,4
+natural,psf/requests,black,7,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,3,4,3,3,3,1,5
+natural,psf/requests,ruff,7,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,2,5,2,2,2,1,5
+natural,pytest-dev/pytest,black,20,20,18,2,18,0,0,0,0,2,0,0,0,0,0,0,0,2,18,0,0,0,12,8
+natural,pytest-dev/pytest,ruff,20,20,19,1,19,0,0,0,0,1,0,0,0,0,0,0,0,6,14,5,5,2,12,8

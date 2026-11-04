@@ -1,0 +1,7 @@
+{
+  "reason": "The first CLI run used the original metadata defaults. Its supplied pair was copied from the AI-assisted Phase 1 fixture; ai_assisted=false in the original result is a default, not a verified source-origin label.",
+  "corrected_ai_assisted": true,
+  "corrected_dataset_origin": "phase1-controlled-feasibility",
+  "original_evidence_retained": true,
+  "included_in_primary_feasibility_trials": false
+}

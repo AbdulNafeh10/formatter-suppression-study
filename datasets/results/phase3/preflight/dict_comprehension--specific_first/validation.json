@@ -1,0 +1,8 @@
+{
+  "case_id": "dict_comprehension--specific_first",
+  "eligible": true,
+  "error": null,
+  "diagnostic_count": 2,
+  "syntax_valid": true,
+  "duplicate_of": null
+}

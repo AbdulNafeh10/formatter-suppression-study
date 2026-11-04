@@ -1,0 +1,27 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--isolated",
+    "--no-cache",
+    "--select",
+    "F401,F821,F841",
+    "--target-version",
+    "py311",
+    "--output-format",
+    "json",
+    "--no-fix",
+    "--stdin-filename",
+    "study_input.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"F841\",\n    \"end_location\": {\n      \"column\": 10,\n      \"row\": 2\n    },\n    \"filename\": \"<home>\\\\AppData\\\\Local\\\\Temp\\\\suppression-study-o44gn548\\\\study_input.py\",\n    \"fix\": {\n      \"applicability\": \"unsafe\",\n      \"edits\": [\n        {\n          \"content\": \"\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 3\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 2\n          }\n        }\n      ],\n      \"message\": \"Remove assignment to unused variable `first`\"\n    },\n    \"location\": {\n      \"column\": 5,\n      \"row\": 2\n    },\n    \"message\": \"Local variable `first` is assigned to but never used\",\n    \"noqa_row\": 2,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-variable\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"F841\",\n    \"end_location\": {\n      \"column\": 11,\n      \"row\": 3\n    },\n    \"filename\": \"<home>\\\\AppData\\\\Local\\\\Temp\\\\suppression-study-o44gn548\\\\study_input.py\",\n    \"fix\": {\n      \"applicability\": \"unsafe\",\n      \"edits\": [\n        {\n          \"content\": \"\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 4\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 3\n          }\n        }\n      ],\n      \"message\": \"Remove assignment to unused variable `second`\"\n    },\n    \"location\": {\n      \"column\": 5,\n      \"row\": 3\n    },\n    \"message\": \"Local variable `second` is assigned to but never used\",\n    \"noqa_row\": 3,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-variable\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-o44gn548"
+}

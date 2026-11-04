@@ -1,0 +1,270 @@
+{
+  "classification": "Preserved",
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[1].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[1].names[0]",
+        "node_context": "alias(name='TestCase')",
+        "construct_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            21
+          ],
+          "end": [
+            3,
+            29
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 30,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-rn3x8y14\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 4
+                },
+                "location": {
+                  "column": 1,
+                  "row": 3
+                }
+              }
+            ],
+            "message": "Remove unused import: `unittest.TestCase`"
+          },
+          "location": {
+            "column": 22,
+            "row": 3
+          },
+          "message": "`unittest.TestCase` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[1].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[1].names[0]",
+        "node_context": "alias(name='TestCase')",
+        "construct_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            21
+          ],
+          "end": [
+            3,
+            29
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 30,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-5379n826\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 4
+                },
+                "location": {
+                  "column": 1,
+                  "row": 3
+                }
+              }
+            ],
+            "message": "Remove unused import: `unittest.TestCase`"
+          },
+          "location": {
+            "column": 22,
+            "row": 3
+          },
+          "message": "`unittest.TestCase` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[1].names[0]",
+      "original": {
+        "identity": "F401@$.body[1].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[1].names[0]",
+        "node_context": "alias(name='TestCase')",
+        "construct_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            21
+          ],
+          "end": [
+            3,
+            29
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 30,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-rn3x8y14\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 4
+                },
+                "location": {
+                  "column": 1,
+                  "row": 3
+                }
+              }
+            ],
+            "message": "Remove unused import: `unittest.TestCase`"
+          },
+          "location": {
+            "column": 22,
+            "row": 3
+          },
+          "message": "`unittest.TestCase` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[1].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[1].names[0]",
+        "node_context": "alias(name='TestCase')",
+        "construct_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "TestCase"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            3,
+            21
+          ],
+          "end": [
+            3,
+            29
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 30,
+            "row": 3
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-5379n826\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 4
+                },
+                "location": {
+                  "column": 1,
+                  "row": 3
+                }
+              }
+            ],
+            "message": "Remove unused import: `unittest.TestCase`"
+          },
+          "location": {
+            "column": 22,
+            "row": 3
+          },
+          "message": "`unittest.TestCase` imported but unused",
+          "noqa_row": 3,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "explanation": "Underlying diagnostics match uniquely (1); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

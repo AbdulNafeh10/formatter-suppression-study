@@ -1,0 +1,215 @@
+[
+  {
+    "id": "hu_supplied",
+    "requested_url": "https://people.ece.ubc.ca/mjulia/publications/Suppressed_Static_Analysis_Warnings_FSE2025.pdf",
+    "kind": "pdf",
+    "status": "retrieved",
+    "final_url": "https://people.ece.ubc.ca/mjulia/publications/Suppressed_Static_Analysis_Warnings_FSE2025.pdf",
+    "bytes": 737199,
+    "sha256": "5e7b9289497d88681085a38eb2d4cafb00b288548c51d83c08411f830fbd5716"
+  },
+  {
+    "id": "hu_final",
+    "requested_url": "https://software-lab.org/publications/fse2025_suppressions.pdf",
+    "kind": "pdf",
+    "status": "retrieved",
+    "final_url": "https://software-lab.org/publications/fse2025_suppressions.pdf",
+    "bytes": 742019,
+    "sha256": "6f63aa3639a6c94bec969c2dc5b05b7002e40de6dbd4c3c31bee59a2bb909e82"
+  },
+  {
+    "id": "statictracker",
+    "requested_url": "https://jinqiuyang.github.io/papers/staticdiff-tse24.pdf",
+    "kind": "pdf",
+    "status": "retrieved",
+    "final_url": "https://jinqiuyang.github.io/papers/staticdiff-tse24.pdf",
+    "bytes": 3912976,
+    "sha256": "0238428fd66bbbf8d58af6dceef8d27f89135fd719ceb70aca0eab440f9a69c1"
+  },
+  {
+    "id": "mckeeman",
+    "requested_url": "https://vmssoftware.com/docs/dtj-v10-01-1998.pdf",
+    "kind": "pdf",
+    "status": "retrieved",
+    "final_url": "https://vmssoftware.com/docs/dtj-v10-01-1998.pdf",
+    "bytes": 11064482,
+    "sha256": "15c857698d71766046495ed86dd3612d47cb40ba0e2909c58cbbf6ec1b715cce"
+  },
+  {
+    "id": "hu_crossref",
+    "requested_url": "https://api.crossref.org/works/10.1145/3715729",
+    "kind": "metadata",
+    "status": "retrieved",
+    "final_url": "https://api.crossref.org/works/10.1145/3715729",
+    "bytes": 14511,
+    "sha256": "2488e9c536db8a1c4f304b1e4118d4007e22d2b3aae64478c737379732dcded8",
+    "bibliographic_metadata": {
+      "title": [
+        "An Empirical Study of Suppressed Static Analysis Warnings"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1470-0839",
+          "authenticated-orcid": false,
+          "given": "Huimin",
+          "family": "Hu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Stuttgart, Stuttgart, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6531-5420",
+          "authenticated-orcid": false,
+          "given": "Yingying",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of British Columbia, Vancouver, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7280-1614",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Rubin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of British Columbia, Vancouver, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1623-498X",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Pradel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Stuttgart, Stuttgart, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            19
+          ]
+        ]
+      },
+      "volume": "2",
+      "issue": "FSE",
+      "page": "290-311",
+      "article-number": null,
+      "DOI": "10.1145/3715729",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "container-title": [
+        "Proceedings of the ACM on Software Engineering"
+      ],
+      "URL": "https://doi.org/10.1145/3715729"
+    }
+  },
+  {
+    "id": "statictracker_crossref",
+    "requested_url": "https://api.crossref.org/works/10.1109/TSE.2024.3358283",
+    "kind": "metadata",
+    "status": "retrieved",
+    "final_url": "https://api.crossref.org/works/10.1109/TSE.2024.3358283",
+    "bytes": 6434,
+    "sha256": "ff510b87c55fadff6f685dcd52e934df8c69b9cef09f9b264c37b8a23878fae5",
+    "bibliographic_metadata": {
+      "title": [
+        "Tracking the Evolution of Static Code Warnings: The State-of-the-Art and a Better Approach"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8828-632X",
+          "authenticated-orcid": false,
+          "given": "Junjie",
+          "family": "Li",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Software Engineering, Concordia University, Montreal, QC, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4282-406X",
+          "authenticated-orcid": false,
+          "given": "Jinqiu",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Software Engineering, Concordia University, Montreal, QC, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3
+          ]
+        ]
+      },
+      "volume": "50",
+      "issue": "3",
+      "page": "534-550",
+      "article-number": null,
+      "DOI": "10.1109/tse.2024.3358283",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "URL": "https://doi.org/10.1109/tse.2024.3358283"
+    }
+  }
+]

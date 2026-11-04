@@ -1,0 +1,1 @@
+Module(body=[Assign(targets=[Name(id='value', ctx=Store())], value=Tuple(elts=[Name(id='missing_a', ctx=Load()), Name(id='missing_b', ctx=Load())], ctx=Load()))], type_ignores=[])

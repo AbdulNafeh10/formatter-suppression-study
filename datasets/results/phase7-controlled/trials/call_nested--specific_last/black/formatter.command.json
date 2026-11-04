@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase7-controlled\\trials\\call_nested--specific_last\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "print(\n    tuple([missing_a]),\n    sorted([missing_b]),  # noqa: F821\n)\n",
+  "stderr": "All done! \\u2728 \\U0001f370 \\u2728\r\n1 file left unchanged.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-d8cpt3r0"
+}

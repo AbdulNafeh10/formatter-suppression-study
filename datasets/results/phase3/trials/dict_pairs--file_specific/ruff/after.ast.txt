@@ -1,0 +1,1 @@
+Module(body=[Assign(targets=[Name(id='value', ctx=Store())], value=Dict(keys=[Constant(value='first'), Constant(value='second')], values=[Name(id='missing_a', ctx=Load()), Name(id='missing_b', ctx=Load())]))], type_ignores=[])

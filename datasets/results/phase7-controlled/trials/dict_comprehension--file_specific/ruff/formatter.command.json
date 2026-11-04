@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "format",
+    "--isolated",
+    "--line-length",
+    "88",
+    "--target-version",
+    "py311",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "# ruff: noqa: F821\nvalue = {key: missing_a(key) for key in missing_b}\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-9bakqj08"
+}

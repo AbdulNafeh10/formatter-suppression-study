@@ -1,0 +1,121 @@
+{
+  "classification": "Preserved",
+  "validation_status": "measurement_complete",
+  "configuration_mode": "project-config-sensitivity-selected-rule-subset",
+  "config": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\pyproject.toml",
+  "stdin_filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+  "selected_rules": [
+    "F401",
+    "F821",
+    "F841"
+  ],
+  "error": null,
+  "newly_hidden_count": 0,
+  "newly_exposed_count": 0,
+  "full_native_passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [
+      {
+        "cell": null,
+        "code": "E402",
+        "end_location": {
+          "column": 42,
+          "row": 5
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+        "fix": null,
+        "location": {
+          "column": 1,
+          "row": 5
+        },
+        "message": "Module level import not at top of file",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+      },
+      {
+        "cell": null,
+        "code": "E402",
+        "end_location": {
+          "column": 48,
+          "row": 6
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+        "fix": null,
+        "location": {
+          "column": 1,
+          "row": 6
+        },
+        "message": "Module level import not at top of file",
+        "noqa_row": 6,
+        "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+      }
+    ],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": [
+      {
+        "cell": null,
+        "code": "E402",
+        "end_location": {
+          "column": 42,
+          "row": 5
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+        "fix": null,
+        "location": {
+          "column": 1,
+          "row": 5
+        },
+        "message": "Module level import not at top of file",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+      },
+      {
+        "cell": null,
+        "code": "E402",
+        "end_location": {
+          "column": 48,
+          "row": 6
+        },
+        "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_apps\\blueprintapp\\__init__.py",
+        "fix": null,
+        "location": {
+          "column": 1,
+          "row": 6
+        },
+        "message": "Module level import not at top of file",
+        "noqa_row": 6,
+        "url": "https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"
+      }
+    ]
+  },
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "matched_diagnostic_identities": [],
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "anchors": {
+    "original": [],
+    "formatted": []
+  },
+  "explanation": "Underlying diagnostics match uniquely (0); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality.",
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0
+  },
+  "full_native_counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 2,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 2
+  }
+}

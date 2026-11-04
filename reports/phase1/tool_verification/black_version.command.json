@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--version"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "python -m black, 25.1.0 (compiled: yes)\r\nPython (CPython) 3.11.9\r\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-thdemslo"
+}

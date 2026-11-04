@@ -1,0 +1,43 @@
+{
+  "classification": "AST changed",
+  "validation_status": "measurement_complete",
+  "configuration_mode": "project-config-sensitivity-selected-rule-subset",
+  "config": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\pyproject.toml",
+  "stdin_filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\src\\flask\\app.py",
+  "selected_rules": [
+    "F401",
+    "F821",
+    "F841"
+  ],
+  "error": null,
+  "newly_hidden_count": null,
+  "newly_exposed_count": null,
+  "full_native_passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": []
+  },
+  "matched_diagnostic_identities": [],
+  "underlying_changes": null,
+  "matching_errors": [],
+  "explanation": "Strict AST equivalence failed; suppression attribution blocked.",
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0
+  },
+  "full_native_counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 0,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 0
+  }
+}

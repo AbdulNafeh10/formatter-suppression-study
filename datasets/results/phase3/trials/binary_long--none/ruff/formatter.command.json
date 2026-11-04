@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "format",
+    "--isolated",
+    "--line-length",
+    "88",
+    "--target-version",
+    "py311",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "value = (\n    missing_a\n    + \"A deliberately long string operand intended to provoke line wrapping across the expression\"\n    + missing_b\n    + \"A second deliberately long string operand making a single-line form impossible\"\n)\n",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-f7cl0829"
+}

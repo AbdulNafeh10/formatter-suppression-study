@@ -1,0 +1,25 @@
+{
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\pyproject.toml",
+    "--no-cache",
+    "--no-fix",
+    "--output-format",
+    "json",
+    "--stdin-filename",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_cli.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"I001\",\n    \"end_location\": {\n      \"column\": 38,\n      \"row\": 30\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pallets--flask\\\\tests\\\\test_cli.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"import importlib.metadata\\nimport os\\nimport platform\\nimport ssl\\nimport sys\\nimport types\\nfrom functools import partial\\nfrom pathlib import Path\\n\\nimport click\\nimport pytest\\nfrom _pytest.monkeypatch import notset\\nfrom click.testing import CliRunner\\nfrom flask import Blueprint\\nfrom flask import current_app\\nfrom flask import Flask\\nfrom flask.cli import AppGroup\\nfrom flask.cli import find_best_app\\nfrom flask.cli import FlaskGroup\\nfrom flask.cli import get_version\\nfrom flask.cli import load_dotenv\\nfrom flask.cli import locate_app\\nfrom flask.cli import NoAppException\\nfrom flask.cli import prepare_import\\nfrom flask.cli import run_command\\nfrom flask.cli import ScriptInfo\\nfrom flask.cli import with_appcontext\\n\\n\",\n          \"end_location\": {\n            \"column\": 1,\n            \"row\": 32\n          },\n          \"location\": {\n            \"column\": 1,\n            \"row\": 3\n          }\n        }\n      ],\n      \"message\": \"Organize imports\"\n    },\n    \"location\": {\n      \"column\": 1,\n      \"row\": 3\n    },\n    \"message\": \"Import block is un-sorted or un-formatted\",\n    \"noqa_row\": 3,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unsorted-imports\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"F401\",\n    \"end_location\": {\n      \"column\": 22,\n      \"row\": 523\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pallets--flask\\\\tests\\\\test_cli.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 16,\n      \"row\": 523\n    },\n    \"message\": \"`dotenv` imported but unused; consider using `importlib.util.find_spec` to test for availability\",\n    \"noqa_row\": 523,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-import\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-qqzr84sk"
+}

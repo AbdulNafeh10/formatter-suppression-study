@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 260
+    },
+    "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-2mtbum4k\\study_input.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "pass",
+          "end_location": {
+            "column": 4,
+            "row": 262
+          },
+          "location": {
+            "column": 9,
+            "row": 260
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `c`"
+    },
+    "location": {
+      "column": 9,
+      "row": 260
+    },
+    "message": "Local variable `c` is assigned to but never used",
+    "noqa_row": 262,
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  }
+]

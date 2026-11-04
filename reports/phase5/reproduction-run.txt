@@ -1,0 +1,100 @@
+{
+  "controlled_records": 400,
+  "natural_records": 80,
+  "paired_controlled": {
+    "paired_inputs": 200,
+    "common_resolved": 184,
+    "one_sided_unresolved": 0,
+    "both_unresolved": 16,
+    "matrix_rows_black_columns_ruff_0_1": [
+      [
+        116,
+        0
+      ],
+      [
+        33,
+        35
+      ]
+    ],
+    "contrasts_common_resolved": {
+      "drift": {
+        "black": 68,
+        "ruff": 35,
+        "denominator": 184,
+        "black_minus_ruff": 0.1793478260869565
+      },
+      "hiding": {
+        "black": 50,
+        "ruff": 14,
+        "denominator": 184,
+        "black_minus_ruff": 0.1956521739130435
+      },
+      "exposing": {
+        "black": 18,
+        "ruff": 21,
+        "denominator": 184,
+        "black_minus_ruff": -0.016304347826086956
+      }
+    },
+    "finite_all_scheduled_contrast_bounds": [
+      0.085,
+      0.245
+    ]
+  },
+  "cluster_model_intervals": {
+    "family": {
+      "clusters": 23,
+      "paired_cases": 184,
+      "seed": 20261103,
+      "replicates": 20000,
+      "level": 0.95,
+      "method": "paired whole-cluster percentile bootstrap; linear quantiles",
+      "interpretation": "conditional exchangeable-cluster model sensitivity; not ecosystem coverage",
+      "statistics": {
+        "black_rate": {
+          "estimate": 0.3695652173913043,
+          "lower": 0.25,
+          "upper": 0.483695652173913
+        },
+        "ruff_rate": {
+          "estimate": 0.19021739130434784,
+          "lower": 0.10869565217391304,
+          "upper": 0.2826086956521739
+        },
+        "black_minus_ruff": {
+          "estimate": 0.1793478260869565,
+          "lower": 0.08695652173913043,
+          "upper": 0.2826086956521739
+        }
+      }
+    },
+    "category": {
+      "clusters": 12,
+      "paired_cases": 184,
+      "seed": 20261104,
+      "replicates": 20000,
+      "level": 0.95,
+      "method": "paired whole-cluster percentile bootstrap; linear quantiles",
+      "interpretation": "conditional exchangeable-cluster model sensitivity; not ecosystem coverage",
+      "statistics": {
+        "black_rate": {
+          "estimate": 0.3695652173913043,
+          "lower": 0.22023809523809523,
+          "upper": 0.5227272727272727
+        },
+        "ruff_rate": {
+          "estimate": 0.19021739130434784,
+          "lower": 0.09134615384615384,
+          "upper": 0.3157894736842105
+        },
+        "black_minus_ruff": {
+          "estimate": 0.1793478260869565,
+          "lower": 0.05921052631578949,
+          "upper": 0.3214285714285714
+        }
+      }
+    }
+  },
+  "output": "<repo>\\reports\\phase5\\reproduction",
+  "figures": "<repo>\\reports\\phase5\\reproduction\\figures"
+}

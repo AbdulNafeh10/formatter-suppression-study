@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase3\\trials\\binary_long--standalone_first\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "value = (\n    # noqa: F821\n    missing_a\n    + \"A deliberately long string operand intended to provoke line wrapping across the expression\"\n    + missing_b\n    + \"A second deliberately long string operand making a single-line form impossible\"\n)\n",
+  "stderr": "reformatted -\r\n\r\nAll done! \\u2728 \\U0001f370 \\u2728\r\n1 file reformatted.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-qjcxbg83"
+}

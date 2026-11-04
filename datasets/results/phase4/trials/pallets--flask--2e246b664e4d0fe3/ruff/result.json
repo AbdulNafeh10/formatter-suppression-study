@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "phase": 4,
+  "trial_id": "phase4--pallets--flask--2e246b664e4d0fe3--ruff",
+  "timestamp_utc": "2026-11-03T05:42:24.102959+00:00",
+  "dataset_origin": "public-repository-validation",
+  "ai_assisted": false,
+  "formatter": "ruff",
+  "evidence_path": "<repo>\\datasets\\results\\phase4\\trials\\pallets--flask--2e246b664e4d0fe3\\ruff",
+  "classification": "Preserved",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": true,
+  "formatting_changed": false,
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[2].names[0]",
+      "original": {
+        "identity": "F401@$.body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].names[0]",
+        "node_context": "alias(name='views')",
+        "construct_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            5,
+            23
+          ],
+          "end": [
+            5,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 5
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-02wf_k_a\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 6
+                },
+                "location": {
+                  "column": 1,
+                  "row": 5
+                }
+              }
+            ],
+            "message": "Remove unused import: `js_example.views`"
+          },
+          "location": {
+            "column": 24,
+            "row": 5
+          },
+          "message": "`js_example.views` imported but unused",
+          "noqa_row": 5,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].names[0]",
+        "node_context": "alias(name='views')",
+        "construct_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            5,
+            23
+          ],
+          "end": [
+            5,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 5
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-tunzxedu\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 6
+                },
+                "location": {
+                  "column": 1,
+                  "row": 5
+                }
+              }
+            ],
+            "message": "Remove unused import: `js_example.views`"
+          },
+          "location": {
+            "column": 24,
+            "row": 5
+          },
+          "message": "`js_example.views` imported but unused",
+          "noqa_row": 5,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "newly_hidden_count": 0,
+  "newly_exposed_count": 0,
+  "configuration": {
+    "rules": [
+      "F401",
+      "F821",
+      "F841"
+    ],
+    "target_version": "py311",
+    "line_length": 88,
+    "preview": false,
+    "timeout_seconds": 30,
+    "isolated_lint": true
+  },
+  "error": null,
+  "case_id": "pallets--flask--2e246b664e4d0fe3",
+  "repository": "pallets/flask",
+  "repository_url": "https://github.com/pallets/flask",
+  "repository_commit": "ab8149664182b662453a563161aa89013c806dc9",
+  "repository_tag": "3.1.0",
+  "original_path": "examples/javascript/js_example/__init__.py",
+  "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/examples/javascript/js_example/__init__.py",
+  "file_role": "initializer",
+  "configuration_mode": "standardized-study_input.py",
+  "population_rank": 1,
+  "source_acquisition_method": "immutable GitHub commit archive",
+  "native_config": "contexts/pallets--flask/examples/javascript/pyproject.toml",
+  "reproduction_selected": true,
+  "manifest_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+  "input_structure_sha256": "cd72410e17e11e3d937fc988a4df1e0c984dcd2ab3092be73ef7ba86c0b03749",
+  "input_sha256": "ea2307cfd406f1b66de1537bc11eecc7d9ff2bf098b65befbe52e99a52ca2b09",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "b70e42db1c1c23d2f2833a80fb1d90cc432ef769",
+    "repository_dirty": false,
+    "seed": 20261103,
+    "random_generation": false,
+    "snapshot_scope": "experiment start"
+  },
+  "output_sha256": "ea2307cfd406f1b66de1537bc11eecc7d9ff2bf098b65befbe52e99a52ca2b09",
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 5
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-02wf_k_a\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 6
+              },
+              "location": {
+                "column": 1,
+                "row": 5
+              }
+            }
+          ],
+          "message": "Remove unused import: `js_example.views`"
+        },
+        "location": {
+          "column": 24,
+          "row": 5
+        },
+        "message": "`js_example.views` imported but unused",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 5
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-tunzxedu\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 6
+              },
+              "location": {
+                "column": 1,
+                "row": 5
+              }
+            }
+          ],
+          "message": "Remove unused import: `js_example.views`"
+        },
+        "location": {
+          "column": 24,
+          "row": 5
+        },
+        "message": "`js_example.views` imported but unused",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "suppressed_within_source": {
+    "original": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 5
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-02wf_k_a\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 6
+              },
+              "location": {
+                "column": 1,
+                "row": 5
+              }
+            }
+          ],
+          "message": "Remove unused import: `js_example.views`"
+        },
+        "location": {
+          "column": 24,
+          "row": 5
+        },
+        "message": "`js_example.views` imported but unused",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "formatted": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 5
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-tunzxedu\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 6
+              },
+              "location": {
+                "column": 1,
+                "row": 5
+              }
+            }
+          ],
+          "message": "Remove unused import: `js_example.views`"
+        },
+        "location": {
+          "column": 24,
+          "row": 5
+        },
+        "message": "`js_example.views` imported but unused",
+        "noqa_row": 5,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 1,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 1,
+    "original_suppressed": 1,
+    "formatted_suppressed": 1
+  },
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].names[0]",
+        "node_context": "alias(name='views')",
+        "construct_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            5,
+            23
+          ],
+          "end": [
+            5,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 5
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-02wf_k_a\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 6
+                },
+                "location": {
+                  "column": 1,
+                  "row": 5
+                }
+              }
+            ],
+            "message": "Remove unused import: `js_example.views`"
+          },
+          "location": {
+            "column": 24,
+            "row": 5
+          },
+          "message": "`js_example.views` imported but unused",
+          "noqa_row": 5,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[2].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[2].names[0]",
+        "node_context": "alias(name='views')",
+        "construct_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "views"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            5,
+            23
+          ],
+          "end": [
+            5,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 5
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-tunzxedu\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 6
+                },
+                "location": {
+                  "column": 1,
+                  "row": 5
+                }
+              }
+            ],
+            "message": "Remove unused import: `js_example.views`"
+          },
+          "location": {
+            "column": 24,
+            "row": 5
+          },
+          "message": "`js_example.views` imported but unused",
+          "noqa_row": 5,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "explanation": "Underlying diagnostics match uniquely (1); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

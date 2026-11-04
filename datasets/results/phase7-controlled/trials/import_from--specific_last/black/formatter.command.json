@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "black",
+    "--config",
+    "<repo>\\datasets\\results\\phase7-controlled\\trials\\import_from--specific_last\\black\\black.toml",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0,
+  "stdout": "from os import (\n    path,\n    getcwd,  # noqa: F401\n)\n",
+  "stderr": "All done! \\u2728 \\U0001f370 \\u2728\r\n1 file left unchanged.\r\n",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-6yt07xll"
+}

@@ -1,0 +1,2 @@
+python -m black, 25.1.0 (compiled: yes)
+Python (CPython) 3.11.9

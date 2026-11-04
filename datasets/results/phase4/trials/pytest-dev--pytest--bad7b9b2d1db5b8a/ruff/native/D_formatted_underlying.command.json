@@ -1,0 +1,25 @@
+{
+  "third_party_modification_notice": "Natural-source experiment evidence. Source is from the repository and pinned commit in datasets/real_world/phase4/manifest.json. Requests: Copyright 2019 Kenneth Reitz, Apache-2.0; Flask: Copyright 2010 Pallets, BSD-3-Clause; pytest: Copyright 2004 Holger Krekel and others, MIT. The appropriate upstream terms remain in third_party/. Before-source is unmodified upstream source; after-source and formatter stdout were changed by the named Black/Ruff formatter during the original experiment; AST files are derived representations. Public packaging changed only this container representation, not the decoded UTF-8 bytes. This container carries the modification notice with the modified source. It is not licensed by the project's author-owned MIT grant.",
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\pyproject.toml",
+    "--no-cache",
+    "--no-fix",
+    "--output-format",
+    "json",
+    "--stdin-filename",
+    "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\src\\_pytest\\capture.py",
+    "--ignore-noqa",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"F401\",\n    \"end_location\": {\n      \"column\": 28,\n      \"row\": 77\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\src\\\\_pytest\\\\capture.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 20,\n      \"row\": 77\n    },\n    \"message\": \"`colorama` imported but unused; consider using `importlib.util.find_spec` to test for availability\",\n    \"noqa_row\": 77,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-import\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"F401\",\n    \"end_location\": {\n      \"column\": 24,\n      \"row\": 94\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\src\\\\_pytest\\\\capture.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 16,\n      \"row\": 94\n    },\n    \"message\": \"`readline` imported but unused; consider using `importlib.util.find_spec` to test for availability\",\n    \"noqa_row\": 94,\n    \"url\": \"https://docs.astral.sh/ruff/rules/unused-import\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"RUF021\",\n    \"end_location\": {\n      \"column\": 54,\n      \"row\": 379\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\src\\\\_pytest\\\\capture.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"(hasattr(self, \\\"_old\\\") and repr(self._old))\",\n          \"end_location\": {\n            \"column\": 54,\n            \"row\": 379\n          },\n          \"location\": {\n            \"column\": 13,\n            \"row\": 379\n          }\n        }\n      ],\n      \"message\": \"Parenthesize the `and` subexpression\"\n    },\n    \"location\": {\n      \"column\": 13,\n      \"row\": 379\n    },\n    \"message\": \"Parenthesize `a and b` expressions when chaining `and` and `or` together, to make the precedence clear\",\n    \"noqa_row\": 379,\n    \"url\": \"https://docs.astral.sh/ruff/rules/parenthesize-chained-operators\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"RUF021\",\n    \"end_location\": {\n      \"column\": 54,\n      \"row\": 388\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\src\\\\_pytest\\\\capture.py\",\n    \"fix\": {\n      \"applicability\": \"safe\",\n      \"edits\": [\n        {\n          \"content\": \"(hasattr(self, \\\"_old\\\") and repr(self._old))\",\n          \"end_location\": {\n            \"column\": 54,\n            \"row\": 388\n          },\n          \"location\": {\n            \"column\": 13,\n            \"row\": 388\n          }\n        }\n      ],\n      \"message\": \"Parenthesize the `and` subexpression\"\n    },\n    \"location\": {\n      \"column\": 13,\n      \"row\": 388\n    },\n    \"message\": \"Parenthesize `a and b` expressions when chaining `and` and `or` together, to make the precedence clear\",\n    \"noqa_row\": 388,\n    \"url\": \"https://docs.astral.sh/ruff/rules/parenthesize-chained-operators\"\n  },\n  {\n    \"cell\": null,\n    \"code\": \"PYI024\",\n    \"end_location\": {\n      \"column\": 31,\n      \"row\": 618\n    },\n    \"filename\": \"<repo>\\\\datasets\\\\real_world\\\\phase4\\\\contexts\\\\pytest-dev--pytest\\\\src\\\\_pytest\\\\capture.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 9,\n      \"row\": 618\n    },\n    \"message\": \"Use `typing.NamedTuple` instead of `collections.namedtuple`\",\n    \"noqa_row\": 618,\n    \"url\": \"https://docs.astral.sh/ruff/rules/collections-named-tuple\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-0zfdda9n"
+}

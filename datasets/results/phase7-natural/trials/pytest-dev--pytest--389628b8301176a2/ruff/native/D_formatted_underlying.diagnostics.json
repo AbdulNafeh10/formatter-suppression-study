@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "UP031",
+    "end_location": {
+      "column": 37,
+      "row": 1472
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\test_junitxml.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "\"{classname} {name}\".format(**x)",
+          "end_location": {
+            "column": 37,
+            "row": 1472
+          },
+          "location": {
+            "column": 9,
+            "row": 1472
+          }
+        }
+      ],
+      "message": "Replace with format specifiers"
+    },
+    "location": {
+      "column": 9,
+      "row": 1472
+    },
+    "message": "Use format specifiers instead of percent format",
+    "noqa_row": 1472,
+    "url": "https://docs.astral.sh/ruff/rules/printf-string-formatting"
+  }
+]

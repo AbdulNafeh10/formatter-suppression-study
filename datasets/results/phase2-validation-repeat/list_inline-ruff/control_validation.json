@@ -1,0 +1,13 @@
+{
+  "control_id": "list_inline-ruff",
+  "trial_id": "phase2-validation-repeat-list_inline-ruff",
+  "expected_classification": "Preserved",
+  "observed_classification": "Preserved",
+  "source_and_output_match_frozen_control": true,
+  "classification_agrees": true,
+  "occurrence_states_agree": true,
+  "hidden_count_agrees": true,
+  "exposed_count_agrees": true,
+  "measurement_complete": true,
+  "passed": true
+}

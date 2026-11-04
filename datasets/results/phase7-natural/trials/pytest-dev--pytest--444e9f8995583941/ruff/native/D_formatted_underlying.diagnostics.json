@@ -1,0 +1,19 @@
+[
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 38,
+      "row": 232
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pytest-dev--pytest\\testing\\test_recwarn.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 232
+    },
+    "message": "Function definition does not bind loop variable `warning`",
+    "noqa_row": 232,
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  }
+]

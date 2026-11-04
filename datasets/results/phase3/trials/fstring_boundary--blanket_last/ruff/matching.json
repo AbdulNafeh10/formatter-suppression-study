@@ -1,0 +1,10 @@
+{
+  "classification": "Ambiguous",
+  "anchors": null,
+  "matched_diagnostic_identities": [],
+  "underlying_changes": null,
+  "matching_errors": [
+    "Diagnostic or construct does not align with complete code tokens"
+  ],
+  "explanation": "Reliable correspondence unavailable: Diagnostic or construct does not align with complete code tokens"
+}

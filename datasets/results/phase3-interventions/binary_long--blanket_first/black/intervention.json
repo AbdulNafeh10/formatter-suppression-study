@@ -1,0 +1,12 @@
+{
+  "case_id": "binary_long--blanket_first",
+  "formatter": "black",
+  "oracle_classification": "Newly exposed",
+  "selection": "lexicographically first case per formatter/drift classification",
+  "checks": {
+    "before.py": true,
+    "after.py": true
+  },
+  "error": null,
+  "passed": true
+}

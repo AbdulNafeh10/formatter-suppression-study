@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "phase": 4,
+  "trial_id": "phase7-natural--psf--requests--05180dda5cdc530f--ruff",
+  "timestamp_utc": "2026-11-03T07:14:19.213189+00:00",
+  "dataset_origin": "public-repository-validation",
+  "ai_assisted": false,
+  "formatter": "ruff",
+  "evidence_path": "<repo>\\datasets\\results\\phase7-natural\\trials\\psf--requests--05180dda5cdc530f\\ruff",
+  "classification": "Preserved",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": true,
+  "formatting_changed": true,
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[34].body[1].body[8].names[0]",
+      "original": {
+        "identity": "F401@$.body[34].body[1].body[8].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[34].body[1].body[8].names[0]",
+        "node_context": "alias(name='PoolManager')",
+        "construct_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            93,
+            58
+          ],
+          "end": [
+            93,
+            69
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 70,
+            "row": 93
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3lp241vs\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 94
+                },
+                "location": {
+                  "column": 1,
+                  "row": 93
+                }
+              }
+            ],
+            "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+          },
+          "location": {
+            "column": 59,
+            "row": 93
+          },
+          "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+          "noqa_row": 93,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[34].body[1].body[8].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[34].body[1].body[8].names[0]",
+        "node_context": "alias(name='PoolManager')",
+        "construct_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            93,
+            58
+          ],
+          "end": [
+            93,
+            69
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 70,
+            "row": 93
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-0enkqyjs\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 94
+                },
+                "location": {
+                  "column": 1,
+                  "row": 93
+                }
+              }
+            ],
+            "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+          },
+          "location": {
+            "column": 59,
+            "row": 93
+          },
+          "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+          "noqa_row": 93,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "newly_hidden_count": 0,
+  "newly_exposed_count": 0,
+  "configuration": {
+    "rules": [
+      "F401",
+      "F821",
+      "F841"
+    ],
+    "target_version": "py311",
+    "line_length": 88,
+    "preview": false,
+    "timeout_seconds": 30,
+    "isolated_lint": true
+  },
+  "error": null,
+  "case_id": "psf--requests--05180dda5cdc530f",
+  "repository": "psf/requests",
+  "repository_url": "https://github.com/psf/requests",
+  "repository_commit": "0e322af87745eff34caffe4df68456ebc20d9068",
+  "repository_tag": "v2.32.3",
+  "original_path": "tests/test_requests.py",
+  "source_url": "https://github.com/psf/requests/blob/0e322af87745eff34caffe4df68456ebc20d9068/tests/test_requests.py",
+  "file_role": "tests",
+  "configuration_mode": "standardized-study_input.py",
+  "population_rank": 4,
+  "source_acquisition_method": "immutable GitHub commit archive",
+  "native_config": null,
+  "reproduction_selected": false,
+  "manifest_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+  "input_structure_sha256": "0e9b4cd80255efc262ba497759901ce93a5031b9b89b3119dd2472e903d53ca8",
+  "input_sha256": "8e553d75084306fd04a2b3fd8ec3f7f7578ae1c44c48d96790e56046cbdf5fbf",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "f6a3e0619243008cd8027e11896db0d8c343b69b",
+    "repository_dirty": true,
+    "seed": 20261103,
+    "random_generation": false,
+    "snapshot_scope": "experiment start"
+  },
+  "output_sha256": "896d8c419341a24b99da731f6abd966d792fe086269918b8dd605d6a63928ad7",
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 70,
+          "row": 93
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3lp241vs\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 94
+              },
+              "location": {
+                "column": 1,
+                "row": 93
+              }
+            }
+          ],
+          "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+        },
+        "location": {
+          "column": 59,
+          "row": 93
+        },
+        "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+        "noqa_row": 93,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 70,
+          "row": 93
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-0enkqyjs\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 94
+              },
+              "location": {
+                "column": 1,
+                "row": 93
+              }
+            }
+          ],
+          "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+        },
+        "location": {
+          "column": 59,
+          "row": 93
+        },
+        "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+        "noqa_row": 93,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "suppressed_within_source": {
+    "original": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 70,
+          "row": 93
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3lp241vs\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 94
+              },
+              "location": {
+                "column": 1,
+                "row": 93
+              }
+            }
+          ],
+          "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+        },
+        "location": {
+          "column": 59,
+          "row": 93
+        },
+        "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+        "noqa_row": 93,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "formatted": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 70,
+          "row": 93
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-0enkqyjs\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 94
+              },
+              "location": {
+                "column": 1,
+                "row": 93
+              }
+            }
+          ],
+          "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+        },
+        "location": {
+          "column": 59,
+          "row": 93
+        },
+        "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+        "noqa_row": 93,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 1,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 1,
+    "original_suppressed": 1,
+    "formatted_suppressed": 1
+  },
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[34].body[1].body[8].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[34].body[1].body[8].names[0]",
+        "node_context": "alias(name='PoolManager')",
+        "construct_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            93,
+            58
+          ],
+          "end": [
+            93,
+            69
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 70,
+            "row": 93
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3lp241vs\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 94
+                },
+                "location": {
+                  "column": 1,
+                  "row": 93
+                }
+              }
+            ],
+            "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+          },
+          "location": {
+            "column": 59,
+            "row": 93
+          },
+          "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+          "noqa_row": 93,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[34].body[1].body[8].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[34].body[1].body[8].names[0]",
+        "node_context": "alias(name='PoolManager')",
+        "construct_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "PoolManager"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            93,
+            58
+          ],
+          "end": [
+            93,
+            69
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 70,
+            "row": 93
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-0enkqyjs\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 94
+                },
+                "location": {
+                  "column": 1,
+                  "row": 93
+                }
+              }
+            ],
+            "message": "Remove unused import: `requests.packages.urllib3.poolmanager.PoolManager`"
+          },
+          "location": {
+            "column": 59,
+            "row": 93
+          },
+          "message": "`requests.packages.urllib3.poolmanager.PoolManager` imported but unused",
+          "noqa_row": 93,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "explanation": "Underlying diagnostics match uniquely (1); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

@@ -1,0 +1,1358 @@
+{
+  "scope": "All templated measurements; prose meaning, bibliography, rule IDs and protocol constants require manual review.",
+  "template_sha256": "8ce7a43f484a681ad8b1557f05947cc0f7c9bdc9a82fde0542275f9fdcfda9ca",
+  "report_sha256": "496426793af29dcf7707807776f7bd8b1539808bf83bd3d7c602b5e4399b8f93",
+  "claims": {
+    "B_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 68,
+      "rendered": "68",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        72
+      ]
+    },
+    "B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 116,
+      "rendered": "116",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        66
+      ]
+    },
+    "B_HIDDEN": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Newly hidden"
+      ],
+      "format": "int",
+      "value": 50,
+      "rendered": "50",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        67
+      ]
+    },
+    "B_EXPOSED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "outcomes",
+        "Newly exposed"
+      ],
+      "format": "int",
+      "value": 18,
+      "rendered": "18",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        68
+      ]
+    },
+    "B_SCHEDULED_PCT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "confirmed_fraction_scheduled"
+      ],
+      "format": "pct1",
+      "value": 0.34,
+      "rendered": "34.0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        72
+      ]
+    },
+    "B_RESOLVED_PCT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "confirmed_fraction_resolved"
+      ],
+      "format": "pct2",
+      "value": 0.3695652173913043,
+      "rendered": "36.96",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        72
+      ]
+    },
+    "B_BOUND_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "finite_observed_corpus_bounds",
+        0
+      ],
+      "format": "pct1",
+      "value": 0.34,
+      "rendered": "34.0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "B_BOUND_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "finite_observed_corpus_bounds",
+        1
+      ],
+      "format": "pct1",
+      "value": 0.42,
+      "rendered": "42.0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "B_TEXT_CHANGED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "text_changed"
+      ],
+      "format": "int",
+      "value": 133,
+      "rendered": "133",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        92
+      ]
+    },
+    "B_CHANGED_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 57,
+      "rendered": "57",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        92
+      ]
+    },
+    "R_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 35,
+      "rendered": "35",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        72
+      ]
+    },
+    "R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 149,
+      "rendered": "149",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        66
+      ]
+    },
+    "R_HIDDEN": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Newly hidden"
+      ],
+      "format": "int",
+      "value": 14,
+      "rendered": "14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        67
+      ]
+    },
+    "R_EXPOSED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "outcomes",
+        "Newly exposed"
+      ],
+      "format": "int",
+      "value": 21,
+      "rendered": "21",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        68
+      ]
+    },
+    "R_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 200,
+      "rendered": "200",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        70,
+        72
+      ]
+    },
+    "R_UNRESOLVED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "unresolved"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        69
+      ]
+    },
+    "R_SCHEDULED_PCT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "confirmed_fraction_scheduled"
+      ],
+      "format": "pct1",
+      "value": 0.175,
+      "rendered": "17.5",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        72
+      ]
+    },
+    "R_RESOLVED_PCT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "confirmed_fraction_resolved"
+      ],
+      "format": "pct2",
+      "value": 0.19021739130434784,
+      "rendered": "19.02",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        72
+      ]
+    },
+    "R_BOUND_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "finite_observed_corpus_bounds",
+        0
+      ],
+      "format": "pct1",
+      "value": 0.175,
+      "rendered": "17.5",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "R_BOUND_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "finite_observed_corpus_bounds",
+        1
+      ],
+      "format": "pct1",
+      "value": 0.255,
+      "rendered": "25.5",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "R_TEXT_CHANGED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "text_changed"
+      ],
+      "format": "int",
+      "value": 118,
+      "rendered": "118",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        92
+      ]
+    },
+    "R_CHANGED_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "ruff",
+        "text_changed_preserved"
+      ],
+      "format": "int",
+      "value": 75,
+      "rendered": "75",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        92
+      ]
+    },
+    "CONTROLLED_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "scheduled"
+      ],
+      "format": "int",
+      "value": 200,
+      "rendered": "200",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        50,
+        70,
+        72
+      ]
+    },
+    "UNRESOLVED": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled",
+        "black",
+        "unresolved"
+      ],
+      "format": "int",
+      "value": 16,
+      "rendered": "16",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        69,
+        79
+      ]
+    },
+    "FAMILIES": {
+      "source": "datasets/controlled/phase3/manifest.json",
+      "pointer": [
+        "cases"
+      ],
+      "format": "int",
+      "operation": "unique",
+      "field": "input_family",
+      "value": 25,
+      "rendered": "25",
+      "source_sha256": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+      "template_lines": [
+        50
+      ]
+    },
+    "TREATMENTS": {
+      "source": "datasets/controlled/phase3/manifest.json",
+      "pointer": [
+        "cases"
+      ],
+      "format": "int",
+      "operation": "unique",
+      "field": "directive_placement",
+      "value": 8,
+      "rendered": "8",
+      "source_sha256": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+      "template_lines": [
+        50
+      ]
+    },
+    "NATURAL_N": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "cases"
+      ],
+      "format": "int",
+      "operation": "length",
+      "value": 40,
+      "rendered": "40",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        9
+      ]
+    },
+    "PAIRED_N": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "common_resolved"
+      ],
+      "format": "int",
+      "value": 184,
+      "rendered": "184",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        79
+      ]
+    },
+    "DIFF": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "contrasts_common_resolved",
+        "drift",
+        "black_minus_ruff"
+      ],
+      "format": "pct2",
+      "value": 0.1793478260869565,
+      "rendered": "17.93",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        9,
+        79
+      ]
+    },
+    "PAIR_00": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        0,
+        0
+      ],
+      "format": "int",
+      "value": 116,
+      "rendered": "116",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        76
+      ]
+    },
+    "PAIR_01": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        0,
+        1
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        76
+      ]
+    },
+    "PAIR_10": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        1,
+        0
+      ],
+      "format": "int",
+      "value": 33,
+      "rendered": "33",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        77
+      ]
+    },
+    "PAIR_11": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "matrix_rows_black_columns_ruff_0_1",
+        1,
+        1
+      ],
+      "format": "int",
+      "value": 35,
+      "rendered": "35",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        77
+      ]
+    },
+    "FAMILY_CLUSTERS": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 23,
+      "rendered": "23",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        85
+      ]
+    },
+    "DRAWS": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "replicates"
+      ],
+      "format": "int",
+      "value": 20000,
+      "rendered": "20000",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        85
+      ]
+    },
+    "FAMILY_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.08695652173913043,
+      "rendered": "8.70",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        85
+      ]
+    },
+    "FAMILY_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "family",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.2826086956521739,
+      "rendered": "28.26",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        85
+      ]
+    },
+    "CATEGORY_CLUSTERS": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "clusters"
+      ],
+      "format": "int",
+      "value": 12,
+      "rendered": "12",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        86
+      ]
+    },
+    "CATEGORY_DRAWS": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "replicates"
+      ],
+      "format": "int",
+      "value": 20000,
+      "rendered": "20000",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        86
+      ]
+    },
+    "CATEGORY_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.05921052631578949,
+      "rendered": "5.92",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        86
+      ]
+    },
+    "CATEGORY_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "cluster_model_intervals",
+        "category",
+        "statistics",
+        "black_minus_ruff",
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.3214285714285714,
+      "rendered": "32.14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        86
+      ]
+    },
+    "DIFF_BOUND_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "finite_all_scheduled_contrast_bounds",
+        0
+      ],
+      "format": "pct1",
+      "value": 0.085,
+      "rendered": "8.5",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "DIFF_BOUND_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "controlled_pairs",
+        "finite_all_scheduled_contrast_bounds",
+        1
+      ],
+      "format": "pct1",
+      "value": 0.245,
+      "rendered": "24.5",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        90
+      ]
+    },
+    "REQ_TAG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        0,
+        "tag"
+      ],
+      "format": "text",
+      "value": "v2.32.3",
+      "rendered": "v2.32.3",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        102
+      ]
+    },
+    "REQ_POP": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        0,
+        "python_population"
+      ],
+      "format": "int",
+      "value": 36,
+      "rendered": "36",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        102
+      ]
+    },
+    "REQ_ELIG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        0,
+        "eligible_noqa_files"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        102
+      ]
+    },
+    "REQ_SAMPLE": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        0,
+        "selected_files"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        102
+      ]
+    },
+    "REQ_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        110
+      ]
+    },
+    "REQ_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        110
+      ]
+    },
+    "REQ_B_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "black",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        110
+      ]
+    },
+    "REQ_FRAME_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        2,
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "REQ_FRAME_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        2,
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "REQ_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 7,
+      "rendered": "7",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        111
+      ]
+    },
+    "REQ_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        111
+      ]
+    },
+    "REQ_R_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "psf/requests",
+        "ruff",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        111
+      ]
+    },
+    "REQ_NATIVE_MISSING": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "native",
+        "psf/requests",
+        "status_records"
+      ],
+      "format": "int",
+      "value": 14,
+      "rendered": "14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        123
+      ]
+    },
+    "FLASK_TAG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        1,
+        "tag"
+      ],
+      "format": "text",
+      "value": "3.1.0",
+      "rendered": "3.1.0",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        103
+      ]
+    },
+    "FLASK_POP": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        1,
+        "python_population"
+      ],
+      "format": "int",
+      "value": 83,
+      "rendered": "83",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        103
+      ]
+    },
+    "FLASK_ELIG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        1,
+        "eligible_noqa_files"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        103
+      ]
+    },
+    "FLASK_SAMPLE": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        1,
+        "selected_files"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        103
+      ]
+    },
+    "FLASK_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 12,
+      "rendered": "12",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        112
+      ]
+    },
+    "FLASK_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 1,
+      "rendered": "1",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        112
+      ]
+    },
+    "FLASK_B_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "black",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        112
+      ]
+    },
+    "FLASK_B_FRAME_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        0,
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "FLASK_B_FRAME_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        0,
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.07692307692307693,
+      "rendered": "7.69",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "FLASK_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 13,
+      "rendered": "13",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        113
+      ]
+    },
+    "FLASK_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        113
+      ]
+    },
+    "FLASK_R_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pallets/flask",
+        "ruff",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        113
+      ]
+    },
+    "FLASK_R_FRAME_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        1,
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "FLASK_R_FRAME_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        1,
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "FLASK_NATIVE": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "native",
+        "pallets/flask",
+        "completed"
+      ],
+      "format": "int",
+      "value": 26,
+      "rendered": "26",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        123
+      ]
+    },
+    "PYTEST_TAG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        2,
+        "tag"
+      ],
+      "format": "text",
+      "value": "8.3.5",
+      "rendered": "8.3.5",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        104
+      ]
+    },
+    "PYTEST_POP": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        2,
+        "python_population"
+      ],
+      "format": "int",
+      "value": 256,
+      "rendered": "256",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        104
+      ]
+    },
+    "PYTEST_ELIG": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        2,
+        "eligible_noqa_files"
+      ],
+      "format": "int",
+      "value": 28,
+      "rendered": "28",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        104
+      ]
+    },
+    "PYTEST_SAMPLE": {
+      "source": "datasets/real_world/phase4/manifest.json",
+      "pointer": [
+        "repositories",
+        2,
+        "selected_files"
+      ],
+      "format": "int",
+      "value": 20,
+      "rendered": "20",
+      "source_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+      "template_lines": [
+        104
+      ]
+    },
+    "PYTEST_B_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 18,
+      "rendered": "18",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        114
+      ]
+    },
+    "PYTEST_B_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 2,
+      "rendered": "2",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        114
+      ]
+    },
+    "PYTEST_B_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "black",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        114
+      ]
+    },
+    "PYTEST_B_FRAME_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        4,
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "PYTEST_B_FRAME_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        4,
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.35714285714285715,
+      "rendered": "35.71",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "PYTEST_R_PRES": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "ruff",
+        "outcomes",
+        "Preserved"
+      ],
+      "format": "int",
+      "value": 19,
+      "rendered": "19",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        115
+      ]
+    },
+    "PYTEST_R_AST": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "ruff",
+        "outcomes",
+        "AST changed"
+      ],
+      "format": "int",
+      "value": 1,
+      "rendered": "1",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        115
+      ]
+    },
+    "PYTEST_R_DRIFT": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural",
+        "pytest-dev/pytest",
+        "ruff",
+        "confirmed_drift"
+      ],
+      "format": "int",
+      "value": 0,
+      "rendered": "0",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        115
+      ]
+    },
+    "PYTEST_R_FRAME_LO": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        5,
+        "lower"
+      ],
+      "format": "pct2",
+      "value": 0.0,
+      "rendered": "0.00",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "PYTEST_R_FRAME_HI": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "natural_finite_frame_bounds",
+        5,
+        "upper"
+      ],
+      "format": "pct2",
+      "value": 0.32142857142857145,
+      "rendered": "32.14",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        125
+      ]
+    },
+    "PYTEST_NATIVE": {
+      "source": "reports/phase5/analysis/metrics.json",
+      "pointer": [
+        "native",
+        "pytest-dev/pytest",
+        "completed"
+      ],
+      "format": "int",
+      "value": 40,
+      "rendered": "40",
+      "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+      "template_lines": [
+        123
+      ]
+    }
+  }
+}

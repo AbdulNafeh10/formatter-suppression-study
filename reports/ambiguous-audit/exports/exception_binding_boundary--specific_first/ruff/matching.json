@@ -1,0 +1,10 @@
+{
+  "classification": "Ambiguous",
+  "anchors": null,
+  "matched_diagnostic_identities": [],
+  "underlying_changes": null,
+  "matching_errors": [
+    "Expected one relevant AST anchor, found 0"
+  ],
+  "explanation": "Reliable correspondence unavailable: Expected one relevant AST anchor, found 0"
+}

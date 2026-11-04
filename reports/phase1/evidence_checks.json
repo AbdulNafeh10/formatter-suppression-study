@@ -1,0 +1,8 @@
+{
+  "phase1_black_evidence_and_export": true,
+  "phase1_ruff_evidence_and_export": true,
+  "phase1-repeat_black_evidence_and_export": true,
+  "phase1-repeat_ruff_evidence_and_export": true,
+  "black_repeatability": true,
+  "ruff_repeatability": true
+}

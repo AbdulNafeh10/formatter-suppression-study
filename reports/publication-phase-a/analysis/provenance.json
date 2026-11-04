@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "datasets/controlled/phase3/manifest.json": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+    "datasets/results/phase3/results.jsonl": "8a45b27fff2cf43b0c7656142e699988ad8f43a0e7fdd08e32beec88e1a9f887",
+    "datasets/results/phase3/results.csv": "97d4fbedd33c0093ec10a5a924d3245ca4dde5bec571f2bd49e6d52042c71b06",
+    "datasets/results/phase3/manifest.json": "e00a86abf2beb934188e8e255c77722105cac72f4cac4bebc87818920d7de4b8",
+    "datasets/results/phase3/run.json": "897c7099e2b21ac8177f1c4506cc12beb6da878a92a158c0992e0fdd0b61e687",
+    "datasets/real_world/phase4/manifest.json": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+    "datasets/results/phase4/results.jsonl": "c195cdce85640cb9b6f0a0f08f5722e0c4735dcdd22b75df3597a72b85c1ebee",
+    "datasets/results/phase4/results.csv": "6a62e3a09907282e7af293563e13361be5ea2dbaa7c81e34574e17e00fce7555",
+    "datasets/results/phase4/manifest.json": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+    "datasets/results/phase4/run.json": "099380fa4d687d1bad06019f69b67a3bb9be375d2ed5918113e265f767930601",
+    "datasets/results/phase4/native_results.jsonl": "692a57675acc5731d100d9421d68d7032f093ac926ec43ffea4db74f03601f17",
+    "datasets/results/phase4/native_results.csv": "2a4ec3975f6392fcc76d6bdbfbdc76c803702259412fb92b96278072d8133442",
+    "reports/phase5/analysis/metrics.json": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
+    "reports/ambiguous-audit/review_manifest.json": "2a0f73475e5e13331834852ba0287a13d1bb9f00e2963ab39ca150d654135890",
+    "reports/ambiguous-audit/integrity.json": "c65067402727e1f2f5457d8c7902571cfd84a9b21b0af21c0dd3a8f987cdb60c",
+    "reports/ambiguous-audit/artifact_hashes.json": "fbe8578d1125e5fd2d36fbfe54212864f9c1edc020e0e7d6e07c407963f619d8",
+    "scripts/audit_ambiguities.py": "7f4752e0e7b46924760990d6a15dafbcbb5c0bc0cc1ef51e24b37105448d656a",
+    "scripts/analyze_reviewed_results.py": "3bc7f04245983159df3442cd0e14c7612333a3d5976d8695865c1b5335d63ef9",
+    "src/suppression_study/statistics.py": "a1b2c5a19b20fc16851bbe1a35690f575ceb42a5b388041999c112e1fa35d2ae"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.3"
+  },
+  "source_commit": "b292056a02420b76252f706443971e9e19acfffe",
+  "new_primary_observations": 0,
+  "figures_created": 0,
+  "interpretation": "supplementary sensitivity conditional on AI-assisted review proposals; not independent human ground truth"
+}

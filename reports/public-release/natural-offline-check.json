@@ -1,0 +1,11 @@
+{
+  "archive_hashes_verified": false,
+  "population_and_sample_recreated": false,
+  "selected_original_bytes_identical": false,
+  "archive_check_note": "Explicitly omitted: archives absent; retained source, diagnostics and repeat checks still performed",
+  "primary_records_checked": 80,
+  "native_status_records_checked": 80,
+  "repeat_comparisons_checked": 80,
+  "csv_jsonl_raw_evidence_checked": true,
+  "repeat_measurements_identical": true
+}

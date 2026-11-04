@@ -1,0 +1,20 @@
+{
+  "flask_cli_supplementary_license": {
+    "source_url": "https://github.com/inveniosoftware/flask-cli/blob/master/LICENSE",
+    "retrieved_for_export_on": "2026-11-03",
+    "sha256": "cf8b5440482e6851f01172b8deb51456f1d2d142a0bf7ff1f2bbac2ac1100c65",
+    "scope": "Additional license text for CERN/Flask-CLI attribution in the already selected Flask tests/test_cli.py, not a new measurement input"
+  },
+  "upstream_notice_files": {
+    "third_party/flask/LICENSE": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "third_party/flask-cli/LICENSE": "cf8b5440482e6851f01172b8deb51456f1d2d142a0bf7ff1f2bbac2ac1100c65",
+    "third_party/pytest/LICENSE": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+    "third_party/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "third_party/requests/NOTICE": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+  },
+  "author_owned_license": {
+    "approved_choice": "MIT",
+    "applied": false,
+    "blocked_reason": "Exact public copyright-holder wording has not been confirmed; no identity inferred from private Git display/contact fields."
+  }
+}

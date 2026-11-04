@@ -1,0 +1,156 @@
+{
+  "case_id": "fstring_boundary--blanket_first",
+  "formatter": "ruff",
+  "original_classification": "Ambiguous",
+  "original_directory": "datasets/results/phase3/trials/fstring_boundary--blanket_first/ruff",
+  "before_sha256": "f1b850843425b49f5e0dc87a14d533edf5831fed540d1dcd1de19df0aa147eda",
+  "after_sha256": "f1b850843425b49f5e0dc87a14d533edf5831fed540d1dcd1de19df0aa147eda",
+  "original_matching_errors": [
+    "Diagnostic or construct does not align with complete code tokens"
+  ],
+  "reason_explanation": "F821 points to `missing_a` inside a formatted-value expression. Python 3.11 tokenize emits the whole f-string as a STRING token, so the embedded identifier span is not a complete token span under the primary matcher. This is a tokenization/coverage boundary, not evidence of a changed suppression.",
+  "noqa": {
+    "before": [
+      {
+        "row": 1,
+        "column": 24,
+        "end_column": 30,
+        "text": "# noqa",
+        "kind": "inline",
+        "preceding_code": "text = f\"{missing_a}\""
+      }
+    ],
+    "after": [
+      {
+        "row": 1,
+        "column": 24,
+        "end_column": 30,
+        "text": "# noqa",
+        "kind": "inline",
+        "preceding_code": "text = f\"{missing_a}\""
+      }
+    ]
+  },
+  "review": {
+    "proposed_resolution": "Preserved",
+    "warnings": [
+      {
+        "identity": "review:F821@$.body[0].value.values[0].value",
+        "before": {
+          "identity": "review:F821@$.body[0].value.values[0].value",
+          "rule": "F821",
+          "lexeme": "missing_a",
+          "role": "load Name",
+          "ast_context": "Name(id='missing_a', ctx=Load())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F821",
+            "end_location": {
+              "column": 20,
+              "row": 1
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-6yvotaza\\study_input.py",
+            "fix": null,
+            "location": {
+              "column": 11,
+              "row": 1
+            },
+            "message": "Undefined name `missing_a`",
+            "noqa_row": 1,
+            "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+          },
+          "visible": false
+        },
+        "after": {
+          "identity": "review:F821@$.body[0].value.values[0].value",
+          "rule": "F821",
+          "lexeme": "missing_a",
+          "role": "load Name",
+          "ast_context": "Name(id='missing_a', ctx=Load())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F821",
+            "end_location": {
+              "column": 20,
+              "row": 1
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3m_itvax\\study_input.py",
+            "fix": null,
+            "location": {
+              "column": 11,
+              "row": 1
+            },
+            "message": "Undefined name `missing_a`",
+            "noqa_row": 1,
+            "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+          },
+          "visible": false
+        },
+        "transition": "suppressed in both"
+      },
+      {
+        "identity": "review:F821@$.body[1].value",
+        "before": {
+          "identity": "review:F821@$.body[1].value",
+          "rule": "F821",
+          "lexeme": "missing_b",
+          "role": "load Name",
+          "ast_context": "Name(id='missing_b', ctx=Load())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F821",
+            "end_location": {
+              "column": 18,
+              "row": 2
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-6yvotaza\\study_input.py",
+            "fix": null,
+            "location": {
+              "column": 9,
+              "row": 2
+            },
+            "message": "Undefined name `missing_b`",
+            "noqa_row": 2,
+            "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+          },
+          "visible": true
+        },
+        "after": {
+          "identity": "review:F821@$.body[1].value",
+          "rule": "F821",
+          "lexeme": "missing_b",
+          "role": "load Name",
+          "ast_context": "Name(id='missing_b', ctx=Load())",
+          "diagnostic": {
+            "cell": null,
+            "code": "F821",
+            "end_location": {
+              "column": 18,
+              "row": 2
+            },
+            "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-3m_itvax\\study_input.py",
+            "fix": null,
+            "location": {
+              "column": 9,
+              "row": 2
+            },
+            "message": "Undefined name `missing_b`",
+            "noqa_row": 2,
+            "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+          },
+          "visible": true
+        },
+        "transition": "visible in both"
+      }
+    ],
+    "hidden": 0,
+    "exposed": 0,
+    "uncertainty": null
+  },
+  "judgment_explanation": "Original and formatted source are byte-identical. Full underlying and visible warnings reproduce; corresponding occurrences cannot move in an identical snapshot. F821 `missing_a` is suppressed in both; F821 `missing_b` is visible in both. All four saved outputs replay exactly after ignoring only temporary filenames. Neutralizing directive comments makes ordinary lint reproduce the underlying warnings in both snapshots. Proposed resolution: Preserved; no corresponding warning changes its visible/suppressed state.",
+  "human_review_flags": [
+    "Independent human adjudication is pending; this is an AI-assisted proposal."
+  ],
+  "ast_equal": true,
+  "non_comment_code_tokens_equal": true
+}

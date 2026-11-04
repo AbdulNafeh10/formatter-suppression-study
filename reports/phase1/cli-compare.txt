@@ -1,0 +1,17 @@
+{
+  "classification": "Ambiguous",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": true,
+  "formatting_changed": true,
+  "counts": {
+    "A_original_visible": 1,
+    "B_original_underlying": 3,
+    "C_formatted_visible": 1,
+    "D_formatted_underlying": 3,
+    "original_suppressed": 2,
+    "formatted_suppressed": 2
+  },
+  "explanation": "Four passes complete. Cross-transformation diagnostic correspondence is not implemented in Phase 1; no suppression-preservation or drift claim is made.",
+  "error": null,
+  "evidence_path": "<repo>\\datasets\\results\\phase1-cli-compare"
+}

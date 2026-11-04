@@ -1,0 +1,26 @@
+{
+  "command": [
+    "<repo>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ruff",
+    "check",
+    "--isolated",
+    "--no-cache",
+    "--select",
+    "F401,F821,F841",
+    "--target-version",
+    "py311",
+    "--output-format",
+    "json",
+    "--no-fix",
+    "--stdin-filename",
+    "study_input.py",
+    "-"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 1,
+  "stdout": "[\n  {\n    \"cell\": null,\n    \"code\": \"F821\",\n    \"end_location\": {\n      \"column\": 30,\n      \"row\": 4\n    },\n    \"filename\": \"<home>\\\\AppData\\\\Local\\\\Temp\\\\suppression-study-yiiod2v7\\\\study_input.py\",\n    \"fix\": null,\n    \"location\": {\n      \"column\": 10,\n      \"row\": 4\n    },\n    \"message\": \"Undefined name `another_missing_name`\",\n    \"noqa_row\": 4,\n    \"url\": \"https://docs.astral.sh/ruff/rules/undefined-name\"\n  }\n]",
+  "stderr": "",
+  "error": null,
+  "cwd": "<home>\\AppData\\Local\\Temp\\suppression-study-yiiod2v7"
+}

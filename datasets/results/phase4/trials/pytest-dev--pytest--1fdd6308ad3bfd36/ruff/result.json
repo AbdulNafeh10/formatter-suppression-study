@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "phase": 4,
+  "trial_id": "phase4--pytest-dev--pytest--1fdd6308ad3bfd36--ruff",
+  "timestamp_utc": "2026-11-03T05:44:08.133445+00:00",
+  "dataset_origin": "public-repository-validation",
+  "ai_assisted": false,
+  "formatter": "ruff",
+  "evidence_path": "<repo>\\datasets\\results\\phase4\\trials\\pytest-dev--pytest--1fdd6308ad3bfd36\\ruff",
+  "classification": "Preserved",
+  "validation_status": "measurement_complete",
+  "ast_equivalent": true,
+  "formatting_changed": false,
+  "matched_diagnostic_identities": [
+    {
+      "identity": "F401@$.body[38].body[11].names[0]",
+      "original": {
+        "identity": "F401@$.body[38].body[11].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[38].body[11].names[0]",
+        "node_context": "alias(name='app')",
+        "construct_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            466,
+            25
+          ],
+          "end": [
+            466,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 466
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-remc15da\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 467
+                },
+                "location": {
+                  "column": 1,
+                  "row": 466
+                }
+              }
+            ],
+            "message": "Remove unused import: `main_app.app`"
+          },
+          "location": {
+            "column": 26,
+            "row": 466
+          },
+          "message": "`main_app.app` imported but unused",
+          "noqa_row": 466,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "formatted": {
+        "identity": "F401@$.body[38].body[11].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[38].body[11].names[0]",
+        "node_context": "alias(name='app')",
+        "construct_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            466,
+            25
+          ],
+          "end": [
+            466,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 466
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-do1kvqrr\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 467
+                },
+                "location": {
+                  "column": 1,
+                  "row": 466
+                }
+              }
+            ],
+            "message": "Remove unused import: `main_app.app`"
+          },
+          "location": {
+            "column": 26,
+            "row": 466
+          },
+          "message": "`main_app.app` imported but unused",
+          "noqa_row": 466,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      },
+      "transition": "preserved"
+    }
+  ],
+  "newly_hidden_count": 0,
+  "newly_exposed_count": 0,
+  "configuration": {
+    "rules": [
+      "F401",
+      "F821",
+      "F841"
+    ],
+    "target_version": "py311",
+    "line_length": 88,
+    "preview": false,
+    "timeout_seconds": 30,
+    "isolated_lint": true
+  },
+  "error": null,
+  "case_id": "pytest-dev--pytest--1fdd6308ad3bfd36",
+  "repository": "pytest-dev/pytest",
+  "repository_url": "https://github.com/pytest-dev/pytest",
+  "repository_commit": "b55ab2aabb68c0ce94c3903139b062d0c2790152",
+  "repository_tag": "8.3.5",
+  "original_path": "testing/test_monkeypatch.py",
+  "source_url": "https://github.com/pytest-dev/pytest/blob/b55ab2aabb68c0ce94c3903139b062d0c2790152/testing/test_monkeypatch.py",
+  "file_role": "tests",
+  "configuration_mode": "standardized-study_input.py",
+  "population_rank": 19,
+  "source_acquisition_method": "immutable GitHub commit archive",
+  "native_config": "contexts/pytest-dev--pytest/pyproject.toml",
+  "reproduction_selected": false,
+  "manifest_sha256": "007caa19c5913e34e5dd0cf363589a83a5bb84b19d7a046e8821a89c76144d89",
+  "input_structure_sha256": "e335e7f37f8f0f8db7dc8d45ec0d0988d5862d0f2b59c8fef9b69ccf071e4245",
+  "input_sha256": "f36e92c59010fa9ef8e7dbb0e96205701fcfdd1135af92be96c2d6095dbbf1f6",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "tools": {
+      "black": "25.1.0",
+      "ruff": "0.11.13",
+      "pytest": "8.3.5"
+    },
+    "repository_commit": "b70e42db1c1c23d2f2833a80fb1d90cc432ef769",
+    "repository_dirty": false,
+    "seed": 20261103,
+    "random_generation": false,
+    "snapshot_scope": "experiment start"
+  },
+  "output_sha256": "f36e92c59010fa9ef8e7dbb0e96205701fcfdd1135af92be96c2d6095dbbf1f6",
+  "passes": {
+    "A_original_visible": [],
+    "B_original_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 466
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-remc15da\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 467
+              },
+              "location": {
+                "column": 1,
+                "row": 466
+              }
+            }
+          ],
+          "message": "Remove unused import: `main_app.app`"
+        },
+        "location": {
+          "column": 26,
+          "row": 466
+        },
+        "message": "`main_app.app` imported but unused",
+        "noqa_row": 466,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "C_formatted_visible": [],
+    "D_formatted_underlying": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 466
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-do1kvqrr\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 467
+              },
+              "location": {
+                "column": 1,
+                "row": 466
+              }
+            }
+          ],
+          "message": "Remove unused import: `main_app.app`"
+        },
+        "location": {
+          "column": 26,
+          "row": 466
+        },
+        "message": "`main_app.app` imported but unused",
+        "noqa_row": 466,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "suppressed_within_source": {
+    "original": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 466
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-remc15da\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 467
+              },
+              "location": {
+                "column": 1,
+                "row": 466
+              }
+            }
+          ],
+          "message": "Remove unused import: `main_app.app`"
+        },
+        "location": {
+          "column": 26,
+          "row": 466
+        },
+        "message": "`main_app.app` imported but unused",
+        "noqa_row": 466,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "formatted": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 29,
+          "row": 466
+        },
+        "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-do1kvqrr\\study_input.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 467
+              },
+              "location": {
+                "column": 1,
+                "row": 466
+              }
+            }
+          ],
+          "message": "Remove unused import: `main_app.app`"
+        },
+        "location": {
+          "column": 26,
+          "row": 466
+        },
+        "message": "`main_app.app` imported but unused",
+        "noqa_row": 466,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ]
+  },
+  "counts": {
+    "A_original_visible": 0,
+    "B_original_underlying": 1,
+    "C_formatted_visible": 0,
+    "D_formatted_underlying": 1,
+    "original_suppressed": 1,
+    "formatted_suppressed": 1
+  },
+  "underlying_changes": {
+    "removed": [],
+    "added": [],
+    "message_changed": []
+  },
+  "matching_errors": [],
+  "anchors": {
+    "original": [
+      {
+        "identity": "F401@$.body[38].body[11].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[38].body[11].names[0]",
+        "node_context": "alias(name='app')",
+        "construct_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            466,
+            25
+          ],
+          "end": [
+            466,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 466
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-remc15da\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 467
+                },
+                "location": {
+                  "column": 1,
+                  "row": 466
+                }
+              }
+            ],
+            "message": "Remove unused import: `main_app.app`"
+          },
+          "location": {
+            "column": 26,
+            "row": 466
+          },
+          "message": "`main_app.app` imported but unused",
+          "noqa_row": 466,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ],
+    "formatted": [
+      {
+        "identity": "F401@$.body[38].body[11].names[0]",
+        "rule": "F401",
+        "ast_path": "$.body[38].body[11].names[0]",
+        "node_context": "alias(name='app')",
+        "construct_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "diagnostic_tokens": [
+          [
+            1,
+            "app"
+          ]
+        ],
+        "source_span": {
+          "start": [
+            466,
+            25
+          ],
+          "end": [
+            466,
+            28
+          ]
+        },
+        "diagnostic": {
+          "cell": null,
+          "code": "F401",
+          "end_location": {
+            "column": 29,
+            "row": 466
+          },
+          "filename": "<home>\\AppData\\Local\\Temp\\suppression-study-do1kvqrr\\study_input.py",
+          "fix": {
+            "applicability": "safe",
+            "edits": [
+              {
+                "content": "",
+                "end_location": {
+                  "column": 1,
+                  "row": 467
+                },
+                "location": {
+                  "column": 1,
+                  "row": 466
+                }
+              }
+            ],
+            "message": "Remove unused import: `main_app.app`"
+          },
+          "location": {
+            "column": 26,
+            "row": 466
+          },
+          "message": "`main_app.app` imported but unused",
+          "noqa_row": 466,
+          "url": "https://docs.astral.sh/ruff/rules/unused-import"
+        },
+        "visible": false
+      }
+    ]
+  },
+  "explanation": "Underlying diagnostics match uniquely (1); 0 newly hidden, 0 newly exposed. Identities use rule, AST path, node and token context, not line equality."
+}

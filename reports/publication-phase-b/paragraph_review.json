@@ -1,0 +1,443 @@
+[
+  {
+    "document": "README.md",
+    "block": 2,
+    "sha256": "111f179a19bd6e397fb00fd68b722cf6386ba9c3fa5640b44a323fc97ba3ac89",
+    "start": "Can formatting Python code change which lint warnings are suppressed, even when",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 4,
+    "sha256": "154e5e27641562ef2e84763376d8b7837199429f01635f54ae2f350b2bf50916",
+    "start": "For each comparison, I ran Ruff on the original and formatted source, with `noqa`",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 5,
+    "sha256": "2f28c5c07f4cd750c9a5c8ba31d0633563b46da4fbc34ce8bf41e8fdc5c03d9f",
+    "start": "The controlled suite contains 25 templates crossed with 8 directive modes:",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 7,
+    "sha256": "f74e1a64b5abe0e47c9490b89ba8870426aac8b24de1f4cefffae3e67e4044e7",
+    "start": "Black produced 68 confirmed suppression changes in 200 controlled comparisons",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 8,
+    "sha256": "13f77852ca2f448628f405a5f66270642cbde182c75a486da0c15a873ab14306",
+    "start": "The original matcher marked 16 comparisons per formatter as Ambiguous. A separate",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 10,
+    "sha256": "4e550b3ae9515919637528fec1db2587688d8517969c1a332796690b58d72c3b",
+    "start": "Each bar contains 200 comparisons. Reviewed bars depend on the supplementary",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 11,
+    "sha256": "ba80d3d42c9feb6b3a7ebe312aae26a9a0d26fe6de2d6d20423a94f8c4cfb6ab",
+    "start": "No confirmed drift appeared in 80 natural-source comparisons. However, 65 outputs",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 13,
+    "sha256": "ee6af72732274e046f1a213fc90cf699dcbfa0c05536ea3e49f67a32c0402461",
+    "start": "Template variants are related, the repositories were chosen for feasibility,",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 14,
+    "sha256": "201801cfd858144037d98140ae0b243028adcec01df429ed6a7c35641e748384",
+    "start": "AI tools assisted implementation, debugging, controlled input generation, analysis",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 16,
+    "sha256": "357cbf34135665e97faccfb627325a93c394c3713c0d961bb7fe84d9ebe66efc",
+    "start": "From the repository root in PowerShell:",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 18,
+    "sha256": "6ab13bdca04fdd1ed7a019b41828f31cd4bda8430d8d0a4f1c7d46f548d626c0",
+    "start": "Use the [reproduction instructions](docs/reproducibility.md) for fresh experiment,",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 20,
+    "sha256": "5755fd9bbd3abb39cc266d7145ab19b83a43f31aa75eca5c03b9aecb3e771fd5",
+    "start": "Start with the [public report](report/research_report_public.md) or its",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "README.md",
+    "block": 21,
+    "sha256": "6c69d2cedba93538f5e1c13ce0fe4ab0eada380a6b4426ad8640662b818e7213",
+    "start": "The project license is pending. Archived third-party sources retain their own",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 2,
+    "sha256": "fb49275e811a6608531e00d768f111607424419f66822aa218d7f533c8f8f2f0",
+    "start": "Independent research report | Public draft, November 2026",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 4,
+    "sha256": "1dfed3cc6f986ce11c2e62b0b3e5bc503822d4c45e425297b1b25974431ec4ad",
+    "start": "Can formatting Python code change which lint warnings are suppressed, even when its executable syntax stays the same? I ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 5,
+    "sha256": "4b6c955e15436eea1201b8d5cf06e8d783fa76180089ab9ff24376c1ca51b12a",
+    "start": "A comment such as `# noqa: F821` tells Ruff to hide an undefined-name warning. Formatting can move that comment or put m",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 6,
+    "sha256": "1f87138715a1ceece14b075b258be00b902a2d393244cca98c14c2b7063e6777",
+    "start": "I compared warning visibility before and after formatting. Checking the number of warnings alone would not be enough: a ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 7,
+    "sha256": "8767049894da61c77fe9b4c6bc7fd2b0f4223200e4cca1aa33d3f458dbe8f4c1",
+    "start": "The experiment has two parts. A controlled suite tests specific source layouts and directive placements. A separate samp",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 9,
+    "sha256": "82ebc8744c2ac5af3e59c871e06b3670b1d152967f1af12af777c739b4f04f94",
+    "start": "Hu et al. [1] studied warning suppressions and their evolution across project histories. Their treatment of line-splitti",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 10,
+    "sha256": "bc4487aa1035f997626692c13bed1115f9cfbf42e6ed034e86fa4b547537a18a",
+    "start": "Li and Yang [2] studied warning tracking across revisions. That work supports treating correspondence as a problem to ch",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 11,
+    "sha256": "144a9a5d56a4f8eca02eb4f28dedc0cd01b22465815678bcd2aa5e7db30255e4",
+    "start": "The general formatter/directive interaction is already documented. Black's FAQ discusses moved linter comments [4]. Ruff",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 14,
+    "sha256": "ff7f9ea5adca07e8b667c6cac4b80c6b0bcc767295e54af3dbcc5205761e8735",
+    "start": "The experiment used CPython 3.11.9, Black 25.1.0 and Ruff 0.11.13 on Windows. These are fixed historical versions. Forma",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 17,
+    "sha256": "a4c778edb3e6301ae7e447edc2da2eb6bef660b5483fd490bf3d58045f71c66b",
+    "start": "I ran all four checks because normal lint output cannot reveal warnings that a comment hides. Passes B and D expose thos",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 19,
+    "sha256": "2bd26fc14e924f8a1aceec1c2ad1faba9b9bbdfa7faee239df4e617ce6096a38",
+    "start": "I compared abstract syntax trees, or ASTs, to check that formatting preserved the parsed program structure. Parsing incl",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 20,
+    "sha256": "1e94bcd82f98993cc6784ab9ab90d01a22065ec0a9fe4a2caab8616b37b64619",
+    "start": "The automatic matcher identifies warnings by rule, AST occurrence and token context. It does not match across formatting",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 22,
+    "sha256": "0bb14d2d39d0d3618b96539df82ce927b791c29f027e6185dea48758ba1bc201",
+    "start": "I used 25 source templates, each with 8 directive modes, to make 200 controlled inputs. Modes include no directive, stan",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 23,
+    "sha256": "79ca1c0e7e00d4d6ad3bfde9c052427017a08d8ebca29f63b18348d7f53daca5",
+    "start": "The natural dataset contains 40 files from pinned commits of Requests, Flask and pytest. Eligible files were valid UTF-8",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 25,
+    "sha256": "0802cb3299aba149ee39bf1267ce9d53f94fab3d1db58f47e60abf1de7e5ac1e",
+    "start": "Each input was tested with both formatters. Comparisons are paired by original source, and directive variants from one t",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 26,
+    "sha256": "1d6dcdd06d71669b1dc53a6db34f0f86566914cfe4c79cec682c9b3b384b9475",
+    "start": "A later review examined every originally ambiguous comparison. Its separate procedure checked literal source occurrences",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 27,
+    "sha256": "23d2e705d3c647543d4a986d9c7db89ce0ff1a100b9e98f12940b3f118c98c82",
+    "start": "AI assistance was used for implementation, debugging, controlled input generation, analysis scripts and writing. Inputs ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 31,
+    "sha256": "767d0b7f881cbcc6f9e70ad67dd251291311b1b7aa7914bdb519cd2ccd7c8fa3",
+    "start": "Black produced 68 confirmed suppression changes and Ruff 35. Both were tested on the same 200 inputs, giving 400 control",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 33,
+    "sha256": "9b73b4d6f1560b59ba368bb8279753e2437dffa372e83bbd6ad5de5ac654b31b",
+    "start": "Each column has 200 comparisons. The reviewed columns use supplementary proposals, not new automatic classifications. [F",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 34,
+    "sha256": "95647a4805389bee9830260ce708850b5732a3f2788b63dfaec040a942865c1f",
+    "start": "The original matcher resolved 184 input pairs. Among those inputs, the drift rates were 36.96% for Black and 19.02% for ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 36,
+    "sha256": "16b4a01fba26474d44db8c057b983ec6becb3ae2b009168b0e4a533a7efff286",
+    "start": "This is the supplementary 200-pair table. Binary drift overlap does not imply that both formatters changed visibility in",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 38,
+    "sha256": "60a134b43839c33e68c2e51c00958acb0673803ad3ec7f3ea3cf53768051473d",
+    "start": "The ambiguity came from two template families. The 16 f-string comparisons had identical original and formatted bytes, b",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 40,
+    "sha256": "27a395bc2758b446df456580770f5db4b3aa43d80501ee3765b5daeeab8fa9d0",
+    "start": "These are exploratory 95% model intervals, not ecosystem confidence intervals. Each model used 20000 paired whole-cluste",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 43,
+    "sha256": "b8ed21f6813f6f47e818770cc38f3ea32f6b5f6409391b57d05c376317b64551",
+    "start": "Directive placement and source layout were associated with different outcomes in the controlled suite. For example, Blac",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 44,
+    "sha256": "19c9144f933d45a715f47195a3e1c19cb43662ded55e1abe5fb97ceb2e3fbdf8",
+    "start": "The pattern tables count the fixed treatments, not independent discoveries. [Figure 3](../reports/figures-reviewed/figur",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 45,
+    "sha256": "3e7b60064ef506f798f52aafb9b74bd513cf2dff35779dbdb3aa655a6750b699",
+    "start": "Formatting changed text in 133 Black comparisons and 118 Ruff comparisons. Of those, the original analysis classified 57",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 47,
+    "sha256": "2a2cbd83de883fcd07e0962c02d0721c4409b0c0cf20315e568b8756b9c4d8a2",
+    "start": "No confirmed suppression changes were found in the 80 primary comparisons involving 40 original files. The natural-sourc",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 49,
+    "sha256": "bdee864b08d4e0fc0ed96557e9d74a257dcacee82a4da93c91016b4eeebcd8a4",
+    "start": "There were 65 unchanged outputs and 15 changed outputs. Among the original files, 22 had no underlying warnings from the",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 50,
+    "sha256": "b734b9a665adf6082dfd40cc5bc90c6526398879c79511bcc655417214ffa4a3",
+    "start": "The 4 AST exclusions arose solely from shifted `TypeIgnore.lineno` fields. A secondary normalization made those ASTs equ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 51,
+    "sha256": "bd86970f76d5d4e8cbb6ebce0cc04370054e203dbe31ce2086e3d8bd065e2e1a",
+    "start": "The early prospective natural repeat sample contained only unchanged outputs. The later full reproduction covered all 80",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 53,
+    "sha256": "136367da71ee62ee8b9abe0049180a48ce5ba7c5d809a5892bd3ecda03936623",
+    "start": "Black changed suppression more often than Ruff on the controlled cases. That difference describes this suite and these t",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 54,
+    "sha256": "391217ec85a41f0e05dc3c1f9541e03fa945506a8180dd67ef4bec4edc02a50d",
+    "start": "The list and semicolon examples show why checking underlying warnings mattered. In each case, the lint finding still ref",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 56,
+    "sha256": "6d84dfe8561a81bb8673ada36adcd7182a59c71a16fa6e10495ea16ccb8ecd17",
+    "start": "The repository sample produced a different result. Most outputs did not change under formatting, and many inputs had no ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 57,
+    "sha256": "08175d5d936704c07d67b6b63702ae24058ecd35bf8fe3cc24cb75afecaed5e2",
+    "start": "The supplementary review identifies two specific gaps in the matcher. It does not establish a general solution for match",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 59,
+    "sha256": "158cc0498973ea1fc8a7a9379d4e3dd84f646a74c579645d33958a22e8c13684",
+    "start": "The controlled examples were designed to stress selected layouts. Reusing a template across directive modes creates rela",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 60,
+    "sha256": "7ce2dd3f4adfa7e3af08d759005de74c6f805c72047c293f656cbe8df91c8e40",
+    "start": "The natural sample came from a few historical repositories chosen for feasibility. Selection required a natural `noqa` c",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 61,
+    "sha256": "12617e27f22ff63171fd0138e797290c8f8a96183019422a86c6be13f1d82179",
+    "start": "The AST gate is conservative and is not a proof of runtime equivalence. Warning matching covers only the selected Ruff r",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 62,
+    "sha256": "50636a1f207ed86eedade136bf6d3d67cb1afef573964c1ba4c6128f8658b0bc",
+    "start": "Only the saved Windows/Python environment and pinned tool versions were tested. The standardized filename differs from r",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 64,
+    "sha256": "8c07a70ba77f511fc0c1f8ba904d049f17a3d37a4c7b48f65543bdc43c44abe0",
+    "start": "Formatting changed which Ruff warnings were suppressed in the controlled tests, even when the strict AST check passed. N",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 65,
+    "sha256": "44d95350bf74a7a256da0b33b6c18d693c1de5631011dc323ce29385859574aa",
+    "start": "The next useful work is independent review of a held-out set, a larger natural sample with relevant warnings and changed",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 68,
+    "sha256": "1ec2dd4dc14f0d63297117e02f2b53312f1b5692049269ea6a42db362ce3ee3e",
+    "start": "[1] Huimin Hu, Yingying Wang, Julia Rubin, and Michael Pradel. 2025. An Empirical Study of Suppressed Static Analysis Wa",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 69,
+    "sha256": "a721233bfcb7f88415234ad102de33f391eed2fc32d7ea0106a84d7bc5d05136",
+    "start": "[2] Junjie Li and Jinqiu Yang. 2024. Tracking the Evolution of Static Code Warnings: The State-of-the-Art and a Better A",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 70,
+    "sha256": "94d185ffbac11b230a07e69728dcdea641682361e4c71846b105b43c9727d882",
+    "start": "[3] William M. McKeeman. 1998. Differential Testing for Software. Digital Technical Journal 10(1), 100-107. [Original jo",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 71,
+    "sha256": "9caf17c21f4621685923349536d0560ee62ea2d2f0b5ded429b21c0ebf9f24c1",
+    "start": "[4] Black contributors. Frequently Asked Questions, version 25.1.0. [Versioned source](https://github.com/psf/black/blob",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 72,
+    "sha256": "8b37906d69d9b729e5a49be6ec7eb8ae03c044e6903e305904a2acc9225846df",
+    "start": "[5] Astral contributors. Known Deviations from Black, Ruff 0.11.13. [Versioned source](https://github.com/astral-sh/ruff",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 73,
+    "sha256": "94730f7189106873e65420bccc9e01364a163db87ee47d6c5d51f51bc234486e",
+    "start": "[6] Astral contributors. Ruff [linter](https://docs.astral.sh/ruff/linter/) and [formatter](https://docs.astral.sh/ruff/",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 74,
+    "sha256": "9a836348a37564875f5a20fc1435f390d5d4c802c942eb59cb3854974cf7b656",
+    "start": "[7] StataCorp. Bootstrap resampling reference manual, cluster resampling. [Manual](https://www.stata.com/manuals/rbootst",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 75,
+    "sha256": "53782570aa5889d5f37cc1e017510ae4c131818fa2ef2b93171668682b8642b8",
+    "start": "[8] NIST/SEMATECH. e-Handbook of Statistical Methods, confidence limits for a proportion. [Wilson method](https://www.it",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 77,
+    "sha256": "761421052e8ad62243d32ae0cf659765b8a94800cf9c03c0c04db867302f227a",
+    "start": "The [reproduction instructions](../docs/reproducibility.md) identify the pinned environment and commands. Original data ",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  },
+  {
+    "document": "report/research_report_public.md",
+    "block": 78,
+    "sha256": "3647f108976fa94e4188b950f6ada6e00c73228dff90cd78ff20887eea4092c0",
+    "start": "This draft does not replace the [original report](research_report.md) or its PDF. Code, raw evidence, original figures a",
+    "editing_pass": "checked for clarity, evidence, repetition and personal voice"
+  }
+]

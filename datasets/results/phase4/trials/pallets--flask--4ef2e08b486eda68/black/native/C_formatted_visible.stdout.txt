@@ -1,0 +1,35 @@
+[
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 41,
+      "row": 12
+    },
+    "filename": "<repo>\\datasets\\real_world\\phase4\\contexts\\pallets--flask\\tests\\test_testing.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import importlib.metadata\n\nimport click\nimport flask\nimport pytest\nfrom flask import appcontext_popped\nfrom flask.cli import ScriptInfo\nfrom flask.globals import _cv_request\nfrom flask.json import jsonify\nfrom flask.testing import EnvironBuilder\nfrom flask.testing import FlaskCliRunner\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 15
+          },
+          "location": {
+            "column": 1,
+            "row": 1
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 1
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "noqa_row": 1,
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  }
+]

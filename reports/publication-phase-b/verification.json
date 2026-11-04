@@ -1,0 +1,34 @@
+{
+  "tests_passed": 139,
+  "public_claim_bindings": 78,
+  "original_claim_bindings": 86,
+  "readme_prose_words": 504,
+  "public_pdf_pages": 6,
+  "supplementary_png_svg_figures": 3,
+  "all_new_figures_reproduced_byte_for_byte": true,
+  "numerical_artifacts_reproduced": [
+    "evidence_checks.json",
+    "metrics.json",
+    "reviewed_category_counts.csv",
+    "reviewed_category_draws.csv",
+    "reviewed_directive_placement.csv",
+    "reviewed_family_counts.csv",
+    "reviewed_family_draws.csv",
+    "reviewed_input_family.csv",
+    "reviewed_pairs.csv",
+    "reviewed_syntax_category.csv",
+    "review_overlay.csv"
+  ],
+  "original_evidence_report_and_analysis_unchanged": true,
+  "public_local_links_checked": 20,
+  "prose_blocks_reviewed": 63,
+  "original_renderer_compatibility": "temporary render matched original PDF bytes",
+  "release_issues": [
+    "project license not selected",
+    "separate third-party notice review",
+    "raw local paths require approval",
+    "upstream certificate-test fixtures in archived Requests sources",
+    "full history and approved file set to be checked before publication"
+  ],
+  "nothing_published_or_pushed": true
+}

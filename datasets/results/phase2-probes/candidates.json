@@ -1,0 +1,10 @@
+{
+  "semicolon": "x=missing_a; y=missing_b  # noqa: F821\n",
+  "list_inline": "x = [missing_a,  # noqa: F821\n     missing_b]\n",
+  "call_open": "print(  # noqa: F821\n    missing_a)\n",
+  "list_closing": "x = [\n    missing_a,\n    missing_b\n]  # noqa: F821\n",
+  "import_inline": "from os import (\n    path,  # noqa: F401\n    getcwd,\n)\n",
+  "local_semicolon": "def f():\n    a=1; b=2  # noqa: F841\n",
+  "repeated_name": "x=missing; y=missing  # noqa: F821\n",
+  "unicode": "é=absent; λ=missing  # noqa: F821\n"
+}
