@@ -1,0 +1,167 @@
+{
+  "baseline": "4d64e72b996f4f1a830a617e3e0507f1838378bf",
+  "published_evidence": "7c77a23092737bf7888dd303d34e46ad2b99e3c5",
+  "baseline_files_hashed": 33854,
+  "protected_files_byte_identical": 33849,
+  "changed_existing_files": [
+    "report/research_report_public.md",
+    "report/research_report_public.pdf",
+    "report/research_report_public.template.md",
+    "reports/publication-phase-b/public_claim_audit.json",
+    "scripts/render_report.py"
+  ],
+  "experimental_code_tests_configurations_datasets_results_and_original_artifacts_unchanged": true,
+  "licenses_notices_and_ownership_unchanged": true,
+  "figures": {
+    "exports_unchanged": 14,
+    "embedded": [
+      {
+        "page": 3,
+        "source": "reports/figures-reviewed/figure1_reviewed_outcomes.png",
+        "pixel_dimensions": [
+          3000,
+          1290
+        ],
+        "original_rgb_pixels_preserved": true
+      },
+      {
+        "page": 5,
+        "source": "reports/figures-reviewed/figure2_reviewed_pairs.png",
+        "pixel_dimensions": [
+          3840,
+          2700
+        ],
+        "original_rgb_pixels_preserved": true
+      },
+      {
+        "page": 6,
+        "source": "reports/figures-reviewed/figure3_reviewed_patterns.png",
+        "pixel_dimensions": [
+          4200,
+          2400
+        ],
+        "original_rgb_pixels_preserved": true
+      },
+      {
+        "page": 7,
+        "source": "reports/figures/figure4_natural_relevance.png",
+        "pixel_dimensions": [
+          3000,
+          1350
+        ],
+        "original_rgb_pixels_preserved": true
+      }
+    ],
+    "regenerated": false
+  },
+  "report": {
+    "pages": 9,
+    "landscape_pages": [
+      5,
+      6
+    ],
+    "visible_author": "Abdul Nafeh",
+    "metadata_author": "Abdul Nafeh",
+    "all_pages_visually_reviewed": true,
+    "text_outside_safety_bounds": [],
+    "original_tables_unchanged": 5,
+    "eight_references_unchanged": true,
+    "AI_disclosure_unchanged": true,
+    "all_78_claim_values_formats_sources_and_source_hashes_unchanged": true,
+    "claim_ledger_changed_fields": "Document hashes and occurrence locations only"
+  },
+  "example": {
+    "trial": "datasets/results/phase3/trials/list_short--specific_first/black",
+    "code_blocks_exact": true,
+    "classification": "Newly hidden",
+    "AST_gate_passed": true,
+    "four_pinned_Ruff_replays_match": {
+      "A_original_visible": {
+        "diagnostics": 1,
+        "messages": [
+          "Undefined name `missing_b`"
+        ]
+      },
+      "B_original_underlying": {
+        "diagnostics": 2,
+        "messages": [
+          "Undefined name `missing_a`",
+          "Undefined name `missing_b`"
+        ]
+      },
+      "C_formatted_visible": {
+        "diagnostics": 0,
+        "messages": []
+      },
+      "D_formatted_underlying": {
+        "diagnostics": 2,
+        "messages": [
+          "Undefined name `missing_a`",
+          "Undefined name `missing_b`"
+        ]
+      }
+    },
+    "analyzed_program_executed": false
+  },
+  "checks": {
+    "pytest": {
+      "passed": 146,
+      "failed": 0,
+      "duration_seconds": 40.27,
+      "scope": "Existing pinned environment, same Windows host; no tests changed"
+    },
+    "public_claims": 78,
+    "historical_claims": 86,
+    "ambiguity_audit": {
+      "comparisons": 32,
+      "review_artifacts": 1498,
+      "unchanged_original_files": 840
+    },
+    "controlled_saved_reproduction": {
+      "source_regeneration_identical": true,
+      "sources_checked": 200,
+      "main_records_checked": 400,
+      "repeat_records_checked": 400,
+      "all_csv_and_jsonl_fields_checked": true,
+      "raw_diagnostics_and_matching_checked": true,
+      "repeat_measurements_identical": true
+    },
+    "natural_saved_reproduction": {
+      "archive_hashes_verified": false,
+      "population_and_sample_recreated": false,
+      "selected_original_bytes_identical": false,
+      "archive_check_note": "Explicitly omitted: archives absent; retained source, diagnostics and repeat checks still performed",
+      "primary_records_checked": 80,
+      "native_status_records_checked": 80,
+      "repeat_comparisons_checked": 80,
+      "csv_jsonl_raw_evidence_checked": true,
+      "repeat_measurements_identical": true
+    },
+    "dependencies": "pip check passed",
+    "black": "47 files unchanged",
+    "ruff": "passed",
+    "historical_rendering_byte_identical": true
+  },
+  "links": {
+    "Markdown_documents_checked": 48,
+    "relative_targets_checked": 775,
+    "broken_targets": 0,
+    "fragment_anchors_checked": false,
+    "PDF_https_links": 21,
+    "published_repository_file_links_verified_against_Git_objects": 7,
+    "remaining_relative_PDF_links": 0
+  },
+  "privacy": {
+    "changed_new_files_scanned": 10,
+    "credential_home_path_email_pattern_findings": [],
+    "PDF_extracted_text_included": true,
+    "limitation": "Pattern scanning does not prove absence of every encoded secret."
+  },
+  "private_repository": {
+    "head_unchanged": true,
+    "working_tree_clean": true
+  },
+  "public_rendering_repeat_byte_identical": true,
+  "scope_limits": "No full fresh experiment, statistical recalculation or archive-population reconstruction in this presentation revision. Native statuses remain distinct from completed checks. Earlier scientific uncertainty remains.",
+  "publication": "No push, publication, remote change or history rewrite."
+}

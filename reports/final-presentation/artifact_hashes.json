@@ -1,0 +1,15 @@
+{
+  "baseline": "4d64e72b996f4f1a830a617e3e0507f1838378bf",
+  "scope": "Current report, presentation-only renderer, refreshed document claim ledger and separate presentation-review files; this manifest excludes itself. Earlier evidence and manifests retain their original scope.",
+  "sha256": {
+    "report/research_report_public.md": "5f73a4ae1c891b5f651e0bc9d4e93017000b563127c784b42ecb75ca3d273322",
+    "report/research_report_public.pdf": "06716bf631cd9f82d5ac05e5af1d2a939e4cef72affd8066a53282cdf7d449ee",
+    "report/research_report_public.template.md": "9a61dbb4192f659f71216da0efebd42cb76907ca031ec502d70362638df1d1b2",
+    "reports/final-presentation/pdf_validation.json": "ac2c4767ff3b71d4912b0c781190a74579296972e9f52a13b1f4ce3c67999cee",
+    "reports/final-presentation/pdf_visual_review.md": "93158eefc17dd078e686941b367be61d4a998b44d680e92f8e9446f0e37a3540",
+    "reports/final-presentation/review.md": "34137a100ebc6a0dbc78c69b78f1bfc4ad70a272c1911eaecf47290178b2b817",
+    "reports/final-presentation/verification.json": "16a74ffcbc3144c951a4f5e366b493018c0ab963f3a2334a2333707408230a88",
+    "reports/publication-phase-b/public_claim_audit.json": "0e78f3603fdebb2d6342c242ddb10a67a09fb9f00b424341fef7abda88dc44ed",
+    "scripts/render_report.py": "99532b49ab1c3bd5fbec80acf9f240b0c1cd5ce42b86b029e230aae8022e2acf"
+  }
+}

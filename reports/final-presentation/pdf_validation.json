@@ -1,0 +1,47 @@
+{
+  "pages": 9,
+  "reportlab": "4.4.9",
+  "markdown_sha256": "5f73a4ae1c891b5f651e0bc9d4e93017000b563127c784b42ecb75ca3d273322",
+  "pdf_sha256": "06716bf631cd9f82d5ac05e5af1d2a939e4cef72affd8066a53282cdf7d449ee",
+  "required_sections_present": true,
+  "page_text_characters": [
+    3066,
+    3846,
+    1657,
+    2866,
+    364,
+    348,
+    1707,
+    3833,
+    2634
+  ],
+  "visual_review": "Separate rendered-page inspection required; see pdf_visual_review.md.",
+  "author": "Abdul Nafeh",
+  "embedded_figures": [
+    {
+      "path": "reports/figures-reviewed/figure1_reviewed_outcomes.png",
+      "sha256": "cc51719e8e5d0eb72e05e80518d950b445d90b93c98b49a82ba9b5fb45a5d26c",
+      "width_points": 501.2755905511811,
+      "height_points": 215.5485039370079
+    },
+    {
+      "path": "reports/figures-reviewed/figure2_reviewed_pairs.png",
+      "sha256": "7d2b9cc959cbb2594045dc1433434639830efbad3982529b869a8dc52c84eda2",
+      "width_points": 634.88,
+      "height_points": 446.4
+    },
+    {
+      "path": "reports/figures-reviewed/figure3_reviewed_patterns.png",
+      "sha256": "d0c122850b0c715682b2d05e351a130fa31bdb7c858bacad9c4b74afb49dae34",
+      "width_points": 747.8897637795277,
+      "height_points": 427.3655793025872
+    },
+    {
+      "path": "reports/figures/figure4_natural_relevance.png",
+      "sha256": "748eb063b0a5a979d2455973280692435b64fbe5628ccaf7eb34aa4c8b90fe4c",
+      "width_points": 501.2755905511811,
+      "height_points": 225.5740157480315
+    }
+  ],
+  "repository_link_base": "https://github.com/AbdulNafeh10/formatter-suppression-study/blob/7c77a230/"
+}
