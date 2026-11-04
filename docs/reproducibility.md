@@ -1,9 +1,9 @@
 # Reproducibility in the public snapshot
 
-Use Windows and CPython 3.11 with the retained historical tool pins. Run from the
-snapshot root in PowerShell. Programs being analyzed are never executed.
+These instructions separate checking saved evidence from running new measurements.
+Use Windows and CPython 3.11 with the retained pins, from a committed checkout
+with Git on PATH. Commands below are PowerShell. Analyzed programs are not executed.
 
-Git must be on PATH, and this must be a Git checkout with a committed HEAD.
 Provenance scripts use Git; a source ZIP without Git metadata is not supported
 by the supplementary provenance step. The checked Git version is recorded in
 the release dependency record.
@@ -24,9 +24,10 @@ The privacy-derived records already tracked here are historical observations,
 not commands to execute verbatim. Their placeholders intentionally hide private
 execution paths. See [public_snapshot.md](public_snapshot.md).
 
-## Check retained measurements and claims
+## Check saved measurements and claims
 
 ```powershell
+New-Item -ItemType Directory -Force local | Out-Null
 .\.venv\Scripts\python.exe scripts/build_public_docs.py --check
 .\.venv\Scripts\python.exe scripts/build_report.py --check
 .\.venv\Scripts\python.exe scripts/audit_ambiguities.py --verify reports/ambiguous-audit
@@ -57,13 +58,22 @@ The retained sampled sources and necessary configuration also support offline
 natural reruns without full archives; that mode checks their own hashes and
 explicitly discloses the absent archive validation.
 
-## Fresh measurements and analysis
+## Run new measurements, then analyze saved observations
 
 Choose unused output directories. Existing observations must not be overwritten.
-For the full controlled run, copy `configs/phase7-reproduction.toml` to an ignored
-local config and change only its output path to `local/controlled-fresh`; then run:
+For a full controlled run, the commands below copy the saved configuration and
+change only its output directory. They refuse to reuse an existing local config.
+Check that `local/controlled-fresh` and `local/natural-fresh` are unused.
 
 ```powershell
+if (Test-Path local/controlled-reproduction.toml) { throw "Choose a new local config" }
+$studyConfig = (Get-Content configs/phase7-reproduction.toml -Raw).Replace(
+    'output = "datasets/results/phase7-controlled"',
+    'output = "local/controlled-fresh"'
+)
+[System.IO.File]::WriteAllText(
+    (Join-Path $PWD 'local/controlled-reproduction.toml'), $studyConfig
+)
 .\.venv\Scripts\python.exe -m suppression_study experiment --config local/controlled-reproduction.toml
 .\.venv\Scripts\python.exe scripts/run_phase4.py --output local/natural-fresh
 .\.venv\Scripts\python.exe -m suppression_study analyze --output reports/local-original-analysis --figures reports/local-original-analysis/figures
@@ -82,9 +92,32 @@ not additional independent samples. For uncertainty assumptions, see the
 ## PDF and figure exports
 
 Report rendering uses a separate Python 3.12 environment with
-`requirements-report.txt`; it is not part of the study dependency lock. Run
-`python scripts/render_report.py --public` in that environment to render the
-six-page public PDF. The default renderer targets the historical original report.
+`requirements-report.txt`; it is not part of the study dependency lock. The
+default renderer targets the frozen historical report. Its `--public` shortcut
+also writes the earlier Phase B validation path. For current public prose, use
+the existing rendering function with a separate local validation destination:
+
+```powershell
+py -3.12 -m venv .venv-report
+.\.venv-report\Scripts\python.exe -m pip install -r requirements-report.txt
+@'
+from pathlib import Path
+from scripts.render_report import render
+
+sections = [
+    "Introduction", "Related Work", "Methodology", "Results",
+    "Discussion", "Limitations", "Conclusion", "References",
+]
+render(
+    Path("report/research_report_public.md"),
+    Path("report/research_report_public.pdf"),
+    Path("local/public-pdf-validation.json"),
+    [f"{i}. {name}" for i, name in enumerate(sections, 1)],
+)
+'@ | .\.venv-report\Scripts\python.exe -
+```
+
+The [editorial review](editorial_revision.md) records this revision's validation.
 Generated PDFs require visual review. Relative PDF links depend on viewer support;
 use Markdown for reliable navigation. Standalone PNG/SVG pairs retain the original
 figure values. [Release verification](../reports/public-release/verification.json)

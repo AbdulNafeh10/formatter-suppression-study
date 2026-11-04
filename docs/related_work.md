@@ -1,65 +1,59 @@
-# Verified related work - Phase 6
+# Related work
 
-Accessed 2026-11-03 UTC. This targeted review follows the supplied references,
-warning correspondence, and differential testing. It is not a systematic search
-or evidence of priority. The historical Phase 1 review below is retained; its
-pending-review statements are superseded by this section. Searches used the
-supplied title, suppression/formatter interactions, warning tracking and
-differential testing. Primary sources support the report.
+This is a targeted review of suppression behavior, warning correspondence and
+differential testing, not a systematic search or a claim of priority.
 
-## Research literature reviewed
+Hu, Wang, Rubin and Pradel's *An Empirical Study of Suppressed Static Analysis
+Warnings* studies suppression mapping and evolution, including line-splitting
+effects ([2025, DOI](https://doi.org/10.1145/3715729),
+[published author text](https://software-lab.org/publications/fse2025_suppressions.pdf)).
+Its longitudinal setting differs from the isolated formatter intervention here.
+The final author text and retained metadata govern the citation; the supplied
+draft contains publication placeholders.
 
-- Huimin Hu, Yingying Wang, Julia Rubin and Michael Pradel,
-  *An Empirical Study of Suppressed Static Analysis Warnings*, PACMSE 2(FSE),
-  290-311 (2025), [DOI](https://doi.org/10.1145/3715729).
-  The [supplied draft](https://people.ece.ubc.ca/mjulia/publications/Suppressed_Static_Analysis_Warnings_FSE2025.pdf)
-  and [published author PDF](https://software-lab.org/publications/fse2025_suppressions.pdf)
-  were retrieved. Relevant passages on suppression mapping, evolution and line
-  splitting were reviewed. Their longitudinal setting differs from our isolated
-  formatter intervention. Draft footer placeholders differ from final metadata;
-  the author PDF and retained Crossref record govern the citation. ACM landing
-  access was blocked; publisher-fulltext access and replication are not claimed.
-- Junjie Li and Jinqiu Yang, *Tracking the Evolution of Static Code Warnings:
-  The State-of-the-Art and a Better Approach*, IEEE TSE 50(3), 534-550 (2024),
-  [DOI](https://doi.org/10.1109/TSE.2024.3358283).
-  [Author PDF](https://jinqiuyang.github.io/papers/staticdiff-tse24.pdf) abstract,
-  motivating examples and tracking discussion were reviewed; metadata was checked
-  against Crossref. Matching warnings across revisions is an established problem.
-  Our AST-stable, rule-restricted oracle is not a new general warning tracker.
-  Published performance figures are not transferred to this detector.
-- William M. McKeeman, *Differential Testing for Software*, Digital Technical
-  Journal 10(1), 100-107 (1998).
-  [Original journal PDF](https://vmssoftware.com/docs/dtj-v10-01-1998.pdf), PDF page
-  103 / printed page 100, was reviewed for the comparison principle and metadata.
-  Disagreement identifies candidates requiring interpretation. Our visibility
-  property differs from formatter output equality; agreement is not correctness.
+Li and Yang's *Tracking the Evolution of Static Code Warnings: The State-of-the-Art
+and a Better Approach* shows why warning identity across revisions needs more
+than location matching ([TSE 50(3), 534-550, 2024](https://doi.org/10.1109/TSE.2024.3358283),
+[author text](https://jinqiuyang.github.io/papers/staticdiff-tse24.pdf)). This study's
+AST-stable, three-rule matcher addresses a restricted case. It is not a new
+general warning tracker, and that paper's accuracy figures do not validate it.
 
-## Versioned documentation and originality limits
+McKeeman's *Differential Testing for Software* provides the comparison principle
+([Digital Technical Journal 10(1), 100-107, 1998](https://vmssoftware.com/docs/dtj-v10-01-1998.pdf)).
+Here, formatter disagreement helps locate cases to inspect. Agreement alone
+does not show that suppression or warning identity is correct.
 
-Black's [25.1.0 FAQ source](https://github.com/psf/black/blob/25.1.0/docs/faq.md)
-was fetched to verify relevance to the pin. Ruff's [0.11.13 deviations source](https://github.com/astral-sh/ruff/blob/0.11.13/docs/formatter/black.md)
-documents suppression broadening when a list collapses; the
-[current page](https://docs.astral.sh/ruff/formatter/black/) was also consulted.
-These references establish prior awareness, not measured prevalence.
-MichaReiser's [Pragma comment handling discussion #6670](https://github.com/astral-sh/ruff/discussions/6670),
-dated 18 August 2023, was read as design history, not a peer-reviewed evaluation.
+## Tool documentation and scope
 
-The contribution is the retained paired experiment and separate negative natural
-validation with explicit exclusions. Independent detector accuracy and broad
-population estimates remain open. Related-work coverage cannot establish
-originality priority. Search leads such as ViolationTracker were not used for
-technical conclusions because their full methods were not reviewed here.
+Black's [25.1.0 FAQ](https://github.com/psf/black/blob/25.1.0/docs/faq.md)
+discusses moved lint directives. Ruff's
+[0.11.13 deviations from Black](https://github.com/astral-sh/ruff/blob/0.11.13/docs/formatter/black.md)
+documents suppression broadening when a list collapses. The general interaction
+was already known. Ruff's [pragma-comment discussion](https://github.com/astral-sh/ruff/discussions/6670)
+is useful design history, not an empirical evaluation.
 
-`reports/phase6/literature_access.json` records PDF/metadata URLs, lengths and
-hashes. Crossref payloads are retained. `reports/phase6/documentation_sources.json`
-records pinned-document hashes and review scope. Temporary copies are excluded
-from Git; primary-source links remain available. Access, relevant-passage reading
-and independent replication are distinct. This was not an exhaustive full-text
-review of every cited paper.
+The retained contribution is a paired, inspectable experiment with explicit
+unresolved cases and a separate negative natural-source sample. Neither the
+literature search nor the sample establishes novelty priority or ecosystem rates.
+Independent detector accuracy remains unmeasured.
 
-Statistical method references remain [NIST's Wilson guidance](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm)
-and [Stata's bootstrap manual](https://www.stata.com/manuals/rbootstrap.pdf).
-They support formulas and resampling principles, not exchangeability of our data.
+[NIST's Wilson guidance](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm)
+and [Stata's bootstrap manual](https://www.stata.com/manuals/rbootstrap.pdf)
+support the statistical formulas and resampling principles. They do not justify
+exchangeability of the authored templates. Calculations used NumPy, not Stata.
+
+## Access records
+
+The 2026-11-03 checks are recorded in
+`reports/phase6/literature_access.json` and
+`reports/phase6/documentation_sources.json`, with retained Crossref payloads.
+They distinguish retrieved sources from blocked publisher access. Relevant
+passages were reviewed; independent replication and an exhaustive full-text
+review are not claimed. Current web documentation is background; pinned help
+and executed commands determine the experimental options.
+
+<details>
+<summary>Historical Phase 1 documentation review (unchanged)</summary>
 
 ## Historical Phase 1 documentation review
 
@@ -97,3 +91,5 @@ are not asserted here. Verify bibliographic details and review accessible conten
 in the literature phase, together with formatter/directive interactions and
 differential-testing research. No originality conclusion follows from this
 limited documentation review.
+
+</details>

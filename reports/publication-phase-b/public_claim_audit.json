@@ -1,16 +1,16 @@
 {
   "scope": "Bound numeric observations; protocol constants, references and prose are reviewed separately.",
-  "readme_prose_words": 561,
+  "readme_prose_words": 524,
   "documents": {
     "README.md": {
       "template": "report/README_public.template.md",
-      "template_sha256": "4e0937778746cc972db32c1fe0cc3d2b5ab1ba20dc98046fbae79e61256c5a30",
-      "sha256": "fd95dab311ebc93096c8e10489275f989a5c8094b6a2ff62ee7206f9be84dde1"
+      "template_sha256": "069888cbce9a770870ff36eea8b227757e986ab5b02d432e6d2fc721f822789b",
+      "sha256": "6f6dd2c3b62f4d478f0d6bb80f0575596d9ca48801651c7e04e68067c1f54c58"
     },
     "report/research_report_public.md": {
       "template": "report/research_report_public.template.md",
-      "template_sha256": "58c23cdc7e1d86c61aaeba32b6242ad758cecba95223316c49285634e4ae6473",
-      "sha256": "9c021054513a71749bb8a6d5e12cb00cbbf9232d3b14412841c7ec51a56a0241"
+      "template_sha256": "14038693823ec1d6556bb193a2264874fa9743ed403a7e2c6de6d5e40a00b96c",
+      "sha256": "c1fea2c36d739d80a40c87d610777758013065b186043afd1a16eb01bfa8d790"
     }
   },
   "claims": {
@@ -44,7 +44,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77
+          75
         ]
       }
     },
@@ -62,7 +62,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          70
+          68
         ]
       }
     },
@@ -80,7 +80,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          82
+          80
         ]
       }
     },
@@ -155,7 +155,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          72
+          70
         ]
       }
     },
@@ -192,7 +192,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          81
+          79
         ]
       }
     },
@@ -209,10 +209,10 @@
       "locations": {
         "README.md": [
           18,
-          41
+          46
         ],
         "report/research_report_public.md": [
-          50,
+          48,
           109
         ]
       }
@@ -231,7 +231,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          71
+          69
         ]
       }
     },
@@ -248,10 +248,10 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "README.md": [
-          27
+          31
         ],
         "report/research_report_public.md": [
-          66
+          64
         ]
       }
     },
@@ -287,7 +287,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77
+          75
         ]
       }
     },
@@ -305,7 +305,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          70
+          68
         ]
       }
     },
@@ -322,10 +322,10 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "README.md": [
-          26
+          30
         ],
         "report/research_report_public.md": [
-          66
+          64
         ]
       }
     },
@@ -377,7 +377,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          81
+          79
         ]
       }
     },
@@ -433,7 +433,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          71
+          69
         ]
       }
     },
@@ -470,7 +470,7 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "report/research_report_public.md": [
-          72
+          70
         ]
       }
     },
@@ -524,10 +524,10 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          17
+          16
         ],
         "report/research_report_public.md": [
-          48
+          46
         ]
       }
     },
@@ -563,14 +563,14 @@
       "source_sha256": "fa13e394171b1e7810288b62c243c354797e605f8e30453573cb17098ad50f1a",
       "locations": {
         "README.md": [
-          18,
-          26,
-          37
+          17,
+          30,
+          41
         ],
         "report/research_report_public.md": [
-          48,
-          66,
-          75
+          46,
+          64,
+          73
         ]
       }
     },
@@ -607,7 +607,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          82
+          80
         ]
       }
     },
@@ -623,10 +623,10 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          17
+          16
         ],
         "report/research_report_public.md": [
-          48
+          46
         ]
       }
     },
@@ -642,7 +642,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          40
+          44
         ],
         "report/research_report_public.md": [
           109,
@@ -662,7 +662,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          40
+          45
         ],
         "report/research_report_public.md": [
           117
@@ -698,7 +698,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          42
+          47
         ],
         "report/research_report_public.md": [
           119
@@ -717,7 +717,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          41
+          45
         ],
         "report/research_report_public.md": [
           117
@@ -784,10 +784,10 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "README.md": [
-          31
+          35
         ],
         "report/research_report_public.md": [
-          56
+          54
         ]
       }
     },
@@ -803,7 +803,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "report/research_report_public.md": [
-          88
+          86
         ]
       }
     },
@@ -819,7 +819,7 @@
       "source_sha256": "874d505bb5a1c897becf8b4de75765d7a882e840b2c55a8d41b30e0d5c7f6b7c",
       "locations": {
         "report/research_report_public.md": [
-          88
+          86
         ]
       }
     },
@@ -836,10 +836,10 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "README.md": [
-          27
+          31
         ],
         "report/research_report_public.md": [
-          66
+          64
         ]
       }
     },
@@ -857,10 +857,10 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "README.md": [
-          30
+          34
         ],
         "report/research_report_public.md": [
-          73
+          71
         ]
       }
     },
@@ -895,10 +895,10 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "README.md": [
-          32
+          36
         ],
         "report/research_report_public.md": [
-          70
+          68
         ]
       }
     },
@@ -916,7 +916,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          73
+          71
         ]
       }
     },
@@ -950,10 +950,10 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "README.md": [
-          27
+          31
         ],
         "report/research_report_public.md": [
-          66
+          64
         ]
       }
     },
@@ -971,7 +971,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          73
+          71
         ]
       }
     },
@@ -1006,10 +1006,10 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "README.md": [
-          32
+          36
         ],
         "report/research_report_public.md": [
-          70
+          68
         ]
       }
     },
@@ -1027,7 +1027,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          73
+          71
         ]
       }
     },
@@ -1060,7 +1060,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77
+          75
         ]
       }
     },
@@ -1076,8 +1076,8 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77,
-          84
+          75,
+          82
         ]
       }
     },
@@ -1095,7 +1095,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77
+          75
         ]
       }
     },
@@ -1113,7 +1113,7 @@
       "source_sha256": "178626da7e29f2c91ffe511adb23e3f58d72239ec57b5261c45b804845257ec4",
       "locations": {
         "report/research_report_public.md": [
-          77
+          75
         ]
       }
     },
@@ -1436,10 +1436,10 @@
       "source_sha256": "fc2c7bda1a2959162fa54c259f59407743d678efde42e4b8460c338f3020da7c",
       "locations": {
         "README.md": [
-          21
+          17
         ],
         "report/research_report_public.md": [
-          66
+          64
         ]
       }
     }

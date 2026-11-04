@@ -1,19 +1,34 @@
-# Future research opportunities
+# Next research questions
 
-These are proposals, not completed experiments. They require new protocols and
-separate evidence; none changes this pilot's primary labels or denominators.
+These are proposed studies. None changes this pilot's observations or labels.
 
-| Priority | Question | Proposed design | Evidence needed before a stronger claim |
-|---|---|---|---|
-| Independent accuracy | Does correspondence recover the intended warning identity? | Held-out changed/unchanged pairs labeled by independent reviewers, with disagreements adjudicated without oracle output | False positives/negatives, precision/recall with uncertainty, clear treatment of abstention |
-| Natural relevance | Does drift occur where selected warnings are present? | Prospectively define a warning-relevant natural stratum separately from an unfiltered sample; retain all eligibility and exclusion counts | Rates within the defined frame; no extrapolation from a selected positive corpus |
-| Versions and configurations | Which observations persist across releases and settings? | Pin a prospective version/configuration matrix; pair identical inputs and separate linter from formatter changes | Raw outputs and version-specific correspondence, not an assumption that newer is better |
-| AST representation | Can type-ignore position metadata be handled more informatively? | Specify a secondary gate prospectively; compare strict and narrowly normalized representations | Independent review of executable syntax, type-checker effects and changes to exclusion rates |
-| Matching coverage | Can f-string and exception-binding ambiguity be reduced safely? | Add new anchors against independent examples, then evaluate on held-out inputs | Coverage gains plus error/abstention analysis; no automatic conversion of unknowns to negatives |
-| Broader inference | How frequent are changes in a defined population? | Establish a repository/file sampling frame and dependence-aware analysis before collection | Design-based or justified model-based inference with diagnostic relevance and nonresponse accounted for |
+The first need is an independent check of warning correspondence. Reviewers could
+label held-out source pairs without seeing the oracle output, then adjudicate
+disagreements. The evaluation should report incorrect matches, missed matches
+and abstentions separately. More variants of the existing templates would not
+provide that independence.
 
-Prioritize independent adjudication before presenting the oracle as a developer
-check with useful accuracy. The negative natural result warrants stronger sampling
-and relevance analysis, not replacement of sampled files with favorable examples.
-More variants of the same authored templates do not establish independent support.
-Generalization to other languages, linters or runtime semantics remains untested.
+The natural sample needs more opportunities to test suppression. A prospective
+study could keep an unfiltered sample and add a separately defined stratum with
+selected suppressed warnings and formatting changes. Eligibility and exclusion
+counts would need to be retained for both. Selecting only cases that exhibit
+drift would answer a different question and could not support a prevalence rate.
+
+F-string and exception-binding anchors are concrete candidates for extending
+coverage. Any extension should be checked against independent examples before
+evaluation on held-out inputs. Likewise, a revised AST gate could distinguish
+type-ignore position metadata from executable structure, but type-checker effects
+would need separate review. The four existing AST exclusions and 32 automatic
+ambiguities should remain unchanged as records of the original procedure.
+
+A pinned version/configuration matrix could test which observed changes persist.
+Keeping linter versions fixed while varying the formatter, then varying the
+linter separately, would help distinguish transformation effects from diagnostic
+changes. Raw outputs and version-specific correspondence would still be required.
+
+Estimating frequency beyond a selected corpus requires a defined repository/file
+sampling frame and a dependence-aware analysis specified before collection.
+Projects, template treatments and paired formatter runs are not interchangeable
+independent observations. Broader rules, languages and runtime properties would
+each require new measurement criteria rather than a stronger interpretation of
+the present results.

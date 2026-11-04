@@ -1,0 +1,16 @@
+{
+  "pages": 6,
+  "reportlab": "4.4.9",
+  "markdown_sha256": "c1fea2c36d739d80a40c87d610777758013065b186043afd1a16eb01bfa8d790",
+  "pdf_sha256": "f2b02669105c8d6a9bc07a39333025a161112fe8fab2f64dda353e8c363d8276",
+  "required_sections_present": true,
+  "page_text_characters": [
+    2706,
+    3410,
+    2727,
+    2221,
+    3497,
+    1963
+  ],
+  "visual_review": "Separate rendered-page inspection required; see pdf_visual_review.md."
+}

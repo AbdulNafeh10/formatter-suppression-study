@@ -4,27 +4,25 @@ Independent research report | Public draft, November 2026
 
 ## 1. Introduction
 
-Can formatting Python code change which lint warnings are suppressed, even when its executable syntax stays the same? I tested this question using Black and Ruff as formatters and Ruff as the linter.
+A `noqa` comment affects linting through its position in the source. Joining two lines can put more code under the same comment; splitting a statement can leave part of it uncovered. Neither change requires a different parsed program structure. This study asks when Black and Ruff produce such changes for three selected Ruff rules.
 
-A comment such as `# noqa: F821` tells Ruff to hide an undefined-name warning. Formatting can move that comment or put more code on the line it covers. A warning may then disappear from normal lint output even though the code that triggered it is still present. Formatting can also separate code from a comment that previously suppressed its warnings.
+For example, `# noqa: F821` suppresses undefined-name warnings within its scope. If formatting moves that comment beside two names instead of one, a warning may disappear from ordinary lint output while the name that caused it is still present. The reverse can happen when a formatter separates statements.
 
-I compared warning visibility before and after formatting. Checking the number of warnings alone would not be enough: a warning could move, become hidden, or be replaced by another warning. The comparison therefore checks the underlying warnings and matches their source occurrences before attributing a change to suppression.
+The comparison follows warning occurrences, rather than just counting them. Equal counts can conceal a swap in visibility, and changed counts can reflect different underlying diagnostics. Each source pair therefore goes through four lint passes and a correspondence check before a change is attributed to suppression.
 
-The experiment has two parts. A controlled suite tests specific source layouts and directive placements. A separate sample contains files from public Python repositories. The controlled cases show when changes can occur; their proportions do not estimate how common those changes are in ordinary projects.
+Controlled inputs exercise particular layouts and directive placements. A separate sample of repository files checks for changes in naturally occurring source. The two datasets answer different questions and are reported separately.
 
 ## 2. Related Work
 
-Hu et al. [1] studied warning suppressions and their evolution across project histories. Their treatment of line-splitting cases shows why a changed warning count does not necessarily mean a new warning. Their setting differs from isolating a formatter's effect on an otherwise fixed input.
+Hu et al. [1] studied suppressions across project histories. Their treatment of line splitting is relevant here because a changed warning count need not mean a new warning. Li and Yang [2] studied correspondence across revisions, a broader setting than the AST-stable, rule-restricted pairs used in this experiment. McKeeman's differential-testing account [3] supplies the comparison principle: disagreement identifies a case to investigate.
 
-Li and Yang [2] studied warning tracking across revisions. That work supports treating correspondence as a problem to check, rather than assuming that warnings on the same line are the same warning. McKeeman's account of differential testing [3] provides a related testing idea: differences between comparable systems identify cases worth investigating.
-
-The general formatter/directive interaction is already documented. Black's FAQ discusses moved linter comments [4]. Ruff's formatter documentation gives an example where collapsing a list broadens the coverage of a `noqa` comment [5]. I do not claim to have discovered this possibility. This project supplies a paired experiment, saved diagnostic evidence and a separate natural-source check.
+Formatter documentation already describes this interaction. Black's FAQ discusses moved linter comments [4], and Ruff gives a list-collapse example that broadens `noqa` coverage [5]. This experiment measures that known possibility under fixed settings, with saved warning identities and a separate repository sample. It makes no claim to discovering the interaction.
 
 ## 3. Methodology
 
 ### 3.1 Four diagnostic checks
 
-The experiment used CPython 3.11.9, Black 25.1.0 and Ruff 0.11.13 on Windows. These are fixed historical versions. Formatting used line length 88, target Python 3.11 and no preview mode. The selected rules were F401 (unused import), F821 (undefined name) and F841 (unused local variable). Lint fixes were disabled [6]. Analyzed programs were never executed.
+The runs used CPython 3.11.9, Black 25.1.0 and Ruff 0.11.13 on Windows. Formatting targeted Python 3.11 with line length 88 and preview disabled. Ruff selected F401 (unused import), F821 (undefined name) and F841 (unused local variable), with fixes disabled [6]. These are historical pins, not current-release recommendations. Analyzed programs were never executed.
 
 | Pass | Source | Suppression comments |
 |---|---|---|
@@ -35,27 +33,27 @@ The experiment used CPython 3.11.9, Black 25.1.0 and Ruff 0.11.13 on Windows. Th
 
 <!-- pagebreak -->
 
-I ran all four checks because normal lint output cannot reveal warnings that a comment hides. Passes B and D expose those underlying warnings. Comparing A with B, and C with D, identifies which warnings are suppressed within each source snapshot. The visible warnings must be a multiset subset of the underlying warnings.
+Passes B and D reveal warnings hidden by `noqa`. Within one snapshot, the difference between underlying and visible diagnostics identifies suppression. The visible output must be a multiset subset of the underlying output. Rule, message and exact range identify a warning for this within-source subtraction; those coordinates cannot identify it across formatting.
 
 ### 3.2 Syntax and warning correspondence
 
-I compared abstract syntax trees, or ASTs, to check that formatting preserved the parsed program structure. Parsing included type comments, and the comparison omitted ordinary location attributes. This is a syntax check, not proof of identical runtime behavior. Some type-ignore line fields remain in the AST representation and can cause conservative exclusions.
+The first attribution gate compares abstract syntax trees (ASTs), parsed with type comments enabled and ordinary location attributes omitted. Unequal dumps stop suppression attribution. This catches changes in parsed structure, but it is not a proof of runtime equivalence. In particular, `TypeIgnore.lineno` remains an AST field and can make otherwise matching dumps unequal.
 
-The automatic matcher identifies warnings by rule, AST occurrence and token context. It does not match across formatting by line number or message alone. Correspondence must be unique, and the underlying warning identities must agree. A visible warning that becomes suppressed is Newly hidden; a suppressed warning that becomes visible is Newly exposed. Preserved means no visibility change for the selected warnings. Ambiguity, changed diagnostics, AST changes and tool failures have separate labels.
+Across snapshots, the identity key is the rule plus an AST field/index path. The matcher also requires the coordinate-free node content and construct/diagnostic tokens to agree. It supports import aliases, load Names and store Names for the selected rules. Only complete, unique correspondence with unchanged underlying warnings permits a visibility judgment: visible to suppressed is Newly hidden, and suppressed to visible is Newly exposed. Preserved, Mixed, Ambiguous, Diagnostic changed, AST changed and Execution failure remain distinct outcomes.
 
 ### 3.3 Inputs
 
-I used {{FAMILIES}} source templates, each with {{MODES}} directive modes, to make {{CONTROLLED_N}} controlled inputs. Modes include no directive, standalone comments, inline specific or blanket comments at different positions, and file-level suppression. Repeated executable structures across treatments are intentional. Input generation and validation are retained with the source manifest, and the design was fixed before the main run. These examples were designed to exercise formatting cases, rather than sampled from typical Python code.
+The controlled design has {{FAMILIES}} templates and {{MODES}} directive modes, giving {{CONTROLLED_N}} inputs. Modes include absent, standalone, inline specific, inline blanket, multicode and file-level directives. Treatments intentionally reuse executable structure. The source specification and validation were fixed before the main run; the examples were constructed to exercise formatting behavior rather than sampled from typical Python code.
 
-The natural dataset contains {{NATURAL_N}} files from pinned commits of Requests, Flask and pytest. Eligible files were valid UTF-8 Python under the study grammar, contained a genuine `noqa` comment, met the size cap and passed the documented generated/vendored exclusions. Seeded hash ranking selected files within each repository without using their outcomes. The primary check used standardized settings and an artificial filename. A separate check used archived Ruff configuration and real relative paths where available. Neither recreated full project CI.
+The natural sample has {{NATURAL_N}} files from pinned Requests, Flask and pytest commits. Eligibility required UTF-8 Python under the study grammar, a genuine `noqa` comment, the documented size cap and generated/vendored exclusions. Seeded hash ranking selected files without using their results. Primary linting used standardized settings and an artificial filename. Separate checks used archived Ruff configuration and original paths where available; they did not reproduce full project CI.
 
 ### 3.4 Analysis and supplementary review
 
-Each input was tested with both formatters. Comparisons are paired by original source, and directive variants from one template are related. Detailed statistical choices were made after earlier counts were known, so the interval analyses are exploratory. Whole-cluster resampling keeps treatments and formatter pairing together [7]. Family-incidence Wilson calculations concern whether a family has any drift [8]. The model assumptions are not established by these authored inputs.
+Both formatters received each original input, so their outcomes are paired. Treatments from one template also share structure. Whole-cluster resampling keeps those treatments and the formatter pairing together [7]; family-incidence Wilson calculations ask whether a family has any drift [8]. Detailed interval choices followed the earlier outcome counts, making the analysis exploratory.
 
-A later review examined every originally ambiguous comparison. Its separate procedure checked literal source occurrences, saved warnings and comment-only interventions. It proposed Preserved for all {{REVIEW_N}} comparisons. The reviewed calculations are conditional on accepting those proposals. The original labels and analysis remain available, and the matcher itself was not changed.
+A later review revisited every Ambiguous comparison using literal source occurrences, saved diagnostics and comment-only interventions. It proposed Preserved for all {{REVIEW_N}}. A separate calculation applies those proposals; the automatic labels, original analysis and matcher are unchanged.
 
-AI assistance was used for implementation, debugging, controlled input generation, analysis scripts and writing. Inputs were checked with deterministic tools, and measurements came from actual formatter and linter execution. The supplementary review was also AI-assisted; it was not independent human adjudication. Natural inputs were archived without study-generated edits, and upstream AI use is unknown.
+AI tools assisted implementation, debugging, controlled input generation, analysis scripts and writing, including this editorial revision. Measurements came from executed tools, with deterministic input and consistency checks. The supplementary review was also AI-assisted, not independent human adjudication. Natural source was collected without study-generated edits; its authors' AI use is unknown.
 
 <!-- pagebreak -->
 
@@ -63,7 +61,7 @@ AI assistance was used for implementation, debugging, controlled input generatio
 
 ### 4.1 Controlled comparisons
 
-Black produced {{B_DRIFT}} confirmed suppression changes and Ruff {{R_DRIFT}}. Both were tested on the same {{CONTROLLED_N}} inputs, giving {{CONTROLLED_COMPARISONS}} controlled comparisons in total. Across all scheduled comparisons, the rates were {{B_PCT}}% and {{R_PCT}}%. No controlled comparison had an execution failure, AST change, underlying-diagnostic change or mixed drift.
+Black had {{B_DRIFT}} confirmed suppression changes and Ruff {{R_DRIFT}} on the same {{CONTROLLED_N}} inputs: {{CONTROLLED_COMPARISONS}} comparisons in total. These account for {{B_PCT}}% and {{R_PCT}}% of scheduled comparisons, respectively. The denominators include the unresolved cases listed below. No controlled comparison had an execution failure, AST change, underlying-diagnostic change or mixed drift.
 
 | Outcome | Original Black | Original Ruff | Reviewed Black | Reviewed Ruff |
 |---|---:|---:|---:|---:|
@@ -72,41 +70,43 @@ Black produced {{B_DRIFT}} confirmed suppression changes and Ruff {{R_DRIFT}}. B
 | Newly exposed | {{B_EXPOSED}} | {{R_EXPOSED}} | {{B_EXPOSED}} | {{R_EXPOSED}} |
 | Ambiguous | {{B_AMBIG}} | {{R_AMBIG}} | {{B_REVIEW_AMBIG}} | {{R_REVIEW_AMBIG}} |
 
-Each column has {{CONTROLLED_N}} comparisons. The reviewed columns use supplementary proposals, not new automatic classifications. [Figure 1](../reports/figures-reviewed/figure1_reviewed_outcomes.png) shows the same distinction.
+Each column contains {{CONTROLLED_N}} comparisons. The automatic columns keep the original labels. The reviewed columns apply only the supplementary proposals; confirmed-change counts stay the same. [Figure 1](../reports/figures-reviewed/figure1_reviewed_outcomes.png) shows both versions.
 
-The original matcher resolved {{ORIGINAL_PAIRS}} input pairs. Among those inputs, the drift rates were {{B_RESOLVED_PCT}}% for Black and {{R_RESOLVED_PCT}}% for Ruff, a difference of {{ORIGINAL_DIFF}} percentage points. The supplementary calculation includes {{REVIEWED_PAIRS}} pairs and gives a difference of {{REVIEWED_DIFF}} points. The confirmed-change counts do not increase; the extra pairs are reviewed as no drift for both formatters.
+The automatic comparison resolves {{ORIGINAL_PAIRS}} input pairs. On that common subset, drift is {{B_RESOLVED_PCT}}% for Black and {{R_RESOLVED_PCT}}% for Ruff, a difference of {{ORIGINAL_DIFF}} percentage points. Accepting the review expands the denominator to {{REVIEWED_PAIRS}} pairs and gives {{REVIEWED_DIFF}} points. The difference changes because the added pairs are reviewed as no drift for both formatters, not because more changes were found.
 
 | Paired drift status | Ruff no drift | Ruff drift |
 |---|---:|---:|
 | Black no drift | {{PAIR_00}} | {{PAIR_01}} |
 | Black drift | {{PAIR_10}} | {{PAIR_11}} |
 
-This is the supplementary {{REVIEWED_PAIRS}}-pair table. Binary drift overlap does not imply that both formatters changed visibility in the same direction.
+The table uses the supplementary {{REVIEWED_PAIRS}} pairs. A shared drift entry means both formatters changed visibility; it does not require the same direction of change.
 
 ### 4.2 Ambiguity and uncertainty
 
-The ambiguity came from two template families. The {{FSTRING_N}} f-string comparisons had identical original and formatted bytes, but the embedded identifier did not align with a complete Python 3.11 token. The {{EXCEPTION_N}} exception-binding comparisons changed only assignment spacing. The matcher did not support the string-valued `ExceptHandler.name` field. The review found no visibility transition in either group. It checked all {{REPLAY_N}} saved lint replays and {{INTERVENTION_N}} comment interventions. Human review flags remain in the audit, particularly for the exception-binding interpretation.
+Two template families account for the ambiguity. In {{FSTRING_N}} f-string comparisons, original and formatted bytes are identical, but the embedded identifier does not align with a complete Python 3.11 token. In {{EXCEPTION_N}} exception-binding comparisons, only assignment spacing changes. The latter warning is attached to the string-valued `ExceptHandler.name`, outside the matcher's store-Name policy.
+
+The separate review found no visibility transition in these cases, checking {{REPLAY_N}} saved lint replays and {{INTERVENTION_N}} comment interventions. Its human-review flags remain, particularly for identifying the same exception binding. These proposals do not constitute a validated extension of the matcher.
 
 | Cluster model | Original difference interval (pp) | Reviewed difference interval (pp) |
 |---|---|---|
 | Template families | {{OLD_FAMILY_LO}} to {{OLD_FAMILY_HI}} | {{NEW_FAMILY_LO}} to {{NEW_FAMILY_HI}} |
 | Syntax categories | {{OLD_CATEGORY_LO}} to {{OLD_CATEGORY_HI}} | {{NEW_CATEGORY_LO}} to {{NEW_CATEGORY_HI}} |
 
-These are exploratory 95% model intervals, not ecosystem confidence intervals. Each model used {{DRAWS}} paired whole-cluster draws. Original calculations used {{OLD_FAMILIES}} complete families and {{OLD_CATEGORIES}} categories; reviewed calculations use {{NEW_FAMILIES}} and {{NEW_CATEGORIES}}. The reviewed intervals were recalculated on their own denominator. [Figure 2](../reports/figures-reviewed/figure2_reviewed_pairs.png) shows the reviewed profiles and comparison. Original unresolved-outcome bounds and family-level Wilson results remain in their separate analysis files.
+Each exploratory 95% model interval uses {{DRAWS}} paired whole-cluster draws. The original analysis has {{OLD_FAMILIES}} complete families and {{OLD_CATEGORIES}} categories; the reviewed analysis has {{NEW_FAMILIES}} and {{NEW_CATEGORIES}}. Its intervals were recalculated with the new denominator. [Figure 2](../reports/figures-reviewed/figure2_reviewed_pairs.png) shows the reviewed profiles. Original unresolved-outcome bounds and family-level Wilson results remain separate. None of these intervals establishes ecosystem coverage.
 
 <!-- pagebreak -->
 
 ### 4.3 Source patterns
 
-Directive placement and source layout were associated with different outcomes in the controlled suite. For example, Black collapsed a short list containing an inline specific `noqa` comment, placing both names under the comment at the end of the line. The warning for the second name became hidden. Ruff kept that example expanded and preserved visibility. Splitting semicolon-separated assignments exposed a previously suppressed warning with both formatters.
+The source pairs show two concrete mechanisms. Black collapsed a short list whose first item had a specific `noqa` comment, leaving both names on the covered line. The second name's warning became hidden. Ruff kept that list expanded. With semicolon-separated assignments, both formatters split the line and exposed a warning previously covered by the trailing comment.
 
-The pattern tables count the fixed treatments, not independent discoveries. [Figure 3](../reports/figures-reviewed/figure3_reviewed_patterns.png) shows drift counts by category and directive placement. Its boundary-category cells use the supplementary review; the original unresolved cells remain in the original figure.
+The pattern tables describe the fixed input/treatment grid, whose cells reuse templates. [Figure 3](../reports/figures-reviewed/figure3_reviewed_patterns.png) groups drift by category and placement. Its boundary cells use the review; the original figure keeps those cells unresolved.
 
-Formatting changed text in {{B_CHANGED}} Black comparisons and {{R_CHANGED}} Ruff comparisons. Of those, the original analysis classified {{B_CHANGED_PRES}} and {{R_CHANGED_PRES}} as Preserved. With the review applied, those counts become {{B_REVIEW_CHANGED_PRES}} and {{R_REVIEW_CHANGED_PRES}}. A text change alone therefore does not establish changed suppression.
+Text changed in {{B_CHANGED}} Black comparisons and {{R_CHANGED}} Ruff comparisons. Of these, {{B_CHANGED_PRES}} and {{R_CHANGED_PRES}} were automatically Preserved; the reviewed counts are {{B_REVIEW_CHANGED_PRES}} and {{R_REVIEW_CHANGED_PRES}}. Reformatting text and changing suppression are different events.
 
 ### 4.4 Natural-source comparisons
 
-No confirmed suppression changes were found in the {{NATURAL_PAIRS}} primary comparisons involving {{NATURAL_N}} original files. The natural-source results were not reclassified by the ambiguity review.
+The {{NATURAL_PAIRS}} primary comparisons of {{NATURAL_N}} repository files produced no confirmed suppression change. The supplementary ambiguity review does not alter these results.
 
 | Repository | Files tested | Black Preserved / AST excluded | Ruff Preserved / AST excluded |
 |---|---:|---|---|
@@ -114,39 +114,39 @@ No confirmed suppression changes were found in the {{NATURAL_PAIRS}} primary com
 | Flask | {{FLASK_N}} | {{FLASK_B_PRES}} / {{FLASK_B_AST}} | {{FLASK_R_PRES}} / {{FLASK_R_AST}} |
 | pytest | {{PYTEST_N}} | {{PYTEST_B_PRES}} / {{PYTEST_B_AST}} | {{PYTEST_R_PRES}} / {{PYTEST_R_AST}} |
 
-There were {{NATURAL_UNCHANGED}} unchanged outputs and {{NATURAL_CHANGED}} changed outputs. Among the original files, {{ZERO_FILES}} had no underlying warnings from the selected rules, corresponding to {{ZERO_COMPARISONS}} comparisons. This left fewer opportunities to observe suppression drift than in the warning-focused controlled suite. The natural relevance figure is retained separately in [the original Figure 4](../reports/figures/figure4_natural_relevance.png).
+Only {{NATURAL_CHANGED}} outputs changed; {{NATURAL_UNCHANGED}} stayed identical. Of the original files, {{ZERO_FILES}} had no underlying selected-rule warnings, corresponding to {{ZERO_COMPARISONS}} comparisons. A natural `noqa` comment can target rules outside this study, so eligibility alone did not guarantee relevant warnings. [Original Figure 4](../reports/figures/figure4_natural_relevance.png) shows that diagnostic relevance.
 
-The {{NATURAL_AST_EXCLUSIONS}} AST exclusions arose solely from shifted `TypeIgnore.lineno` fields. A secondary normalization made those ASTs equal, but the original labels remain excluded. Available native-configuration checks completed {{NATIVE_COMPLETED}} comparisons and retained the same primary outcome classifications. Requests supplied {{NATIVE_MISSING}} missing-configuration records, not completed native checks.
+The {{NATURAL_AST_EXCLUSIONS}} AST exclusions came solely from shifted `TypeIgnore.lineno` fields. Zeroing those fields in a secondary investigation made the dumps equal, but the primary labels stay excluded. Native-configuration checks completed {{NATIVE_COMPLETED}} comparisons with the same outcome classifications as the primary checks. Another {{NATIVE_MISSING}} Requests records report missing configuration; they are statuses, not executed native comparisons.
 
-The early prospective natural repeat sample contained only unchanged outputs. The later full reproduction covered all {{NATURAL_PAIRS}} primary comparisons, including all {{NATURAL_CHANGED}} changed outputs. Those checks matched the originals. Repeated measurements confirm agreement on these inputs; they do not enlarge the independent sample.
-
-## 5. Discussion
-
-Black changed suppression more often than Ruff on the controlled cases. That difference describes this suite and these tool versions. It does not show that one formatter is generally better. Both hiding and exposure occurred, and fewer total changes did not mean fewer exposed warnings.
-
-The list and semicolon examples show why checking underlying warnings mattered. In each case, the lint finding still referred to the same code occurrence, while its visible state changed. Whether that change violates an intended formatter policy is a separate question. The experiment measured the change, not the correctness of every warning or directive.
+The first natural repeat sample happened to contain only unchanged outputs. Phase 7 later repeated all {{NATURAL_PAIRS}} primary comparisons, including all {{NATURAL_CHANGED}} changed outputs, and matched the originals. This extends repeatability coverage while leaving the independent sample unchanged.
 
 <!-- pagebreak -->
 
-The repository sample produced a different result. Most outputs did not change under formatting, and many inputs had no warnings relevant to the selected rules. These observations may help explain the absence of confirmed drift, but they do not prove that prior formatting caused the result or that the formatters are safe on other files. If I repeated this part of the study, I would define a separate sample of files with selected warnings and changed formatter output. Its results would apply to that sample, not to all Python files.
+## 5. Discussion
 
-The supplementary review identifies two specific gaps in the matcher. It does not establish a general solution for matching f-string or exception-binding warnings. If the matcher were extended, I would evaluate those changes on held-out examples with independently checked labels before claiming improved accuracy.
+Ruff had fewer suppression changes overall in this controlled suite, but fewer total changes did not mean fewer exposed warnings. Hiding and exposure need to be read separately. The comparison is about these inputs, settings and tool versions, not a general ranking of the formatters.
+
+In the list and semicolon pairs, the underlying warning still belongs to the same source occurrence. What changes is whether the directive covers it. That distinction is the reason for checking correspondence before visibility. The experiment does not judge whether the warning is useful or whether a formatter should adopt a particular comment policy.
+
+The natural sample offers fewer opportunities to observe those mechanisms: most outputs were unchanged and many selected warning sets were empty. Prior formatting could be one explanation for unchanged text, but repository formatting history was not measured here. A follow-up could define a separate stratum with relevant warnings and changed formatter output; its rate would describe that stratum, not all Python files.
+
+The review also separates two matcher limitations from actual visibility changes. A wider matcher would need new anchors for those constructs, followed by testing on independently checked held-out examples. Resolving these saved cases alone cannot establish how that extension would behave elsewhere.
 
 ## 6. Limitations
 
-The controlled examples were designed to stress selected layouts. Reusing a template across directive modes creates related observations. Whole-cluster resampling preserves some of that dependence, but the assumptions that clusters are independent and exchangeable remain unverified. Interval choices were made after earlier counts were known. The reviewed intervals also depend on the proposed labels and do not account for errors in the AI-assisted review.
+The templates deliberately stress selected layouts, and directive variants share code. Cluster resampling preserves that within-group dependence, but independence and exchangeability between authored clusters remain assumptions. Interval choices were made after the earlier counts were known. Reviewed intervals are also conditional on the proposed labels and omit review error.
 
-The natural sample came from a few historical repositories chosen for feasibility. Selection required a natural `noqa` comment, valid UTF-8 source and the study grammar, and excluded files using documented size and generated/vendored rules. The sample cannot establish a Python-wide rate. Empty selected-warning sets and unchanged outputs further limit the negative finding. Counts and bounds for each eligible historical archive remain separate in the original analysis.
+The repository sample is limited to a few historical projects chosen for feasibility. Its UTF-8, grammar, size, generated/vendored and natural-comment filters define a narrow frame. Empty warning sets and unchanged outputs restrict the negative finding further. The original analysis reports each archive's eligible population and completion bounds separately.
 
-The AST gate is conservative and is not a proof of runtime equivalence. Warning matching covers only the selected Ruff rules and supported anchors. The same AI-assisted process developed code, examples, tests and interpretation. Development controls and repeated executions reduce some implementation risks but do not supply independent held-out ground truth. I therefore report no precision, recall or F1.
+The AST gate and supported warning anchors limit attribution. AST equality does not prove runtime equivalence, and unsupported correspondence remains uncertain. The same AI-assisted process developed implementation, examples, tests and interpretation. Controls and repeated runs can expose inconsistencies, but they do not supply independently adjudicated held-out labels. Precision, recall and F1 therefore remain unmeasured.
 
-Only the saved Windows/Python environment and pinned tool versions were tested. The standardized filename differs from real project context, and native configuration checks are partial. A fresh-machine installation, other platforms, later releases, other diagnostic families and complete project CI were not evaluated.
+Testing covered the pinned Windows/Python environment. The artificial primary filename differs from real project context, and native checks restore only part of that context. Other machines, operating systems, releases, diagnostic families and full project CI were not evaluated.
 
 ## 7. Conclusion
 
-Formatting changed which Ruff warnings were suppressed in the controlled tests, even when the strict AST check passed. No confirmed changes appeared in the natural-source sample. The separate review supports Preserved proposals for the original matcher ambiguities while leaving the automatic record intact.
+On the controlled inputs, formatting changed which Ruff warnings were suppressed while passing the strict AST gate. The repository sample produced no confirmed change. The later review supports Preserved proposals for the original ambiguities and leaves their automatic labels intact.
 
-The next useful work is independent review of a held-out set, a larger natural sample with relevant warnings and changed source, and comparisons across additional rules and tool versions. A small developer check could then be evaluated against that evidence. These are proposed extensions, not completed features.
+The next evaluation should establish correspondence accuracy on independently reviewed held-out pairs. A larger natural sample with relevant warnings and changed output would address a different gap. Both are needed before presenting this implementation as a developer check with measured error rates.
 
 <!-- pagebreak -->
 
@@ -170,6 +170,6 @@ The next useful work is independent review of a held-out set, a larger natural s
 
 ### Data and reproduction
 
-The [reproduction instructions](../docs/reproducibility.md) identify the pinned environment and commands. Original data and metrics are under `datasets` and `reports/phase5/analysis`. The [supplementary audit](../reports/ambiguous-audit/ambiguous_comparisons_review.md) retains each source, raw diagnostic output and review reason. Reviewed metrics and draws are under `reports/publication-phase-a/analysis`. A separate claim ledger for this public draft is under `reports/publication-phase-b`.
+The [reproduction guide](../docs/reproducibility.md) covers the pinned environment and fresh output paths. Primary data and automatic metrics are under `datasets` and `reports/phase5/analysis`. The [ambiguity audit](../reports/ambiguous-audit/ambiguous_comparisons_review.md) records source occurrences, diagnostics and judgment reasons. Reviewed metrics and draws are under `reports/publication-phase-a/analysis`; the public document claim ledger is under `reports/publication-phase-b`.
 
-This draft does not replace the [original report](research_report.md) or its PDF. Scientific findings and decoded source bytes are preserved in this privacy-derived snapshot. Execution metadata is anonymized; full upstream archives and unrelated assets are excluded. See the [snapshot notes](../docs/public_snapshot.md) and [third-party notices](../THIRD_PARTY_NOTICES.md). The [MIT license](../LICENSE) covers author-owned code and documentation; upstream terms remain separate. No publication has been performed.
+The [original report](research_report.md) and its PDF remain frozen. In this public copy, execution metadata is anonymized and natural trial source uses lossless, noticed containers. Full upstream archives and unrelated assets are excluded; [snapshot notes](../docs/public_snapshot.md) explain the reconstruction limits. [MIT](../LICENSE) covers author-owned code and documentation, while [upstream terms](../THIRD_PARTY_NOTICES.md) remain separate.

@@ -1,63 +1,55 @@
 # Code Formatting and Linter Suppressions
 
-Can formatting Python code change which lint warnings are suppressed, even when
-its executable syntax stays the same? I compared Black and Ruff formatting using
-Ruff's diagnostics before and after each transformation. This is an independent
-research pilot with a controlled test suite and a separate sample of public
-repository files.
+A `noqa` comment can change its effect even when its text stays the same.
+If a formatter joins two lines, a comment beside one name may end up suppressing
+warnings for both. Splitting a line can expose a warning that the comment used
+to cover.
 
-## Method
+This project tests those changes with Black and Ruff, using Ruff as the linter
+in both cases. It follows individual warnings through formatting, after checking
+that the parsed program structure has stayed the same. The question is about
+warning visibility, not whether the linter's warning or the author's decision to
+suppress it was correct.
 
-For each comparison, I ran Ruff on the original and formatted source, with `noqa`
-comments respected and ignored. These four checks separate a change in underlying
-warnings from a change in which warnings are visible. An abstract syntax tree
-(AST) comparison checks parsed program structure. A matcher then uses rule, AST occurrence and token
-context to establish warning identity rather than relying on line numbers.
+## What was tested
 
-The controlled suite contains {{FAMILIES}} templates crossed with {{MODES}} directive modes:
-{{CONTROLLED_N}} inputs tested with each formatter. The natural sample contains {{NATURAL_N}} files
-from pinned historical versions of Requests, Flask and pytest. Only F401, F821
-and F841 were selected. The tools were Black 25.1.0, Ruff 0.11.13 and Python 3.11.9.
-There were {{CONTROLLED_COMPARISONS}} controlled comparisons in total. Analyzed programs were
-never executed, and lint fixes were disabled.
+The controlled suite crosses {{FAMILIES}} templates with {{MODES}} directive modes:
+{{CONTROLLED_N}} inputs and {{CONTROLLED_COMPARISONS}} formatter comparisons. A separate sample has
+{{NATURAL_N}} files from pinned commits of Requests, Flask and pytest. The tools were
+Black 25.1.0, Ruff 0.11.13 and CPython 3.11.9 on Windows, with F401, F821 and F841
+as the selected rules. Analyzed programs were never executed; lint fixes were off.
 
-## Results
+For every source pair, Ruff runs with `noqa` respected and ignored, before and
+after formatting. Ignoring the comments reveals the warnings that ordinary lint
+output hides. Within each snapshot, the two outputs show what is suppressed.
+Across snapshots, the matcher checks the rule, AST occurrence and node/token
+context. A moved line number is not enough to identify the same warning.
 
-Black produced {{B_DRIFT}} confirmed suppression changes in {{CONTROLLED_N}} controlled comparisons
-({{B_PCT}}%); Ruff produced {{R_DRIFT}} ({{R_PCT}}%). Both hiding and exposure occurred. These
-proportions describe deliberately constructed examples, not Python-wide frequency.
+## Findings
 
-The original matcher marked {{B_AMBIG}} comparisons per formatter as Ambiguous. A separate
-AI-assisted review proposed Preserved for all {{REVIEW_N}}, giving reviewed Preserved
-counts of {{B_REVIEW_PRES}} for Black and {{R_REVIEW_PRES}} for Ruff. The original labels remain intact.
-The review is not independently human-validated ground truth.
+Black had {{B_DRIFT}} confirmed suppression changes among {{CONTROLLED_N}} controlled comparisons
+({{B_PCT}}%); Ruff had {{R_DRIFT}} ({{R_PCT}}%). Both hid and exposed warnings. These are counts
+for deliberately constructed inputs, not estimates of frequency in Python projects.
 
-![Original automatic classifications and supplementary reviewed counts](reports/figures-reviewed/figure1_reviewed_outcomes.png)
+The automatic matcher left {{B_AMBIG}} comparisons per formatter Ambiguous. A separate
+AI-assisted review proposed Preserved for all {{REVIEW_N}}, producing reviewed Preserved
+counts of {{B_REVIEW_PRES}} and {{R_REVIEW_PRES}}. Those proposals have not been independently
+human-validated, and the automatic labels remain unchanged.
 
-Each bar contains {{CONTROLLED_N}} comparisons. Reviewed bars depend on the supplementary
-proposals; confirmed-change counts are unchanged.
+![Automatic outcomes and the separate AI-assisted review](reports/figures-reviewed/figure1_reviewed_outcomes.png)
 
-No confirmed drift appeared in {{NATURAL_PAIRS}} natural-source comparisons. However, {{NATURAL_UNCHANGED}} outputs
-were unchanged by formatting, and {{ZERO_FILES}} of the {{NATURAL_N}} original files had no underlying
-warnings from the selected rules. There were also {{NATURAL_AST_EXCLUSIONS}} strict AST exclusions. The
-zero result does not establish that either formatter is safe on other code.
+Each bar has {{CONTROLLED_N}} comparisons. The review changes the unresolved counts;
+it adds no confirmed suppression changes.
 
-## Limitations
+No confirmed drift appeared in the {{NATURAL_PAIRS}} natural-source comparisons. There was
+less opportunity to observe it: {{NATURAL_UNCHANGED}} outputs were unchanged, and {{ZERO_FILES}} of the
+{{NATURAL_N}} original files had no underlying warnings from the selected rules.
+Another {{NATURAL_AST_EXCLUSIONS}} comparisons failed the strict AST check. The result leaves
+behavior on other files and rules open.
 
-Template variants are related, the repositories were chosen for feasibility,
-and only the pinned Windows environment was tested. AST equality does not prove
-runtime equivalence. Statistical intervals are exploratory cluster-model checks,
-not ecosystem estimates. Independent detector accuracy remains unmeasured.
+## Reproduce the work
 
-AI tools assisted implementation, debugging, controlled input generation, analysis
-scripts and writing. Measurements came from executed tools, and inputs were
-checked programmatically. The [AI-use note](docs/ai_use.md) explains the scope.
-
-## Running the Experiments
-
-From the repository root in PowerShell:
-
-Git must be available on PATH. Use a committed Git checkout for provenance.
+Use a committed Git checkout with Git on PATH. From the root in PowerShell:
 
 ```powershell
 py -3.11 -m venv .venv
@@ -66,23 +58,24 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Use the [reproduction instructions](docs/reproducibility.md) for fresh experiment,
-analysis and reviewed-result outputs. Existing evidence directories cannot be
-overwritten. Dependencies require network access on first installation. All primary comparisons were also repeated in a freshly installed pinned
-environment on the same Windows host. A clean-machine installation and other
-platforms remain untested.
+The [reproduction guide](docs/reproducibility.md) covers saved-result checks,
+fresh runs and analysis outputs. A fresh pinned environment on the same Windows
+host reproduced every primary comparison. Other machines and platforms remain
+untested. Templates reuse code across treatments, AST equality is not runtime
+proof, and the statistical intervals are exploratory. Independent detector
+accuracy is still unmeasured.
 
-## Project Files
+## Read the results and evidence
 
-Start with the [public report](report/research_report_public.md) or its
-[PDF](report/research_report_public.pdf). The [evidence guide](docs/evidence_guide.md)
-links source snapshots and diagnostics. [Original metrics](reports/phase5/analysis/metrics.json),
+The [public report](report/research_report_public.md) and
+[PDF](report/research_report_public.pdf) explain the design and interpretation.
+The [evidence guide](docs/evidence_guide.md) connects examples to source pairs,
+diagnostics, [automatic metrics](reports/phase5/analysis/metrics.json),
 [reviewed metrics](reports/publication-phase-a/analysis/metrics.json) and the
-[ambiguity audit](reports/ambiguous-audit/ambiguous_comparisons_review.md) remain separate.
+[ambiguity audit](reports/ambiguous-audit/ambiguous_comparisons_review.md).
 
-This is a privacy-derived public snapshot with fresh history. Source bytes and
-scientific findings are preserved; execution metadata is anonymized. Full upstream
-archives and unrelated assets are excluded. See the [snapshot notes](docs/public_snapshot.md),
-[third-party notices](THIRD_PARTY_NOTICES.md) and [release status](docs/release_review.md).
-[MIT](LICENSE) covers author-owned code and documentation; upstream terms remain separate.
-No publication has been performed.
+AI assisted implementation, debugging, template construction, analysis and writing;
+see the [disclosure](docs/ai_use.md). The [public snapshot notes](docs/public_snapshot.md)
+explain anonymized metadata, lossless source containers and omitted archives.
+[MIT](LICENSE) covers author-owned code and documentation. Upstream material keeps
+the terms in [third-party notices](THIRD_PARTY_NOTICES.md).

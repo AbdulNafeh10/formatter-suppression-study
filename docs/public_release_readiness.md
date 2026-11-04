@@ -1,15 +1,20 @@
-# Public snapshot readiness
+# Public snapshot readiness record
 
-The scientific, reproducibility and release checks passed. **No unresolved release
-blocker remains.** The author explicitly confirmed Abdul Nafeh as the public
-copyright-holder wording. The [MIT license](../LICENSE) now covers author-owned
-code and documentation; upstream material retains its own terms. No identity was
-inferred from a private email address. Publication still needs separate approval.
+This page records preparation of the public baseline `7c77a230`, subsequently
+published at [GitHub](https://github.com/AbdulNafeh10/formatter-suppression-study).
+Its checks concern that snapshot. The machine-readable manifests retain their
+original checkpoint wording and hashes; they are not rewritten for later prose
+edits. Current editorial checks are recorded [separately](editorial_revision.md).
 
-The original repository remains unchanged at `60d9471e`. This export has fresh
-history and a neutral export identity, with no configured remote. No publication
-or push has occurred. The initial export commit is not a development milestone.
-The resume period remains the author's August-November 2026 statement.
+The release audit found no unresolved publication blocker after the author
+approved Abdul Nafeh as the copyright-holder wording. [MIT](../LICENSE) covers
+author-owned code and documentation; upstream terms remain separate. The original
+private repository was preserved at `60d9471e`.
+
+The author's resume period is August-November 2026. It is supplied context,
+not a reconstruction of development milestones. No historical dates were altered.
+
+## Recorded release checks
 
 Changes are limited to privacy-derived execution metadata and hashes, portable
 evidence reading and verification, explicit archive-omission handling, source
@@ -47,8 +52,3 @@ See the [verification record](../reports/public-release/verification.json),
 [exclusions](../reports/public-release/exclusions.json),
 [reproduction instructions](reproducibility.md), and
 [third-party notices](../THIRD_PARTY_NOTICES.md).
-
-The confirmed notice is `Copyright (c) 2026 Abdul Nafeh`. License, document,
-privacy and history checks were repeated after applying it. The public name is
-intentional attribution; private contacts, machine names and paths remain removed.
-Publication itself requires the author's separate explicit approval.

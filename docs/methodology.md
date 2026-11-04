@@ -1,42 +1,95 @@
-# Methodology through Phase 6
+# Methodology
 
-## Current consolidated method (2026-11-03)
+The measurement unit is one source formatted by one tool. Each original source
+is paired across Black and Ruff. The controlled corpus tests specific layouts;
+the natural sample checks the same procedure on unedited upstream source.
+They answer different questions and are analyzed separately.
 
-This is a two-dataset empirical pilot: a controlled stress corpus and a separate
-historical convenience sample. The source-formatter comparison is the measurement
-unit; formatter contrasts are paired by original source. Template treatments and
-files within projects are dependent. No ecosystem sampling frame or independent
-detector-accuracy benchmark is claimed.
+## Tool settings and execution
 
-CPython 3.11.9, Black 25.1.0 and Ruff 0.11.13 are fixed historical baselines on
-Windows. Formatting uses line length 88, target py311 and no preview. Ruff checks
-F401/F821/F841 without fixes. Primary settings isolate user/project configuration.
-Four passes observe original/formatted source with directives respected/ignored.
-Within-snapshot subset checks use exact diagnostic identity; cross-snapshot
-matching uses unique rule/AST-occurrence/token correspondence. Visibility changes
-require stable underlying diagnostics and an accepted AST gate. Unsupported
-anchors, changed diagnostics, AST changes and failures remain separate outcomes.
+The measured environment was CPython 3.11.9 on Windows, Black 25.1.0 and Ruff
+0.11.13. Both formatters used line length 88, target `py311` and no preview.
+Ruff selected F401 (unused import), F821 (undefined name) and F841 (unused local),
+without fixes. Primary lint calls used isolated configuration and the filename
+`study_input.py`, including for files originally named `__init__.py`. Black used
+an explicit study TOML file. These conditions make the primary comparison
+consistent across inputs; they do not reproduce each project's normal CI.
 
-The 25-template by eight-directive controlled design produces 200 original sources
-and 400 formatter comparisons. Natural selection uses three pinned archives,
-genuine noqa comments, UTF-8, Python 3.11 parsing, a 200 KiB cap and documented
-vendored/generated exclusions. Seeded hash ranking selects up to twenty eligible
-files per project without outcomes. Forty natural inputs yield eighty primary
-comparisons. Native configuration sensitivity is separate from the artificial-
-filename standardized primary; neither recreates full project CI.
+Subprocesses received argument arrays, a temporary working directory and a
+30-second timeout. No shell was used. Python compilation checked source legality;
+the programs under analysis were never executed.
 
-Raw source, AST dumps, diagnostic arrays, commands, stdout/stderr, environment and
-hashes are retained. The strict AST representation includes type-ignore line
-fields; secondary normalization does not replace primary labels. Repeats and
-representative directive interventions check narrower claims than independent
-oracle accuracy. Analyzed programs are never executed.
+## Separating warnings from suppression
 
-Detailed statistical choices were fixed after earlier counts were known and are
-exploratory. Descriptive proportions, paired contrasts, unresolved-outcome bounds
-and conditional cluster-model sensitivity have distinct estimands. There is no
-IID per-variant inference or pooled natural-source confidence interval. See the
-[report](../report/research_report.md), [AI disclosure](ai_use.md) and
-[limitations](limitations.md) for interpretive scope.
+Each comparison has four Ruff passes:
+
+| Pass | Source | `noqa` handling | Meaning |
+|---|---|---|---|
+| A | Original | Respected | Warnings ordinarily visible before formatting |
+| B | Original | Ignored | Underlying warnings before formatting |
+| C | Formatted | Respected | Warnings ordinarily visible after formatting |
+| D | Formatted | Ignored | Underlying warnings after formatting |
+
+Within a snapshot, visible diagnostics must be a multiset subset of underlying
+diagnostics. This check uses the rule, message and exact start/end coordinates.
+The difference identifies suppressed warning occurrences. A change in the visible
+count alone cannot distinguish changed suppression from changed underlying warnings.
+
+Across snapshots, line numbers are unreliable because formatting moves code.
+The matcher keys a warning by rule and AST field/index path, then checks its
+coordinate-free node representation, construct tokens and diagnostic tokens.
+F401 anchors to an import alias, F821 to a loaded `Name` and F841 to a stored
+`Name`. Ruff character columns are converted when compared with AST UTF-8 byte
+offsets. Anchors must be unique and cover complete, aligned token spans.
+Unsupported anchors remain unresolved rather than being matched by counts or
+similar messages. The implementation is in `src/suppression_study/matching.py`.
+
+The AST gate parses with Python 3.11 grammar and `type_comments=True`, then
+compares dumps without node attributes. `TypeIgnore.lineno` is an AST field,
+so it still participates. Equality checks this representation, not runtime
+equivalence. The four natural-source exclusions caused by shifted type-ignore
+lines retain their original labels.
+
+Only an accepted AST gate and stable underlying correspondence permit a
+visibility judgment. A formerly visible warning becoming suppressed is Newly
+hidden; the reverse is Newly exposed. Both transitions give Mixed. Preserved
+means no transition under these checks, including when selected warning sets
+are empty. Ambiguous, Diagnostic changed, AST changed and Execution failure
+remain separate outcomes, with unresolved drift counts left null.
+
+## Inputs and analysis
+
+The controlled design crosses 25 templates with eight directive modes: 200
+sources and 400 comparisons. Seed 20261103 ranks execution by SHA-256; it does
+not generate random programs. Template construction used AI assistance and
+development controls. The main suite was frozen before its run, but was not
+held out for evaluating matcher accuracy. Treatments of the same template are
+related observations.
+
+The natural sample uses pinned historical commits of Requests, Flask and pytest.
+Eligible files contain a genuine COMMENT-token `noqa`, are UTF-8, compile under
+Python 3.11 and are at most 200 KiB, with documented generated/vendored exclusions.
+Seeded hash ranking selected up to 20 eligible files per project without looking
+at formatter outcomes: 7 Requests, 13 Flask and 20 pytest files. The
+[sampling protocol](phase4_protocol.md) records the frame and pins. The separate
+native-configuration check reran linting on primary source pairs, not formatting
+under each project's settings. It executed 66 comparisons; 14 Requests entries
+record missing configuration rather than completed native checks.
+
+The [analysis specification](phase5_analysis_spec.md) distinguishes corpus
+proportions, paired contrasts, unresolved-outcome bounds and exploratory
+cluster-model intervals. Detailed statistical choices followed the initial
+counts. Cluster assumptions are not established by the authored templates, and
+the intervals do not estimate ecosystem prevalence.
+
+The [supplementary review](../reports/ambiguous-audit/ambiguous_comparisons_review.md)
+proposes resolutions for 32 ambiguous comparisons. It uses saved diagnostics and
+comment-only interventions, with separate reviewed metrics. It neither replaces
+the automatic labels nor supplies independent human ground truth. See
+[limitations](limitations.md) and the [AI disclosure](ai_use.md).
+
+<details>
+<summary>Historical Phase 1 protocol and dated amendments (unchanged)</summary>
 
 ## Protocol chronology (retained below)
 
@@ -164,3 +217,5 @@ and repository dependence, and use Wilson 95% intervals only with an appropriate
 interpretation of the sampling unit. Detector metrics require ground truth
 independently labeled from the detector. Sampling and detailed analysis must be
 specified before the main experiments. No prevalence inference from this example.
+
+</details>

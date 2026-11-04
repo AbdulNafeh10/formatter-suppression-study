@@ -1,16 +1,21 @@
-# Public release review
+# Release review
 
-Use the [public snapshot boundary](public_snapshot.md),
-[final readiness report](public_release_readiness.md),
-[third-party notices](../THIRD_PARTY_NOTICES.md) and
-[verification record](../reports/public-release/verification.json).
+The published baseline is `7c77a230` at
+[AbdulNafeh10/formatter-suppression-study](https://github.com/AbdulNafeh10/formatter-suppression-study).
+The [readiness record](public_release_readiness.md) summarizes the checks completed
+for that snapshot. The [machine-readable verification](../reports/public-release/verification.json)
+and manifests remain records of that release preparation, including their
+pre-publication wording.
 
-This export has fresh history. It omits original private inventories and upstream
-archives/assets. Historical phase notes are retained as checkpoints, not current
-release instructions. No remote, push or publication is authorized by this work.
+The repository has fresh public history. Original private commits and evidence
+were not published; full upstream archives and unrelated assets were excluded.
+The [snapshot boundary](public_snapshot.md) explains privacy derivatives and
+lossless source containers. Required upstream terms remain in
+[third-party notices](../THIRD_PARTY_NOTICES.md).
 
-The author confirmed the public wording "Copyright (c) 2026 Abdul Nafeh".
-The [MIT license](../LICENSE) now applies to author-owned code and documentation;
-upstream licenses remain separate. No release blocker remains from that decision.
-Final publication readiness is recorded in the verification record. Publishing
-still requires separate explicit approval.
+The approved notice is "Copyright (c) 2026 Abdul Nafeh". [MIT](../LICENSE)
+applies to author-owned code and documentation, with upstream licenses separate.
+No license wording changes are part of the documentation revision.
+
+The [editorial review](editorial_revision.md) records later local prose changes
+and their checks. That work does not authorize another push or publication.
