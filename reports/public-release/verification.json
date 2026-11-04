@@ -28,7 +28,7 @@
   "reviewed_png_svg_pairs_identical": 3,
   "public_claim_bindings": 78,
   "historical_claim_bindings": 86,
-  "readme_prose_words": 549,
+  "readme_prose_words": 562,
   "public_pdf_pages": 6,
   "public_pdf_all_six_pages_visually_reviewed": true,
   "public_pdf_scientific_sections_unchanged": true,
@@ -54,7 +54,8 @@
     "Same Windows host; other platforms and clean-machine installation remain untested",
     "Without archive downloads, offline mode cannot recreate archive populations and explicitly records that omission",
     "Metadata captures are privacy derivatives, not original capture bytes; source bytes and scientific fields remain unchanged",
-    "Supplementary review is AI-assisted, not independent human adjudication"
+    "Supplementary review is AI-assisted, not independent human adjudication",
+    "Git must be on PATH with a committed checkout for provenance; the supplementary provenance step does not support source ZIPs without Git metadata."
   ],
   "original_resume_dates_unchanged": "August 2026 through November 2026, user-supplied; historical records not backdated",
   "black_ruff_pip_check_passed": true,
@@ -65,5 +66,6 @@
   "missing_local_targets": 0,
   "public_export_manifest": "reports/public-release/export_manifest.json",
   "original_working_tree_clean_and_baseline_unchanged": true,
-  "final_git_delivery_check": "One fresh export commit, neutral identity and no remote; stored-object privacy checked after commit without adding self-referential provenance."
+  "final_git_delivery_check": "Fresh export-only history, neutral identity and no remote; stored-object privacy checked after commit without adding self-referential provenance.",
+  "git_checkout_prerequisite_documented": true
 }

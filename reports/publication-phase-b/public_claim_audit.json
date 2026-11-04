@@ -1,11 +1,11 @@
 {
   "scope": "Bound numeric observations; protocol constants, references and prose are reviewed separately.",
-  "readme_prose_words": 549,
+  "readme_prose_words": 562,
   "documents": {
     "README.md": {
       "template": "report/README_public.template.md",
-      "template_sha256": "5680ed4f4c626c719cd54737e44fb3fada2d013bcd1140f455fee17a3b760581",
-      "sha256": "4ba3b524c769b5b9e80bf63208c4aa9626d68a0ca257c7c4588e7a261de28692"
+      "template_sha256": "395741c8293458dd44846e2decde1c4943d117219e87b08c2246b361d2cdcfb1",
+      "sha256": "937337bd9937a5190923b7933637486b4acfb4f13a92e74fed9178d3e88acf8c"
     },
     "report/research_report_public.md": {
       "template": "report/research_report_public.template.md",

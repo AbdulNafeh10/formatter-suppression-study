@@ -57,6 +57,8 @@ checked programmatically. The [AI-use note](docs/ai_use.md) explains the scope.
 
 From the repository root in PowerShell:
 
+Git must be available on PATH. Use a committed Git checkout for provenance.
+
 ```powershell
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-analysis-lock.txt

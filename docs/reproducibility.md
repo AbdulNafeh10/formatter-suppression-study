@@ -3,6 +3,11 @@
 Use Windows and CPython 3.11 with the retained historical tool pins. Run from the
 snapshot root in PowerShell. Programs being analyzed are never executed.
 
+Git must be on PATH, and this must be a Git checkout with a committed HEAD.
+Provenance scripts use Git; a source ZIP without Git metadata is not supported
+by the supplementary provenance step. The checked Git version is recorded in
+the release dependency record.
+
 ```powershell
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-analysis-lock.txt
