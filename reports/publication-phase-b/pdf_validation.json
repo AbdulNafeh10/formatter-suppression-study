@@ -1,8 +1,8 @@
 {
   "pages": 6,
   "reportlab": "4.4.9",
-  "markdown_sha256": "b8b7eccbdf35feb741379ee4516a06b90a3b6628a001c6298f65bda70c4a4bd5",
-  "pdf_sha256": "51b40bb3f9bac2f3d8886f49f81bb3f4112b3702f5f32666e64754843b1fae17",
+  "markdown_sha256": "9c021054513a71749bb8a6d5e12cb00cbbf9232d3b14412841c7ec51a56a0241",
+  "pdf_sha256": "1cc47bbec38859f2b25cd4b5991e96d2c079b2f64cabd8fe6423b84de717b4ad",
   "required_sections_present": true,
   "page_text_characters": [
     2923,
@@ -10,7 +10,7 @@
     2548,
     3115,
     3217,
-    2016
+    2035
   ],
   "visual_review": "Separate rendered-page inspection required; see pdf_visual_review.md."
 }

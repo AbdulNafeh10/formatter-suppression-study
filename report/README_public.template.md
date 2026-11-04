@@ -84,5 +84,5 @@ This is a privacy-derived public snapshot with fresh history. Source bytes and
 scientific findings are preserved; execution metadata is anonymized. Full upstream
 archives and unrelated assets are excluded. See the [snapshot notes](docs/public_snapshot.md),
 [third-party notices](THIRD_PARTY_NOTICES.md) and [release status](docs/release_review.md).
-MIT is approved for author-owned material, pending the exact copyright-holder line.
+[MIT](LICENSE) covers author-owned code and documentation; upstream terms remain separate.
 No publication has been performed.

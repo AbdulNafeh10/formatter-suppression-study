@@ -1,6 +1,6 @@
 # Third-party material
 
-The project MIT grant, once the copyright-holder wording is confirmed, covers
+The [project MIT license](LICENSE), Copyright (c) 2026 Abdul Nafeh, covers
 author-owned code and documentation. It does not relicense upstream source,
 excerpts or derived formatter evidence.
 

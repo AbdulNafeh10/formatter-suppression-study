@@ -1,9 +1,10 @@
 # Public snapshot readiness
 
-The scientific and reproducibility checks passed. **Publication remains blocked
-until the author confirms the exact public copyright-holder name for MIT.** The
-existing Git display identity was not suitable evidence of that name. MIT is
-approved, but no placeholder or inferred identity has been used to apply it.
+The scientific, reproducibility and release checks passed. **No unresolved release
+blocker remains.** The author explicitly confirmed Abdul Nafeh as the public
+copyright-holder wording. The [MIT license](../LICENSE) now covers author-owned
+code and documentation; upstream material retains its own terms. No identity was
+inferred from a private email address. Publication still needs separate approval.
 
 The original repository remains unchanged at `60d9471e`. This export has fresh
 history and a neutral export identity, with no configured remote. No publication
@@ -47,7 +48,7 @@ See the [verification record](../reports/public-release/verification.json),
 [reproduction instructions](reproducibility.md), and
 [third-party notices](../THIRD_PARTY_NOTICES.md).
 
-Before any publication, confirm the exact name for `Copyright (c) 2026 ...`, apply
-the approved MIT text to author-owned material, update the pending-license wording,
-and repeat the affected document, notice, privacy and history checks. Publication
-itself requires the author's separate explicit approval.
+The confirmed notice is `Copyright (c) 2026 Abdul Nafeh`. License, document,
+privacy and history checks were repeated after applying it. The public name is
+intentional attribution; private contacts, machine names and paths remain removed.
+Publication itself requires the author's separate explicit approval.

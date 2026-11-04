@@ -54,7 +54,8 @@ to the public history.
 ## Release status
 
 Scientific, reproduction and release checks passed as recorded in the
-[readiness report](public_release_readiness.md). Publication remains blocked until
-the exact public copyright-holder wording is confirmed. MIT has been approved in
-principle; no identity was inferred from an email address. Nothing has been pushed,
-published or connected to a remote by this preparation.
+[readiness report](public_release_readiness.md). The author confirmed the public
+copyright-holder name Abdul Nafeh, and [MIT](../LICENSE) now covers author-owned
+code and documentation. Upstream terms remain separate. No identity was inferred
+from an email address. Nothing has been pushed, published or connected to a remote;
+publication still requires separate explicit approval.

@@ -9,6 +9,8 @@ This export has fresh history. It omits original private inventories and upstrea
 archives/assets. Historical phase notes are retained as checkpoints, not current
 release instructions. No remote, push or publication is authorized by this work.
 
-The MIT copyright-holder line requires the author's exact public wording before
-the license can be applied. No email address or inferred name will be substituted.
-Final publication status is recorded in the verification record.
+The author confirmed the public wording "Copyright (c) 2026 Abdul Nafeh".
+The [MIT license](../LICENSE) now applies to author-owned code and documentation;
+upstream licenses remain separate. No release blocker remains from that decision.
+Final publication readiness is recorded in the verification record. Publishing
+still requires separate explicit approval.

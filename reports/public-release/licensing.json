@@ -14,7 +14,26 @@
   },
   "author_owned_license": {
     "approved_choice": "MIT",
-    "applied": false,
-    "blocked_reason": "Exact public copyright-holder wording has not been confirmed; no identity inferred from private Git display/contact fields."
+    "applied": true,
+    "copyright_holder": "Abdul Nafeh",
+    "copyright_notice": "Copyright (c) 2026 Abdul Nafeh",
+    "confirmed_by": "Explicit user response; not inferred from Git identity",
+    "license_file": "LICENSE",
+    "license_sha256": "e646bf0af3793199ef2999ff8751a46068e08e5485fe498621e6e4ce871ae0cd",
+    "blocked_reason": null
+  },
+  "installed_package_metadata": {
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE",
+      "NOTICE",
+      "THIRD_PARTY_NOTICES.md",
+      "third_party/flask-cli/LICENSE",
+      "third_party/flask/LICENSE",
+      "third_party/pytest/LICENSE",
+      "third_party/requests/LICENSE",
+      "third_party/requests/NOTICE"
+    ],
+    "editable_build_verified": true
   }
 }

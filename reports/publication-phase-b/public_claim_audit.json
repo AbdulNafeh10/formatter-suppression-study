@@ -1,16 +1,16 @@
 {
   "scope": "Bound numeric observations; protocol constants, references and prose are reviewed separately.",
-  "readme_prose_words": 562,
+  "readme_prose_words": 561,
   "documents": {
     "README.md": {
       "template": "report/README_public.template.md",
-      "template_sha256": "395741c8293458dd44846e2decde1c4943d117219e87b08c2246b361d2cdcfb1",
-      "sha256": "937337bd9937a5190923b7933637486b4acfb4f13a92e74fed9178d3e88acf8c"
+      "template_sha256": "4e0937778746cc972db32c1fe0cc3d2b5ab1ba20dc98046fbae79e61256c5a30",
+      "sha256": "fd95dab311ebc93096c8e10489275f989a5c8094b6a2ff62ee7206f9be84dde1"
     },
     "report/research_report_public.md": {
       "template": "report/research_report_public.template.md",
-      "template_sha256": "55fe9698e315c42cfe8943bf351a3ead42ee325e78784ac1eb9790ad6b13da5c",
-      "sha256": "b8b7eccbdf35feb741379ee4516a06b90a3b6628a001c6298f65bda70c4a4bd5"
+      "template_sha256": "58c23cdc7e1d86c61aaeba32b6242ad758cecba95223316c49285634e4ae6473",
+      "sha256": "9c021054513a71749bb8a6d5e12cb00cbbf9232d3b14412841c7ec51a56a0241"
     }
   },
   "claims": {

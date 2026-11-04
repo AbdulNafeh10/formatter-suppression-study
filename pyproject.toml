@@ -6,6 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "formatter-suppression-study"
 version = "0.1.0"
 description = "Four-pass measurements and a conservative suppression-comparison oracle"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md", "third_party/*/LICENSE", "third_party/*/NOTICE"]
 requires-python = ">=3.11,<3.12"
 dependencies = ["black==25.1.0", "ruff==0.11.13"]
 
