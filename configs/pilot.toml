@@ -1,7 +1,0 @@
-# Phase 1 settings documentation; there is no experiment runner yet.
-rules = ["F401", "F821", "F841"]
-target_version = "py311"
-line_length = 88
-preview = false
-subprocess_timeout_seconds = 30
-seed = 0 # No random generation in Phase 1.

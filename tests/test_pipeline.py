@@ -7,7 +7,9 @@ from suppression_study import pipeline
 from suppression_study.cli import main
 
 
-EXAMPLE = (pipeline.ROOT / "examples" / "feasibility.py").read_text(encoding="utf-8")
+EXAMPLE = (pipeline.ROOT / "tests" / "fixtures" / "feasibility.txt").read_text(
+    encoding="utf-8"
+)
 
 
 def test_ast_ignores_positions_but_detects_code_and_type_comments():

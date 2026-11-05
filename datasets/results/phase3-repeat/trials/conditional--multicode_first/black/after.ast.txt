@@ -1,1 +1,0 @@
-Module(body=[Assign(targets=[Name(id='value', ctx=Store())], value=IfExp(test=Constant(value=True), body=Name(id='missing_a', ctx=Load()), orelse=Name(id='missing_b', ctx=Load())))], type_ignores=[])

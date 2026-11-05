@@ -790,14 +790,25 @@ def create(output):
 def verify(output):
     records = json.loads((output / "review_manifest.json").read_text(encoding="utf-8"))
     integrity = json.loads((output / "integrity.json").read_text(encoding="utf-8"))
+    historical = {"report/research_report.md", "report/research_report.pdf"}
+    checked = 0
     for path, expected in integrity["original_files_sha256"].items():
+        if path in historical and not (ROOT / path).exists():
+            continue
         if sha(ROOT / path) != expected:
             raise ValueError(f"Original evidence changed: {path}")
+        checked += 1
     artifacts = json.loads(
         (output / "artifact_hashes.json").read_text(encoding="utf-8")
     )
+    report = output / "ambiguous_comparisons_review.md"
+    report_bytes = render(output, records, integrity).encode()
     for path, expected in artifacts.items():
-        if sha(output / path) != expected:
+        if path == report.name and not report.exists():
+            actual = hashlib.sha256(report_bytes).hexdigest()
+        else:
+            actual = sha(output / path)
+        if actual != expected:
             raise ValueError(f"Review artifact changed: {path}")
     original = [
         json.loads(line)
@@ -811,14 +822,12 @@ def verify(output):
         if r["classification"] == "Ambiguous"
     }:
         raise ValueError("Review does not cover the full original ambiguous cohort")
-    if (output / "ambiguous_comparisons_review.md").read_bytes() != render(
-        output, records, integrity
-    ).encode():
+    if report.exists() and report.read_bytes() != report_bytes:
         raise ValueError(
             "Review report is stale or differs from the exported judgments"
         )
     print(
-        f"Verified {len(records)} comparisons, {len(artifacts)} review artifacts and {len(integrity['original_files_sha256'])} unchanged original files"
+        f"Verified {len(records)} comparisons, {len(artifacts)} review artifacts and {checked} unchanged original files"
     )
 
 

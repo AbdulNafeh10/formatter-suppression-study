@@ -1,2 +1,0 @@
-text = f"{missing_a}"
-other = missing_b  # noqa: F821

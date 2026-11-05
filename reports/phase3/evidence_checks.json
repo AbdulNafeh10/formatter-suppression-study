@@ -1,9 +1,0 @@
-{
-  "source_regeneration_identical": true,
-  "sources_checked": 200,
-  "main_records_checked": 400,
-  "repeat_records_checked": 50,
-  "all_csv_and_jsonl_fields_checked": true,
-  "raw_diagnostics_and_matching_checked": true,
-  "repeat_measurements_identical": true
-}

@@ -1,1 +1,0 @@
-Module(body=[Assign(targets=[Name(id='value', ctx=Store())], value=ListComp(elt=Call(func=Name(id='missing_a', ctx=Load()), args=[Name(id='item', ctx=Load())], keywords=[]), generators=[comprehension(target=Name(id='item', ctx=Store()), iter=Name(id='missing_b', ctx=Load()), ifs=[], is_async=0)]))], type_ignores=[])

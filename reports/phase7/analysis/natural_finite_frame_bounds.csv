@@ -1,7 +1,0 @@
-repository,formatter,population_eligible_files,sampled_files,confirmed,sampled_unresolved,unsampled,lower,upper,interpretation
-pallets/flask,black,13,13,0,1,0,0,0.076923076923076927,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"
-pallets/flask,ruff,13,13,0,0,0,0,0,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"
-psf/requests,black,7,7,0,0,0,0,0,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"
-psf/requests,ruff,7,7,0,0,0,0,0,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"
-pytest-dev/pytest,black,28,20,0,2,8,0,0.35714285714285715,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"
-pytest-dev/pytest,ruff,28,20,0,1,8,0,0.32142857142857145,"finite eligible-archive bounds, not confidence intervals or ecosystem rates"

@@ -45,7 +45,7 @@ Only complete correspondence with unchanged underlying warnings permits a visibi
 
 ### 3.3 Inputs
 
-The controlled design has 25 templates and 8 directive modes, giving 200 inputs. Modes include absent, standalone, inline specific, inline blanket, multicode and file-level directives. Treatments intentionally reuse executable structure. The source specification and validation were fixed before the main run; the examples were constructed to exercise formatting behavior rather than sampled from typical Python code.
+The controlled design crosses 25 distinct syntax templates with eight directive variants, yielding 200 inputs. The variants are no directive, a standalone specific directive, specific and blanket directives at each of two inline sites, a multicode directive at the first site, and a file-level specific directive. Each template reuses the same executable structure across variants. AI assisted construction of the saved synthetic templates. Deterministic Python generated and validated the inputs, and a fixed seed (20261103) ordered their execution. The design was frozen before the main run.
 
 The natural sample has 40 files from pinned Requests, Flask and pytest commits. Eligibility required UTF-8 Python under the study grammar, a genuine `noqa` comment, the documented size cap and generated/vendored exclusions. Seeded hash ranking selected files without using their results. Primary linting used standardized settings and an artificial filename. Separate checks used archived Ruff configuration and original paths where available; they did not reproduce full project CI.
 
@@ -74,7 +74,7 @@ Black had 68 confirmed suppression changes and Ruff 35 on the same 200 inputs: 4
 
 Each column contains 200 comparisons. The automatic columns keep the original labels. The reviewed columns apply only the supplementary proposals; confirmed-change counts stay the same. Figure 1 shows both versions.
 
-![Figure 1. Controlled outcomes, with 200 comparisons per bar. Automatic bars retain the original ambiguity. Reviewed bars accept the separate AI-assisted Preserved proposals; the confirmed-change counts do not increase.](../reports/figures-reviewed/figure1_reviewed_outcomes.png)
+![Figure 1. Controlled outcomes, with 200 comparisons per bar. Automatic bars retain the original ambiguity. Reviewed bars accept the separate AI-assisted Preserved proposals; the confirmed-change counts do not increase.](figures/figure1_reviewed_outcomes.png)
 
 The automatic comparison resolves 184 input pairs. On that common subset, drift is 36.96% for Black and 19.02% for Ruff, a difference of 17.93 percentage points. Accepting the review expands the denominator to 200 pairs and gives 16.50 points. The difference changes because the added pairs are reviewed as no drift for both formatters, not because more changes were found.
 
@@ -115,7 +115,7 @@ After formatting:
 value = [missing_a, missing_b]  # noqa: F821
 ```
 
-Before formatting, Ruff reports `missing_b` while the directive suppresses `missing_a`. After formatting, the same directive covers both names. Ignoring `noqa` reports both names in either source, and the strict AST gate passes. The `missing_b` warning is therefore Newly hidden, as recorded in the trial's [result](../datasets/results/phase3/trials/list_short--specific_first/black/result.json). Ruff formatting kept this list expanded. With semicolon-separated assignments, both formatters instead split a line and exposed a warning previously covered by its trailing comment.
+Before formatting, Ruff reports `missing_b` while the directive suppresses `missing_a`. After formatting, the same directive covers both names. Ignoring `noqa` reports both names in either source, and the strict AST gate passes. The `missing_b` warning is therefore Newly hidden, as recorded in the trial's [result](https://github.com/AbdulNafeh10/formatter-suppression-study/blob/8c8ed2eec2053293a339275502916a8276f8210f/datasets/results/phase3/trials/list_short--specific_first/black/result.json). Ruff formatting kept this list expanded. With semicolon-separated assignments, both formatters instead split a line and exposed a warning previously covered by its trailing comment.
 
 The pattern tables describe the fixed input/treatment grid, whose cells reuse templates. Figure 3 groups drift by category and placement. Its boundary cells use the review; the original figure keeps those cells unresolved.
 
@@ -123,11 +123,11 @@ Text changed in 133 Black comparisons and 118 Ruff comparisons. Of these, 57 and
 
 <!-- landscape -->
 
-![Figure 2. Supplementary paired comparison conditional on the AI-assisted review. Family profiles retain all directive treatments; the paired table has 200 inputs. The bottom panel shows the reviewed Black-minus-Ruff difference and exploratory 95% cluster-model intervals, not ecosystem confidence limits.](../reports/figures-reviewed/figure2_reviewed_pairs.png)
+![Figure 2. Supplementary paired comparison conditional on the AI-assisted review. Family profiles retain all directive treatments; the paired table has 200 inputs. The bottom panel shows the reviewed Black-minus-Ruff difference and exploratory 95% cluster-model intervals, not ecosystem confidence limits.](figures/figure2_reviewed_pairs.png)
 
 <!-- pagebreak -->
 
-![Figure 3. Confirmed drift / reviewed comparisons by source category and directive mode. The outlined boundary row accepts the AI-assisted Preserved proposals. Other cells reuse related templates; they are not independent samples. Original unresolved cells remain in the original analysis.](../reports/figures-reviewed/figure3_reviewed_patterns.png)
+![Figure 3. Confirmed drift / reviewed comparisons by source category and directive mode. The outlined boundary row accepts the AI-assisted Preserved proposals. Other cells reuse related templates; they are not independent samples. Original unresolved cells remain in the original analysis.](figures/figure3_reviewed_patterns.png)
 
 <!-- portrait -->
 
@@ -143,7 +143,7 @@ The 80 primary comparisons of 40 repository files produced no confirmed suppress
 
 Only 15 outputs changed; 65 stayed identical. Of the original files, 22 had no underlying selected-rule warnings, corresponding to 44 comparisons. A natural `noqa` comment can target rules outside this study, so eligibility alone did not guarantee relevant warnings. Figure 4 shows that diagnostic relevance, counting original files once.
 
-![Figure 4. Baseline diagnostic relevance in 40 original repository files, each counted once. 22 files have no selected underlying warnings. The groups describe the original source; they are neither additional selection filters nor necessary conditions for every possible suppression change.](../reports/figures/figure4_natural_relevance.png)
+![Figure 4. Baseline diagnostic relevance in 40 original repository files, each counted once. 22 files have no selected underlying warnings. The groups describe the original source; they are neither additional selection filters nor necessary conditions for every possible suppression change.](figures/figure4_natural_relevance.png)
 
 The 4 AST exclusions came solely from shifted `TypeIgnore.lineno` fields. Zeroing those fields in a secondary investigation made the dumps equal, but the primary labels stay excluded. Native-configuration checks completed 66 comparisons with the same outcome classifications as the primary checks. Another 14 Requests records report missing configuration; they are statuses, not executed native comparisons.
 
@@ -199,6 +199,6 @@ The next evaluation should establish correspondence accuracy on independently re
 
 ### Data and reproduction
 
-The public repository is [github.com/AbdulNafeh10/formatter-suppression-study](https://github.com/AbdulNafeh10/formatter-suppression-study). Its [reproduction guide](../docs/reproducibility.md) describes installation of the exact recorded tool versions, checks on saved observations, and new runs in separate output directories. Primary data, meaning the original automatic observations, are under `datasets`; their metrics are in `reports/phase5/analysis`. The [ambiguity audit](../reports/ambiguous-audit/ambiguous_comparisons_review.md) records evidence and reasons for each supplementary judgment. Reviewed metrics and bootstrap draws (the resampled groups used for the intervals) are in `reports/publication-phase-a/analysis`. A claim ledger in `reports/publication-phase-b` maps numerical statements to saved evidence fields. Repository file links in the PDF identify the published evidence snapshot `7c77a230`.
+The repository contains the experiment code, this report and a checksum-verified evidence bundle. The bundle holds the original inputs, four-pass diagnostics, source snapshots, automatic classifications and separate ambiguity review. The reproduction command checks fresh comparisons against the saved trials and recomputes the original and reviewed metrics and plots. The archived analysis specification records the assumptions behind the interval calculations. [Repository and instructions](https://github.com/AbdulNafeh10/formatter-suppression-study).
 
-The [original report](research_report.md) and its PDF remain frozen historical artifacts. Public execution records replace private machine paths with placeholders. Natural trial source is stored in lossless JSON containers: structured text files containing the measured source and required notices, from which the exact source bytes can be recovered and checksum-checked. Full upstream archives and unrelated assets are excluded. Offline checks cover retained sources; rebuilding the original file-selection populations requires checksum-verified archive downloads. [Snapshot notes](../docs/public_snapshot.md) explain the boundary. [MIT](../LICENSE) covers author-owned code and documentation; [upstream terms](../THIRD_PARTY_NOTICES.md) remain separate.
+Natural source is stored with upstream notices and original source checksums. Public execution records use placeholders for private machine paths. The retained sample supports offline reruns after dependency installation. Reconstructing sample selection also requires the pinned upstream archives. Earlier repeat exports and protocols are available in the [prior public snapshot](https://github.com/AbdulNafeh10/formatter-suppression-study/tree/8c8ed2eec2053293a339275502916a8276f8210f). [MIT](../LICENSE) covers the study code and documentation. Upstream terms are listed in the [third-party notices](../THIRD_PARTY_NOTICES.md).

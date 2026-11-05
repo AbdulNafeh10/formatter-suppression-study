@@ -109,9 +109,7 @@ def verify_run(directory, manifest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--main", type=Path, default=ROOT / "datasets/results/phase3")
-    parser.add_argument(
-        "--repeat", type=Path, default=ROOT / "datasets/results/phase3-repeat"
-    )
+    parser.add_argument("--repeat", type=Path)
     parser.add_argument(
         "--report", type=Path, default=ROOT / "reports/phase3/evidence_checks.json"
     )
@@ -131,7 +129,8 @@ def main():
             assert (regenerated / case["source"]).read_bytes() == (
                 dataset / case["source"]
             ).read_bytes()
-    first, repeat = verify_run(args.main, manifest), verify_run(args.repeat, manifest)
+    first = verify_run(args.main, manifest)
+    repeat = verify_run(args.repeat, manifest) if args.repeat else {}
     fields = (
         "input_sha256",
         "output_sha256",
@@ -159,7 +158,7 @@ def main():
         "repeat_records_checked": len(repeat),
         "all_csv_and_jsonl_fields_checked": True,
         "raw_diagnostics_and_matching_checked": True,
-        "repeat_measurements_identical": True,
+        "repeat_measurements_identical": bool(repeat),
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
     save_json(args.report, result)

@@ -153,8 +153,10 @@ audit_neutralize = AUDIT_MODULE.neutralize
 
 
 def run(output):
-    if output.exists() or not output.is_relative_to(ROOT / "reports"):
-        raise ValueError("Choose a new output directory under reports")
+    if output.exists() or not any(
+        output.is_relative_to(ROOT / name) for name in ("local", "reports")
+    ):
+        raise ValueError("Choose a new output directory under local or reports")
     if {name: version(name) for name in ANALYSIS_PINS} != ANALYSIS_PINS:
         raise ValueError("Analysis dependencies differ from the retained pins")
     audit = ROOT / "reports/ambiguous-audit"

@@ -1,81 +1,65 @@
 # Code Formatting and Linter Suppressions
 
-A `noqa` comment can change its effect even when its text stays the same.
-If a formatter joins two lines, a comment beside one name may end up suppressing
-warnings for both. Splitting a line can expose a warning that the comment used
-to cover.
+Can a Python formatter change which warnings a `noqa` comment hides while
+leaving the program's syntax tree unchanged? Both Black and Ruff changed
+warning visibility in controlled tests. Here, Black joins two lines and the
+existing comment starts hiding a second warning.
 
-This project tests those changes with Black and Ruff, using Ruff as the linter
-in both cases. It follows individual warnings through formatting, after checking
-that the parsed program structure has stayed the same. The question is about
-warning visibility, not whether the linter's warning or the author's decision to
-suppress it was correct.
+```python
+# Before Black: Ruff reports missing_b.
+value = [missing_a,  # noqa: F821
+    missing_b]
 
-## What was tested
+# After Black: the same comment covers both names.
+value = [missing_a, missing_b]  # noqa: F821
+```
 
-The controlled suite crosses 25 templates with 8 directive modes:
-200 inputs and 400 formatter comparisons. A separate sample has
-40 files from pinned commits of Requests, Flask and pytest. The tools were
-Black 25.1.0, Ruff 0.11.13 and CPython 3.11.9 on Windows, with F401, F821 and F841
-as the selected rules. Analyzed programs were never executed; lint fixes were off.
+Ruff checked each source before and after formatting, both respecting and
+ignoring `noqa`. The passes that ignore `noqa` reveal the underlying warnings.
+The matcher tracks those warnings across the two versions before comparing
+which ones are visible. The controlled set crosses 25
+templates with eight directive variants. A separate sample uses 40 files
+from pinned Requests, Flask and pytest snapshots.
 
-For every source pair, Ruff runs with `noqa` respected and ignored, before and
-after formatting. Ignoring the comments reveals the warnings that ordinary lint
-output hides. Within each snapshot, the two outputs show what is suppressed.
-Across snapshots, the matcher checks the rule, AST occurrence and node/token
-context. A moved line number is not enough to identify the same warning.
+| Controlled comparisons | Black | Ruff |
+|---|---:|---:|
+| Confirmed changes | 68 / 200 | 35 / 200 |
+| Automatically ambiguous | 16 | 16 |
 
-## Findings
+The separate AI-assisted review proposed **Preserved** for the 32 ambiguous
+comparisons. The automatic labels and confirmed counts stand. The 80 natural
+comparisons showed no confirmed change and included four strict syntax-tree
+exclusions. These counts describe the tested inputs.
 
-Black had 68 confirmed suppression changes among 200 controlled comparisons
-(34.0%); Ruff had 35 (17.5%). Both hid and exposed warnings. These are counts
-for deliberately constructed inputs, not estimates of frequency in Python projects.
+[Full report (PDF)](report/research_report_public.pdf) · [Markdown](report/research_report_public.md)
 
-The automatic matcher left 16 comparisons per formatter Ambiguous. A separate
-AI-assisted review proposed Preserved for all 32, producing reviewed Preserved
-counts of 132 and 165. Those proposals have not been independently
-human-validated, and the automatic labels remain unchanged.
+## Reproduce
 
-![Automatic outcomes and the separate AI-assisted review](reports/figures-reviewed/figure1_reviewed_outcomes.png)
-
-Each bar has 200 comparisons. The review changes the unresolved counts;
-it adds no confirmed suppression changes.
-
-No confirmed drift appeared in the 80 natural-source comparisons. There was
-less opportunity to observe it: 65 outputs were unchanged, and 22 of the
-40 original files had no underlying warnings from the selected rules.
-Another 4 comparisons failed the strict AST check. The result leaves
-behavior on other files and rules open.
-
-## Reproduce the work
-
-Use a committed Git checkout with Git on PATH. From the root in PowerShell:
+From a Git checkout on Windows with CPython 3.11.9:
 
 ```powershell
 py -3.11 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-analysis-lock.txt
-.\.venv\Scripts\python.exe -m pip install --no-deps --no-build-isolation -e .
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt -e .
+.\.venv\Scripts\python.exe reproduce.py
 ```
 
-The [reproduction guide](docs/reproducibility.md) covers saved-result checks,
-fresh runs and analysis outputs. A fresh pinned environment on the same Windows
-host reproduced every primary comparison. Other machines and platforms remain
-untested. Templates reuse code across treatments, AST equality is not runtime
-proof, and the statistical intervals are exploratory. Independent detector
-accuracy is still unmeasured.
+The command restores the [evidence bundle](evidence/study.zip), runs the tests,
+repeats the 400 controlled and 80 natural comparisons, and checks classifications,
+diagnostics, metrics and figures. Each run writes to a new folder under `local/`.
+Use `--check` to verify saved trials and rerun the analysis without the full formatter run,
+or `--unpack` to inspect the original files. Extracted paths retain the identifiers
+used in the original records, including the input and result manifests.
 
-## Read the results and evidence
+The natural rerun uses the retained sampled files. To reconstruct sample
+selection as well, fetch the checksum-pinned archives and pass their cache path:
 
-The [public report](report/research_report_public.md) and
-[PDF](report/research_report_public.pdf) explain the design and interpretation.
-The [evidence guide](docs/evidence_guide.md) connects examples to source pairs,
-diagnostics, [automatic metrics](reports/phase5/analysis/metrics.json),
-[reviewed metrics](reports/publication-phase-a/analysis/metrics.json) and the
-[ambiguity audit](reports/ambiguous-audit/ambiguous_comparisons_review.md).
+```powershell
+.\.venv\Scripts\python.exe scripts/fetch_pinned_archives.py
+.\.venv\Scripts\python.exe reproduce.py --archives local/upstream-archives
+```
 
-AI assisted implementation, debugging, template construction, analysis and writing;
-see the [disclosure](docs/ai_use.md). The [public snapshot notes](docs/public_snapshot.md)
-explain anonymized metadata, lossless source containers and omitted archives.
-[MIT](LICENSE) covers author-owned code and documentation. Upstream material keeps
-the terms in [third-party notices](THIRD_PARTY_NOTICES.md).
+Rebuild the PDF from its Markdown source with
+`python scripts/render_report.py` in the installed environment.
+Earlier repeats, protocols and releases remain available in the
+[prior public snapshot](https://github.com/AbdulNafeh10/formatter-suppression-study/tree/8c8ed2eec2053293a339275502916a8276f8210f).
+See the [MIT license](LICENSE) and [upstream notices](THIRD_PARTY_NOTICES.md).

@@ -1,1 +1,0 @@
-Module(body=[Expr(value=Call(func=Name(id='print', ctx=Load()), args=[Name(id='missing_a', ctx=Load())], keywords=[]))], type_ignores=[])

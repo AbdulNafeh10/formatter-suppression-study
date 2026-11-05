@@ -1,2 +1,0 @@
-warning: Invalid rule code provided to `# noqa` at <repo>\datasets\real_world\phase4\contexts\pallets--flask\src\flask\app.py:278: B950
-warning: Invalid rule code provided to `# noqa` at <repo>\datasets\real_world\phase4\contexts\pallets--flask\src\flask\app.py:1515: B001

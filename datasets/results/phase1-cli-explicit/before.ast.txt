@@ -1,1 +1,0 @@
-Module(body=[Import(names=[alias(name='os')]), Assign(targets=[Name(id='value', ctx=Store())], value=Name(id='missing_name', ctx=Load())), Assign(targets=[Name(id='result', ctx=Store())], value=Name(id='another_missing_name', ctx=Load()))], type_ignores=[])

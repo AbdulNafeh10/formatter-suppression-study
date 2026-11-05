@@ -1,3 +1,0 @@
-formatter,families_with_any_confirmed_drift,complete_families,excluded_incomplete_families,fraction,lower,upper,level,unit,interpretation
-black,15,23,2,0.65217391304347827,0.44890335377263008,0.81188724061202255,0.94999999999999996,wholly resolved template family,hypothetical independent/exchangeable-family Bernoulli model only
-ruff,12,23,2,0.52173913043478259,0.32962737336427411,0.70762842583353347,0.94999999999999996,wholly resolved template family,hypothetical independent/exchangeable-family Bernoulli model only

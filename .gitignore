@@ -8,5 +8,8 @@ build/
 dist/
 tmp/
 local/
-reports/local-*/
-datasets/real_world/phase4/archives/
+# Restored by reproduce.py from evidence/study.zip.
+/configs/
+/datasets/
+/docs/
+/reports/

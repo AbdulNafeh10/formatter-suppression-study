@@ -1,3 +1,0 @@
-...................                                                      [100%]
-- generated xml file: <repo>\reports\phase1\pytest.xml -
-19 passed in 6.06s

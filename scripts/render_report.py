@@ -24,7 +24,6 @@ from reportlab.platypus import (
     PageTemplate,
     Paragraph,
     Preformatted,
-    SimpleDocTemplate,
     Spacer,
     Table,
     TableStyle,
@@ -32,7 +31,7 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_EVIDENCE = (
-    "https://github.com/AbdulNafeh10/formatter-suppression-study/blob/7c77a230/"
+    "https://github.com/AbdulNafeh10/formatter-suppression-study/blob/main/"
 )
 PUBLIC_SECTIONS = [
     f"{number}. {name}"
@@ -73,13 +72,12 @@ def inline(text, source=None):
 
 
 def render(source=None, output=None, validation_path=None, required=None):
-    source = source or ROOT / "report/research_report.md"
-    output = output or ROOT / "report/research_report.pdf"
-    validation_path = validation_path or ROOT / "reports/phase6/pdf_validation.json"
-    public = source.name == "research_report_public.md"
+    source = source or ROOT / "report/research_report_public.md"
+    output = output or ROOT / "report/research_report_public.pdf"
+    validation_path = validation_path or ROOT / "local/pdf-validation.json"
 
     def markup(text):
-        return inline(text, source if public else None)
+        return inline(text, source)
 
     body = ParagraphStyle(
         "body",
@@ -145,7 +143,7 @@ def render(source=None, output=None, validation_path=None, required=None):
         if not line:
             index += 1
             continue
-        if public and line in ("<!-- landscape -->", "<!-- portrait -->"):
+        if line in ("<!-- landscape -->", "<!-- portrait -->"):
             wide_page = line == "<!-- landscape -->"
             story.extend(
                 [
@@ -153,7 +151,7 @@ def render(source=None, output=None, validation_path=None, required=None):
                     PageBreak(),
                 ]
             )
-        elif public and line.startswith("!["):
+        elif line.startswith("!["):
             match = re.fullmatch(r"!\[(.+)\]\(([^)]+)\)", line)
             if not match:
                 raise ValueError("Unsupported figure syntax")
@@ -179,7 +177,7 @@ def render(source=None, output=None, validation_path=None, required=None):
                     "height_points": image.drawHeight,
                 }
             )
-        elif public and line.startswith("```"):
+        elif line.startswith("```"):
             block = []
             index += 1
             while index < len(lines) and not lines[index].startswith("```"):
@@ -231,7 +229,7 @@ def render(source=None, output=None, validation_path=None, required=None):
             continue
         elif line.startswith("- "):
             story.append(Paragraph(markup(line[2:]), body, bulletText="-"))
-        elif public and line in ("Before formatting:", "After formatting:"):
+        elif line in ("Before formatting:", "After formatting:"):
             label = ParagraphStyle("code_label", parent=body, keepWithNext=True)
             story.append(Paragraph(markup(line), label))
         else:
@@ -243,7 +241,7 @@ def render(source=None, output=None, validation_path=None, required=None):
         index += 1
 
     def footer(canvas, document):
-        width = canvas._pagesize[0] if public else A4[0]
+        width = canvas._pagesize[0]
         canvas.setStrokeColor(colors.HexColor("#a2adb5"))
         canvas.line(47, 39, width - 47, 39)
         canvas.setFont("Times-Roman", 8)
@@ -252,8 +250,7 @@ def render(source=None, output=None, validation_path=None, required=None):
         )
         canvas.drawRightString(width - 47, 27, str(document.page))
 
-    doc_type = BaseDocTemplate if public else SimpleDocTemplate
-    doc = doc_type(
+    doc = BaseDocTemplate(
         str(output),
         pagesize=A4,
         leftMargin=47,
@@ -261,45 +258,28 @@ def render(source=None, output=None, validation_path=None, required=None):
         topMargin=41,
         bottomMargin=50,
         title="Code Formatting and Linter Suppressions",
-        author="Abdul Nafeh" if public else "AI-assisted research pilot",
+        author="Abdul Nafeh",
         pageCompression=1,
         invariant=1,
     )
-    if public:
-        templates = []
-        for name, size in (("portrait", A4), ("landscape", landscape(A4))):
-            frame = Frame(
-                47,
-                50,
-                size[0] - 94,
-                size[1] - 91,
-                leftPadding=0,
-                rightPadding=0,
-                topPadding=0,
-                bottomPadding=0,
-            )
-            templates.append(PageTemplate(name, [frame], onPage=footer, pagesize=size))
-        doc.addPageTemplates(templates)
-        doc.build(story)
-    else:
-        doc.build(story, onFirstPage=footer, onLaterPages=footer)
+    templates = []
+    for name, size in (("portrait", A4), ("landscape", landscape(A4))):
+        frame = Frame(
+            47,
+            50,
+            size[0] - 94,
+            size[1] - 91,
+            leftPadding=0,
+            rightPadding=0,
+            topPadding=0,
+            bottomPadding=0,
+        )
+        templates.append(PageTemplate(name, [frame], onPage=footer, pagesize=size))
+    doc.addPageTemplates(templates)
+    doc.build(story)
     reader = PdfReader(output)
     text = "\n".join(page.extract_text() for page in reader.pages)
-    if not public and not 4 <= len(reader.pages) <= 6:
-        raise ValueError(f"report length outside target: {len(reader.pages)} pages")
-    required = required or (
-        PUBLIC_SECTIONS
-        if public
-        else [
-            "Abstract",
-            "Methodology",
-            "Results: controlled inputs",
-            "Results: natural-source validation",
-            "Threats to validity",
-            "References",
-            "AI-use disclosure",
-        ]
-    )
+    required = required or PUBLIC_SECTIONS
     if any(part not in text for part in required) or "{{" in text or "\u25a0" in text:
         raise ValueError("PDF content verification failed")
     result = {
@@ -309,18 +289,14 @@ def render(source=None, output=None, validation_path=None, required=None):
         "pdf_sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         "required_sections_present": True,
         "page_text_characters": [len(page.extract_text()) for page in reader.pages],
-        "visual_review": "Separate rendered-page inspection required; see pdf_visual_review.md.",
     }
-    if public:
-        if len(figures) != 4 or reader.metadata.author != "Abdul Nafeh":
-            raise ValueError(
-                "Public report requires four figures and the approved author"
-            )
-        result.update(
-            author=reader.metadata.author,
-            embedded_figures=figures,
-            repository_link_base=PUBLIC_EVIDENCE,
-        )
+    if len(figures) != 4 or reader.metadata.author != "Abdul Nafeh":
+        raise ValueError("Public report requires four figures and the approved author")
+    result.update(
+        author=reader.metadata.author,
+        embedded_figures=figures,
+        repository_link_base=PUBLIC_EVIDENCE,
+    )
     validation_path.parent.mkdir(parents=True, exist_ok=True)
     validation_path.write_bytes((json.dumps(result, indent=2) + "\n").encode())
     print(json.dumps(result))
@@ -328,17 +304,5 @@ def render(source=None, output=None, validation_path=None, required=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--public", action="store_true")
-    parser.add_argument(
-        "--validation", type=Path, help="Write a separate validation record"
-    )
-    args = parser.parse_args()
-    if args.public:
-        render(
-            ROOT / "report/research_report_public.md",
-            ROOT / "report/research_report_public.pdf",
-            args.validation or ROOT / "reports/publication-phase-b/pdf_validation.json",
-            PUBLIC_SECTIONS,
-        )
-    else:
-        render()
+    parser.add_argument("--validation", type=Path)
+    render(validation_path=parser.parse_args().validation)
