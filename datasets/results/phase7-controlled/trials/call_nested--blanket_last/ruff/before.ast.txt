@@ -1,1 +1,0 @@
-Module(body=[Expr(value=Call(func=Name(id='print', ctx=Load()), args=[Call(func=Name(id='tuple', ctx=Load()), args=[List(elts=[Name(id='missing_a', ctx=Load())], ctx=Load())], keywords=[]), Call(func=Name(id='sorted', ctx=Load()), args=[List(elts=[Name(id='missing_b', ctx=Load())], ctx=Load())], keywords=[])], keywords=[]))], type_ignores=[])

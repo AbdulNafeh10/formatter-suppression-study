@@ -1,8 +1,0 @@
-{
-  "case_id": "exception_binding_boundary--blanket_last",
-  "eligible": true,
-  "error": null,
-  "diagnostic_count": 2,
-  "syntax_valid": true,
-  "duplicate_of": null
-}

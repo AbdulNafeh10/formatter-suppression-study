@@ -1,1 +1,0 @@
-Module(body=[Assign(targets=[Name(id='x', ctx=Store())], value=Name(id='missing_a', ctx=Load())), Assign(targets=[Name(id='y', ctx=Store())], value=Name(id='missing_b', ctx=Load()))], type_ignores=[])

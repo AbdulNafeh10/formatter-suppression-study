@@ -1,7 +1,0 @@
-repository,formatter,scheduled,measurement_complete,attributable,unresolved,outcome_preserved,outcome_newly_hidden,outcome_newly_exposed,outcome_mixed,outcome_diagnostic_changed,outcome_ast_changed,outcome_ambiguous,outcome_execution_failure,confirmed_drift,confirmed_fraction_scheduled,confirmed_fraction_resolved,newly_hidden_diagnostics,newly_exposed_diagnostics,text_changed,text_unchanged,text_changed_preserved,changed_and_resolved,changed_resolved_original_suppression,original_zero_underlying,original_with_suppression
-pallets/flask,black,13,13,12,1,12,0,0,0,0,1,0,0,0,0,0,0,0,1,12,0,0,0,9,4
-pallets/flask,ruff,13,13,13,0,13,0,0,0,0,0,0,0,0,0,0,0,0,1,12,1,1,0,9,4
-psf/requests,black,7,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,3,4,3,3,3,1,5
-psf/requests,ruff,7,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,0,2,5,2,2,2,1,5
-pytest-dev/pytest,black,20,20,18,2,18,0,0,0,0,2,0,0,0,0,0,0,0,2,18,0,0,0,12,8
-pytest-dev/pytest,ruff,20,20,19,1,19,0,0,0,0,1,0,0,0,0,0,0,0,6,14,5,5,2,12,8

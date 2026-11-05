@@ -18,10 +18,11 @@ from suppression_study.figures import COLORS, FORMATTER, style
 from suppression_study.pipeline import ROOT
 
 
-def run(output):
-    if output.exists() or not output.is_relative_to(ROOT / "reports"):
-        raise ValueError("Use a new figure directory under reports")
-    data = ROOT / "reports/publication-phase-a/analysis"
+def run(output, data):
+    if output.exists() or not any(
+        output.is_relative_to(ROOT / name) for name in ("local", "reports")
+    ):
+        raise ValueError("Use a new figure directory under local or reports")
     metrics = json.loads((data / "metrics.json").read_bytes())
     frame = pd.read_csv(data / "review_overlay.csv")
     spec = json.loads(
@@ -358,5 +359,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output", type=Path, default=ROOT / "reports/figures-reviewed"
     )
+    parser.add_argument(
+        "--data", type=Path, default=ROOT / "reports/publication-phase-a/analysis"
+    )
     args = parser.parse_args()
-    run(args.output.resolve())
+    run(args.output.resolve(), args.data.resolve())

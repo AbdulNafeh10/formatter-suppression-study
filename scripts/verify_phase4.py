@@ -130,9 +130,7 @@ def main():
         "--dataset", type=Path, default=ROOT / "datasets/real_world/phase4"
     )
     parser.add_argument("--main", type=Path, default=ROOT / "datasets/results/phase4")
-    parser.add_argument(
-        "--repeat", type=Path, default=ROOT / "datasets/results/phase4-repeat"
-    )
+    parser.add_argument("--repeat", type=Path)
     parser.add_argument(
         "--report", type=Path, default=ROOT / "reports/phase4/evidence_checks.json"
     )
@@ -190,7 +188,9 @@ def main():
                     dataset / case["source"]
                 ).read_bytes()
     first, native_first = verify_run(args.main, manifest, dataset)
-    repeat, native_repeat = verify_run(args.repeat, manifest, dataset)
+    repeat, native_repeat = (
+        verify_run(args.repeat, manifest, dataset) if args.repeat else ({}, {})
+    )
     fields = (
         "input_sha256",
         "output_sha256",
@@ -239,7 +239,7 @@ def main():
         "native_status_records_checked": len(native_first),
         "repeat_comparisons_checked": len(repeat),
         "csv_jsonl_raw_evidence_checked": True,
-        "repeat_measurements_identical": True,
+        "repeat_measurements_identical": bool(repeat),
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
     save_json(args.report, result)
