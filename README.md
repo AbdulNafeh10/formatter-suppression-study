@@ -1,9 +1,9 @@
 # Code Formatting and Linter Suppressions
 
 Can a Python formatter change which warnings a `noqa` comment hides while
-leaving the program's syntax tree unchanged? Black and Ruff both did so in
-controlled tests. This matters when a formatting-only change also changes
-what a lint check reports.
+leaving the program's syntax tree unchanged? Both Black and Ruff changed
+warning visibility in controlled tests. Here, Black joins two lines and the
+existing comment starts hiding a second warning.
 
 ```python
 # Before Black: Ruff reports missing_b.
@@ -14,10 +14,11 @@ value = [missing_a,  # noqa: F821
 value = [missing_a, missing_b]  # noqa: F821
 ```
 
-Ruff checked each source before and after formatting, with and without
-suppression. The four passes distinguish a warning that changed visibility
-from a warning whose underlying occurrence changed. We tested eight directive
-variants of 25 templates with both formatters and separately tested 40 files
+Ruff checked each source before and after formatting, both respecting and
+ignoring `noqa`. The passes that ignore `noqa` reveal the underlying warnings.
+The matcher tracks those warnings across the two versions before comparing
+which ones are visible. The controlled set crosses 25
+templates with eight directive variants. A separate sample uses 40 files
 from pinned Requests, Flask and pytest snapshots.
 
 | Controlled comparisons | Black | Ruff |
