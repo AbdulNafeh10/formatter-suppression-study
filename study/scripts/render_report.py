@@ -29,7 +29,7 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 PUBLIC_EVIDENCE = (
     "https://github.com/AbdulNafeh10/formatter-suppression-study/blob/main/"
 )
@@ -74,7 +74,7 @@ def inline(text, source=None):
 def render(source=None, output=None, validation_path=None, required=None):
     source = source or ROOT / "report/research_report_public.md"
     output = output or ROOT / "report/research_report_public.pdf"
-    validation_path = validation_path or ROOT / "local/pdf-validation.json"
+    validation_path = validation_path or ROOT / "study/local/pdf-validation.json"
 
     def markup(text):
         return inline(text, source)
