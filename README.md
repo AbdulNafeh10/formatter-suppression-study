@@ -38,12 +38,13 @@ exclusions. These counts describe the tested inputs.
 From a Git checkout on Windows with CPython 3.11.9:
 
 ```powershell
+Set-Location study
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt -e .
 .\.venv\Scripts\python.exe reproduce.py
 ```
 
-The command restores the [evidence bundle](evidence/study.zip), runs the tests,
+The command restores the [evidence bundle](study/evidence/study.zip), runs the tests,
 repeats the 400 controlled and 80 natural comparisons, and checks classifications,
 diagnostics, metrics and figures. Each run writes to a new folder under `local/`.
 Use `--check` to verify saved trials and rerun the analysis without the full formatter run,
@@ -62,4 +63,4 @@ Rebuild the PDF from its Markdown source with
 `python scripts/render_report.py` in the installed environment.
 Earlier repeats, protocols and releases remain available in the
 [prior public snapshot](https://github.com/AbdulNafeh10/formatter-suppression-study/tree/8c8ed2eec2053293a339275502916a8276f8210f).
-See the [MIT license](LICENSE) and [upstream notices](THIRD_PARTY_NOTICES.md).
+See the [MIT license](LICENSE) and [upstream notices](study/THIRD_PARTY_NOTICES.md).

@@ -98,7 +98,7 @@ def verify_analysis(output):
     )
     from PIL import Image, ImageChops
 
-    for original_png in (ROOT / "report" / "figures").glob("*.png"):
+    for original_png in (ROOT.parent / "report" / "figures").glob("*.png"):
         directory = (
             figures if original_png.name.startswith("figure4_") else reviewed_figures
         )

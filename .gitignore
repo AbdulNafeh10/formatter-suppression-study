@@ -13,3 +13,7 @@ local/
 /datasets/
 /docs/
 /reports/
+/study/configs/
+/study/datasets/
+/study/docs/
+/study/reports/
