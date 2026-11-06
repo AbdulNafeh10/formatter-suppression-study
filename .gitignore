@@ -8,11 +8,13 @@ build/
 dist/
 tmp/
 local/
-# Restored by reproduce.py from evidence/study.zip.
+# Evidence restored in older checkouts.
 /configs/
 /datasets/
 /docs/
 /reports/
+
+# Evidence restored by study/reproduce.py.
 /study/configs/
 /study/datasets/
 /study/docs/
