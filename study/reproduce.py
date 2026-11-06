@@ -124,7 +124,7 @@ def main():
     mode.add_argument(
         "--check",
         action="store_true",
-        help="Check saved trials without rerunning formatters",
+        help="Check saved trials and rerun the analysis without a full formatter run",
     )
     parser.add_argument(
         "--archives", type=Path, help="Check upstream archives in this cache"

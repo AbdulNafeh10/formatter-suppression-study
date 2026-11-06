@@ -46,7 +46,8 @@ py -3.11 -m venv .venv
 
 The command restores the [evidence bundle](study/evidence/study.zip), runs the tests,
 repeats the 400 controlled and 80 natural comparisons, and checks classifications,
-diagnostics, metrics and figures. Each run writes to a new folder under `local/`.
+diagnostics, metrics and figures. Each run writes to its own folder in
+`study/local/`.
 Use `--check` to verify saved trials and rerun the analysis without the full formatter run,
 or `--unpack` to inspect the original files. Extracted paths retain the identifiers
 used in the original records, including the input and result manifests.
